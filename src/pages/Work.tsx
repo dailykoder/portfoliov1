@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Card, CardContent } from "@/components/ui/card";
-import { Brush, Camera, Star, Palette } from "lucide-react";
+import { Palette } from "lucide-react";
 type Routes =
   | "/"
   | "/about"
