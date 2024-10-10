@@ -12,17 +12,9 @@ import {
 
 function Home() {
   return (
-    <div
-      className="relative w-full min-h-screen"
-      style={{
-        backgroundImage: `url('https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/b4ae4543-e4fb-4972-888f-23a8f86829cf_rwc_83x0x10583x4500x4096.jpg?h=c41ff844684ff54bb661d3227b086bbc')`,
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-        backgroundPosition: "center",
-      }}
-    >
+    <div className="relative w-full">
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/100 to-white/60 rounded-md" />
 
       <div className="relative">
         {/* Hero Section */}
@@ -53,7 +45,7 @@ function Home() {
                            transform hover:scale-[1.02] transition-transform duration-500"
               >
                 <p className="text-2xl md:text-3xl font-bold text-[#4a3034] leading-relaxed mb-6">
-                  I'm a visual concept designer based in So-cal,
+                  I'm a visual concept designer based in SD,
                   <span className="text-[#d4848c]">
                     {" "}
                     crafting miniature worlds that tell stories.

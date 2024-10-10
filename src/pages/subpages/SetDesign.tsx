@@ -20,20 +20,12 @@ import { images } from "@/components/set-design/constants";
 
 function SetDesign() {
   return (
-    <div
-      className="min-h-screen w-full py-12 px-4 md:px-8"
-      style={{
-        backgroundImage: `url('https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/b4ae4543-e4fb-4972-888f-23a8f86829cf_rwc_83x0x10583x4500x4096.jpg?h=c41ff844684ff54bb661d3227b086bbc')`,
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-        backgroundPosition: "center",
-      }}
-    >
+    <div className="w-full py-12 px-4 md:px-8">
       {/* Overlay to improve content readability */}
       <div className="fixed inset-0 pointer-events-none" />
 
       {/* Content wrapper */}
-      <div className="relative z-10">
+      <div className="w-[]">
         {/* Hero Section */}
         <div className="flex flex-col items-center relative mb-24">
           <div className="" />
@@ -50,7 +42,7 @@ function SetDesign() {
         </div>
 
         {/* Main Content */}
-        <div className="max-w-6xl mx-auto space-y-20">
+        <div className="mx-auto space-y-20">
           {/* Accordion Section */}
           <div className="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg">
             <Accordion type="multiple" className="w-full space-y-6">
@@ -67,7 +59,7 @@ function SetDesign() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <div className="prose max-w-none">
+                  <div>
                     <div className="flex flex-col mt-6 space-y-4">
                       <h5 className="text-lg font-semibold text-[#4a3034]">
                         Written by Brian Gatewood & Alessandro Tanaka
@@ -128,16 +120,96 @@ function SetDesign() {
                   <div className="flex items-center space-x-4">
                     <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
                     <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      Script: "Sharper"
+                      TV Pilot Script: "The Book of Enchantment"
                     </h4>
                   </div>
                 </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <LightGallery
+                    speed={100}
+                    plugins={[lgZoom, lgThumbnail]}
+                    elementClassNames="flex flex-col"
+                    selector="a"
+                  >
+                    <div className="flex flex-col mt-6 space-y-4">
+                      <h5 className="text-lg font-semibold text-[#4a3034]">
+                        Based on The Disney Villains Series of Books by Serena
+                        Valentino
+                      </h5>
+                      <div className="flex items-center space-x-4 text-[#6d464c]">
+                        <Brush className="w-5 h-5" />
+                        <span className="italic">
+                          Materials used: Polymer Clay, Resin, Hot Glue, Foil,
+                          Coffee Grounds, Tea Leaves, Paint
+                        </span>
+                      </div>
+                    </div>
+                    <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bfd23547-b05e-4649-8d3d-19b3c94a58a7_rw_3840.jpg?h=218e0fe56f1feb1e0ba265b5e88f361d">
+                      <img
+                        src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bfd23547-b05e-4649-8d3d-19b3c94a58a7_rw_3840.jpg?h=218e0fe56f1feb1e0ba265b5e88f361d"
+                        className="w-3/4 ml-auto mr-auto mb-4 mt-6"
+                      />
+                    </a>
+                    <GalleryGrid layout={4} images={images["tHouseImages"]} />
+                  </LightGallery>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem
+                value="item-3"
+                className="border border-[#e8b5bd] rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
+              >
+                <AccordionTrigger className="px-6 py-4 hover:no-underline group">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
+                    <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                      "Midnight in Paris" (2011)
+                    </h4>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <AccordionContent>
+                    <LightGallery
+                      speed={100}
+                      plugins={[lgZoom, lgThumbnail]}
+                      elementClassNames="flex flex-col"
+                      selector="a"
+                    >
+                      <div className="flex flex-col mt-6 space-y-4">
+                        <h5 className="text-lg font-semibold text-[#4a3034]">
+                          This conceptual design represents the two timelines of
+                          the story: 1920s and modern day
+                        </h5>
+                        <div className="flex items-center space-x-4 text-[#6d464c]">
+                          <Brush className="w-5 h-5" />
+                          <span className="italic">
+                            Materials used: Foam core, task board, resin, paint,
+                            metal leaf, sand, fairy light
+                          </span>
+                        </div>
+                      </div>
+                      <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-2 mb-4 mt-6">
+                        <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/3d3f146c-102d-4812-8df1-39d7d70052c4_rw_1920.jpg?h=f304b7c30dbd003b49a86eadeecc188e">
+                          <img
+                            src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/3d3f146c-102d-4812-8df1-39d7d70052c4_rw_1920.jpg?h=f304b7c30dbd003b49a86eadeecc188e"
+                            className="h-[50em]"
+                          />
+                        </a>
+                        <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/0ad5d9de-8ed9-474d-bbe4-142f68f8c38d_rw_1920.jpg?h=02442fad0dcc0eec8be175487e4c0b2b">
+                          <img
+                            src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/0ad5d9de-8ed9-474d-bbe4-142f68f8c38d_rw_1920.jpg?h=02442fad0dcc0eec8be175487e4c0b2b"
+                            className="h-[50em]"
+                          />
+                        </a>
+                      </div>
+                    </LightGallery>
+                  </AccordionContent>
+                </AccordionContent>
               </AccordionItem>
             </Accordion>
           </div>
 
           {/* Project Stats Section */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 bg-white/100 backdrop-blur-sm ">
             {[
               {
                 icon: Brush,
@@ -179,12 +251,12 @@ function SetDesign() {
             ))}
           </div>
 
-          {/* Process Section */}
+          {/* Process Section
           <div className="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg">
             <h5 className="text-3xl font-semibold text-center mb-12 text-[#4a3034]">
               Design Process
             </h5>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8">
               {[
                 {
                   step: "Research",
@@ -251,10 +323,10 @@ function SetDesign() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Skills Section */}
-          <div className="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg">
+          {/* <div className="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg">
             <h5 className="text-3xl font-semibold text-center mb-12 text-[#4a3034]">
               Technical Skills
             </h5>
@@ -315,7 +387,7 @@ function SetDesign() {
                 </Card>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
