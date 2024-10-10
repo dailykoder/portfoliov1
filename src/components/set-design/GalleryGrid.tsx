@@ -1,14 +1,23 @@
 import { memo } from "react";
-import LightGallery from "lightgallery/react";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
-import lgThumbnail from "lightgallery/plugins/thumbnail";
-import lgZoom from "lightgallery/plugins/zoom";
 import GalleryItem from "./GalleryItem";
 
-const GalleryGrid = memo(({ layout, images }) => {
-  const gridLayouts = {
+// Define the props type for GalleryItem, if not already done
+interface GalleryItemProps {
+  src: string;
+  alt: string;
+}
+
+// Define the props type for GalleryGrid
+interface GalleryGridProps {
+  layout: number;
+  images: GalleryItemProps[];
+}
+
+const GalleryGrid = memo(({ layout, images }: GalleryGridProps) => {
+  const gridLayouts: { [key: number]: string } = {
     1: "w-full mb-4",
     2: "grid grid-cols-2 gap-2 mb-4",
     3: "grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mb-4",

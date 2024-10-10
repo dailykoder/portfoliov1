@@ -1,11 +1,21 @@
 import { Link } from "@tanstack/react-router";
-import { motion } from "framer-motion";
+
+type Routes =
+  | "/"
+  | "/about"
+  | "/branding"
+  | "/styling"
+  | "/set-design"
+  | "/work"
+  | "/hand-rendering"
+  | "/window-installation"
+  | "/digital-rendering";
 
 function Work() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
       <div className="relative">
-        <Link to="/setdesign">
+        <Link to={"/set-design" as Routes}>
           <img
             className=""
             src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/0e96b101-8d11-4fa7-9ed7-a638e49015fa_rwc_0x401x3840x2164x1280.jpg?h=82af8d907ba3768107c35f4a9d0235bf"
@@ -16,7 +26,7 @@ function Work() {
         </Link>
       </div>
       <div className="relative">
-        <Link to="/window-installation">
+        <Link to={"/window-installation" as Routes}>
           <img
             className=""
             src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/a4da34a4-6c3d-4967-bbd3-5a1aaa0fd40d_rwc_0x951x1920x1082x1280.jpg?h=4e2b14d5905df56dc7ed0d8732cf6da9"
@@ -27,7 +37,7 @@ function Work() {
         </Link>
       </div>
       <div className="relative">
-        <Link to="/digital-rendering">
+        <Link to={"/digital-rendering" as Routes}>
           <img
             className=""
             src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/20e9ad46-b0d7-4c90-8c33-a8949851781a_carw_16x9x1280.png?h=78bd95ec8db66b697edad56da380d14b"
@@ -38,7 +48,7 @@ function Work() {
         </Link>
       </div>
       <div className="relative">
-        <Link to="/hand-rendering">
+        <Link to={"/hand-rendering" as Routes}>
           <img
             className=""
             src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/a47f96cd-b2ae-4320-b0fe-19f71a4ec126_rwc_97x307x1782x1004x1280.jpg?h=a7092deb0d09512ec428422ee8f1253d"
@@ -49,7 +59,7 @@ function Work() {
         </Link>
       </div>
       <div className="relative">
-        <Link to="/">
+        <Link to={"/branding" as Routes}>
           <img
             className=""
             src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/8aee71d0-d6a5-438c-ab39-9fc321b5f14a_carw_16x9x1280.png?h=ae750fb66b5b20feb787cd5d420b7226"
@@ -60,7 +70,7 @@ function Work() {
         </Link>
       </div>
       <div className="relative">
-        <Link to="/">
+        <Link to={"/styling" as Routes}>
           <img
             className=""
             src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/59ec1fca-cd5f-4b5b-9fce-7d24a64a30cc_rwc_0x122x3840x2164x1280.jpg?h=872d998f2102a330da8f36347699e17c"

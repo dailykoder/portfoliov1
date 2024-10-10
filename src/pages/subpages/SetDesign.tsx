@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/accordion";
 
 import GalleryGrid from "@/components/set-design/GalleryGrid";
-import GalleryItem from "@/components/set-design/GalleryItem";
 import { images } from "@/components/set-design/constants";
 
 function SetDesign() {

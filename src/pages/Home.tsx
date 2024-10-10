@@ -1,22 +1,8 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
-import { Button } from "@/components/ui/button";
-
 function Home() {
   return (
     <div className="flex flex-col flex-grow items-center">
       <div className="mb-20">
         <h1 className="text-9xl font-semibold">Gina Kim</h1>
-        {/* <h6 className="text-xl mt-4 font-semibold">
-            Visual Concept Designer
-          </h6> */}
       </div>
       <div className="flex items-center w-1/2 mb-10">
         <p className="text-3xl font-bold text-left">
