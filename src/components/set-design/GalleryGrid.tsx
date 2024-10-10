@@ -4,13 +4,11 @@ import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
 import GalleryItem from "./GalleryItem";
 
-// Define the props type for GalleryItem, if not already done
 interface GalleryItemProps {
   src: string;
   alt: string;
 }
 
-// Define the props type for GalleryGrid
 interface GalleryGridProps {
   layout: number;
   images: GalleryItemProps[];

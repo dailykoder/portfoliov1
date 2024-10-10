@@ -1,70 +1,180 @@
+import React from "react";
+import {
+  Palette,
+  Sparkles,
+  Paintbrush,
+  Shapes,
+  ArrowRight,
+  Eye,
+  Camera,
+  Ruler,
+  Clock,
+} from "lucide-react";
+
 function Home() {
   return (
-    <div className="flex flex-col flex-grow items-center">
-      <div className="mb-20">
-        <h1 className="text-9xl font-semibold">Gina Kim</h1>
+    <div
+      className="relative w-full min-h-screen"
+      style={{
+        backgroundImage: `url('https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/b4ae4543-e4fb-4972-888f-23a8f86829cf_rwc_83x0x10583x4500x4096.jpg?h=c41ff844684ff54bb661d3227b086bbc')`,
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
+
+      <div className="relative">
+        {/* Hero Section */}
+        <div className="px-6 md:px-12 pt-12 pb-20">
+          <div className="max-w-7xl mx-auto">
+            {/* Name and Title */}
+            <div className="relative inline-block group cursor-pointer mb-16">
+              <div
+                className="absolute -inset-x-6 -inset-y-4 bg-white/60 backdrop-blur-sm 
+                           rounded-2xl scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 
+                           transition-all duration-500 shadow-lg border border-[#e8b5bd]/30"
+              />
+              <h1
+                className="relative text-7xl md:text-8xl lg:text-9xl font-semibold 
+                         bg-gradient-to-r from-[#4a3034] to-[#d4848c] 
+                         bg-clip-text text-transparent animate-gradient-x"
+              >
+                Gina Kim
+              </h1>
+            </div>
+
+            {/* Introduction Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+              {/* Main Introduction */}
+              <div
+                className="bg-white/70 backdrop-blur-sm p-8 rounded-2xl 
+                           shadow-lg border border-[#e8b5bd]/30 
+                           transform hover:scale-[1.02] transition-transform duration-500"
+              >
+                <p className="text-2xl md:text-3xl font-bold text-[#4a3034] leading-relaxed mb-6">
+                  I'm a visual concept designer based in So-cal,
+                  <span className="text-[#d4848c]">
+                    {" "}
+                    crafting miniature worlds that tell stories.
+                  </span>
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  {[
+                    { icon: Paintbrush, text: "Set Design" },
+                    { icon: Eye, text: "Visual Concepts" },
+                    { icon: Ruler, text: "Miniature Crafting" },
+                    { icon: Camera, text: "Creative Direction" },
+                  ].map(({ icon: Icon, text }) => (
+                    <div
+                      key={text}
+                      className="flex items-center gap-2 px-4 py-2 bg-white/50 
+                                  rounded-full border border-[#e8b5bd]/30 
+                                  hover:bg-white/70 transition-all duration-300
+                                  hover:shadow-md"
+                    >
+                      <Icon className="w-4 h-4 text-[#d4848c]" />
+                      <span className="text-[#6d464c]">{text}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Quick Stats */}
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { number: "2+", label: "Years Experience", icon: Clock },
+                  { number: "5+", label: "Projects Completed", icon: Shapes },
+                  {
+                    number: "20+",
+                    label: "Set Pieces Created",
+                    icon: Palette,
+                  },
+                  { number: "3", label: "Some achievement", icon: Sparkles },
+                ].map(({ number, label, icon: Icon }) => (
+                  <div
+                    key={label}
+                    className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl
+                                shadow-lg border border-[#e8b5bd]/30
+                                hover:bg-white/70 transition-all duration-300
+                                group"
+                  >
+                    <Icon
+                      className="w-6 h-6 text-[#d4848c] mb-3 
+                                   group-hover:scale-110 transition-transform duration-300"
+                    />
+                    <div className="text-3xl font-bold text-[#4a3034] mb-1">
+                      {number}
+                    </div>
+                    <div className="text-[#6d464c]">{label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Featured Projects Preview */}
+            <div
+              className="bg-white/70 backdrop-blur-sm p-8 rounded-2xl 
+                         shadow-lg border border-[#e8b5bd]/30 mb-20"
+            >
+              <h2 className="text-3xl font-bold text-[#4a3034] mb-8">
+                Featured Projects
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {[
+                  {
+                    title: '"Sharper" Set Design',
+                    desc: "Miniature world crafting for dramatic scenes",
+                    progress: "100%",
+                  },
+                  {
+                    title: "The Book of Enchantment",
+                    desc: "Disney Villains-inspired creative direction",
+                    progress: "100%",
+                  },
+                  {
+                    title: "Midnight in Paris (2011)",
+                    desc: "Period-accurate set piece recreation",
+                    progress: "100%",
+                  },
+                ].map(({ title, desc, progress }) => (
+                  <div
+                    key={title}
+                    className="group relative bg-white/60 p-6 rounded-xl
+                                border border-[#e8b5bd]/30 hover:bg-white/70 
+                                transition-all duration-300 cursor-pointer"
+                  >
+                    <div
+                      className="absolute bottom-0 left-0 h-1 bg-[#d4848c]/30 
+                                  rounded-full w-full overflow-hidden"
+                    >
+                      <div
+                        className="h-full bg-[#d4848c] rounded-full"
+                        style={{ width: progress }}
+                      />
+                    </div>
+                    <h3
+                      className="text-xl font-semibold text-[#4a3034] mb-2 
+                                 group-hover:text-[#d4848c] transition-colors duration-300"
+                    >
+                      {title}
+                    </h3>
+                    <p className="text-[#6d464c] mb-6">{desc}</p>
+                    <div className="flex items-center text-[#d4848c] font-medium">
+                      View Project
+                      <ArrowRight
+                        className="w-4 h-4 ml-2 
+                                          group-hover:translate-x-2 transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="flex items-center w-1/2 mb-10">
-        <p className="text-3xl font-bold text-left">
-          I'm a visual concept designer based in So-cal, see what I'm working
-          on!
-        </p>
-      </div>
-      {/* <div className="grid grid-cols-3 gap-10 w-full">
-          <Card className="">
-            <CardHeader className="font-bold text-3xl">Set Design</CardHeader>
-            <CardContent>
-              <img
-                src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/b63908a6-be0e-41c8-a695-8cee002d30fd_rw_3840.png?h=773f62547b66aea6fe51e800792202cc"
-                className="h-80"
-                loading="lazy"
-              />
-              <CardFooter className="flex flex-col justify-between pt-0 p-0 h-32">
-                <div>Concept Sketch</div>
-                <Button className="w-full">View More</Button>
-              </CardFooter>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader className="font-bold text-3xl">
-              Window Installation
-            </CardHeader>
-            <CardContent>
-              <img
-                src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/da2be984-98b1-4224-9e33-22701e9e5956_rw_1920.png?h=a3def0e4c10cb59de9d5217924c93828"
-                className=""
-                loading="lazy"
-              />
-              <CardFooter>Concept Sketch</CardFooter>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader className="font-bold text-3xl">
-              Digital Rendering
-            </CardHeader>
-            <CardContent>
-              <img
-                src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/05bb0c99-63ed-4e5d-b131-6a2b2c94592a_rw_1920.jpg?h=51287d0eabf42ced280ceba44e00ca96"
-                className="h-80"
-                loading="lazy"
-              />
-              <CardFooter>Concept Sketch</CardFooter>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader className="font-bold text-3xl">
-              Hand Rendering
-            </CardHeader>
-            <CardContent>
-              <img
-                src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/d8f3faf2-ae63-4b75-a881-99f44ce7790a_rw_600.jpg?h=520b2b496b39ebb30bec692c35bf28e1"
-                className="h-80"
-                loading="lazy"
-              />
-              <CardFooter>Concept Sketch</CardFooter>
-            </CardContent>
-          </Card>
-        </div> */}
     </div>
   );
 }
