@@ -2,6 +2,7 @@
   "name": "bbyport-v1",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://dailykoder.github.io/",
   "type": "module",
   "scripts": {
     "generate-routes": "tsr generate",
