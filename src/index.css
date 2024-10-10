@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus:wght@400;500;600;700&&display=swap");
 /* TAILWIND */
 @tailwind base;
 @tailwind components;
@@ -100,6 +101,7 @@ html {
 /* min body height */
 body {
   min-height: 100svh;
+  font-family: "Marcellus";
 }
 
 /* responsive images/videos */
