@@ -26,7 +26,7 @@ const Sidebar = () => {
               d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
             />
           </svg>
-          <Link to="/" className="font-bold pl-1">
+          <Link to="/portfoliov1" className="font-bold pl-1">
             Home
           </Link>
         </div>
@@ -46,16 +46,18 @@ const Sidebar = () => {
             />
           </svg>
           <NavigationMenuLink className="pl-1">
-            <Link to="/work" className="font-bold">
+            <Link to="/portfoliov1/work" className="font-bold">
               Work
             </Link>
             <NavigationMenuItem>
               <ul className="flex flex-col">
                 <NavigationMenuLink className="pt-1">
-                  <Link to="/setdesign">Set Design</Link>
+                  <Link to="/portfoliov1/setdesign">Set Design</Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink className="pt-1">
-                  <Link to="/setdesign">Window Installation</Link>
+                  <Link to="/portfoliov1/window-installation">
+                    Window Installation
+                  </Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink className="pt-1">
                   Digital Rendering

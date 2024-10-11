@@ -14,8 +14,8 @@ type Routes =
 function Work() {
   return (
     <div>
-      <div className="flex flex-col items-center  mb-24">
-        <div className="bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
+      <div className="flex flex-col items-center  mb-24 ">
+        <div className="md:min-w-[25rem] lg:min-w-[40rem] bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
           <Palette className="w-12 h-12 text-[#d4848c] mb-4 mx-auto" />
           <h4 className="font-bold text-5xl mb-4 text-[#4a3034]">My Work</h4>
           {/* <p className="text-lg text-[#6d464c] max-w-2xl">
@@ -74,7 +74,7 @@ function Work() {
             <div key={step} className="relative group">
               <div className="bg-white/90 rounded-lg p-6 border border-[#e8b5bd] h-full hover:shadow-lg transition-all duration-300">
                 <div className="text-[#d4848c] font-bold text-lg mb-2">
-                  0{index + 1}
+                  {index + 1}.
                 </div>
                 <h6 className="font-semibold mb-3 text-[#4a3034]">{step}</h6>
                 <p className="text-[#6d464c] text-sm mb-4">{desc}</p>

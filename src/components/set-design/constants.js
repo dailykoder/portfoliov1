@@ -1,5 +1,41 @@
 export const images = {
   // Image arrays for different sections
+  astroImages: [
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/6e542c9f-c5a6-4eda-ad0e-ed86329bf73c_rw_1920.png?h=23d757cb2c0fc9be4154b4fd17273db7",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/28c5f916-40d3-49a3-8279-ff4c10e70864_rw_1920.jpg?h=5baf2f05de44d631fa472942f289d6b1",
+      alt: "Inspiration: Libra",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/fd0b55ad-d605-4e50-a55b-e9b28699ed72_rw_1920.jpg?h=b707e1194676da5dd74e29e126b257a4",
+      alt: "Ring Display",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bf7875cb-0512-432b-9f3f-c834398fe355_rw_1920.jpg?h=3834c9adab84b8d8bf09ade5d5f389ae",
+      alt: "Necklace Display",
+    },
+  ],
+  opticalIllImages: [
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/da2be984-98b1-4224-9e33-22701e9e5956_rw_1920.png?h=a3def0e4c10cb59de9d5217924c93828",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/262e50c6-004c-44b2-9002-e0dcf53bfbd1_rw_1920.jpg?h=79505099d82254dc96bfd1e8c4a6a367",
+      alt: "Inspiration: Alice in Wonderland",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/22859155-c7c0-4e8f-8dba-0d7132152e78_rw_1920.jpg?h=2fea07003070e89dca206baebf8b3844",
+      alt: "Shoe Design",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/8c3d9702-2003-4692-bb31-ef315de26323_rw_1920.jpg?h=e86a7a39b99f6f4b4ab251c5a79172fa",
+      alt: "Product Display",
+    },
+  ],
   scriptPages: [
     {
       src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/ce1bdb9f-f80c-479c-ab82-353d7e9a3957_rw_1920.png?h=1859e8b43b63d8ce77b56f6eea0a8853",
