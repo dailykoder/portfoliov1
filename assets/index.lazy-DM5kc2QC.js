@@ -1,4 +1,4 @@
-import{a,j as e,c as i}from"./index-Dt6sEFL5.js";import{C as l}from"./camera-BIAmB7L6.js";import{P as d}from"./palette-CiRPAOW9.js";/**
+import{c as a,j as e,a as i}from"./index-DVBwYJkq.js";import{C as l}from"./camera-9m3mPJIN.js";import{P as d}from"./palette-CXMMSJ10.js";/**
  * @license lucide-react v0.446.0 - ISC
  *
  * This source code is licensed under the ISC license.
@@ -52,4 +52,4 @@ import{a,j as e,c as i}from"./index-Dt6sEFL5.js";import{C as l}from"./camera-BIA
                                 transition-all duration-300 cursor-pointer`,children:[e.jsx("div",{className:`absolute bottom-0 left-0 h-1 bg-[#d4848c]/30 \r
                                   rounded-full w-full overflow-hidden`,children:e.jsx("div",{className:"h-full bg-[#d4848c] rounded-full",style:{width:s}})}),e.jsx("h3",{className:`text-xl font-semibold text-[#4a3034] mb-2 \r
                                  group-hover:text-[#d4848c] transition-colors duration-300`,children:t}),e.jsx("p",{className:"text-[#6d464c] mb-6",children:r}),e.jsxs("div",{className:"flex items-center text-[#d4848c] font-medium",children:["View Project",e.jsx(o,{className:`w-4 h-4 ml-2 \r
-                                          group-hover:translate-x-2 transition-transform duration-300`})]})]},t))})]})]})})})]})}const y=i("/")({component:()=>e.jsx(b,{})});export{y as Route};
+                                          group-hover:translate-x-2 transition-transform duration-300`})]})]},t))})]})]})})})]})}const y=i("/portfoliov1/")({component:()=>e.jsx(b,{})});export{y as Route};
