@@ -18,7 +18,7 @@ function Home() {
 
       <div className="relative">
         {/* Hero Section */}
-        <div className="px-6 md:px-12 pt-12 pb-20">
+        <div className="px-3 md:px-6 pt-6 pb-12">
           <div className="max-w-7xl mx-auto">
             {/* Name and Title */}
             <div className="relative inline-block group cursor-pointer mb-16">
@@ -37,7 +37,7 @@ function Home() {
             </div>
 
             {/* Introduction Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+            <div className="grid lg:grid-cols-1 xl:grid-cols-2 gap-8 mb-20">
               {/* Main Introduction */}
               <div
                 className="bg-white/70 backdrop-blur-sm p-8 rounded-2xl 
@@ -73,7 +73,7 @@ function Home() {
               </div>
 
               {/* Quick Stats */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-4">
                 {[
                   { number: "2+", label: "Years Experience", icon: Clock },
                   { number: "5+", label: "Projects Completed", icon: Shapes },
@@ -112,7 +112,7 @@ function Home() {
               <h2 className="text-3xl font-bold text-[#4a3034] mb-8">
                 Featured Projects
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid md:grid-cols-1 xl:grid-cols-3 gap-6">
                 {[
                   {
                     title: '"Sharper" Set Design',

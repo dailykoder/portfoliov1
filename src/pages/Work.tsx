@@ -15,7 +15,7 @@ function Work() {
   return (
     <div>
       <div className="flex flex-col items-center  mb-24">
-        <div className="bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center w-[35em]">
+        <div className="bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
           <Palette className="w-12 h-12 text-[#d4848c] mb-4 mx-auto" />
           <h4 className="font-bold text-5xl mb-4 text-[#4a3034]">My Work</h4>
           {/* <p className="text-lg text-[#6d464c] max-w-2xl">
@@ -28,7 +28,7 @@ function Work() {
         <h5 className="text-3xl font-semibold text-center mb-12 text-[#4a3034]">
           Design Process
         </h5>
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8">
           {[
             {
               step: "Research",
@@ -94,7 +94,7 @@ function Work() {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+      <div className="grid lg:grid-cols-1 xl:grid-cols-2 gap-2">
         <div className="relative">
           <Link to={"/set-design" as Routes}>
             <img
