@@ -4,7 +4,7 @@ import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
-import { Palette, Brush, Camera, Star, Anvil } from "lucide-react";
+import { Palette, Brush, Camera, Star } from "lucide-react";
 
 import {
   Accordion,
@@ -74,24 +74,30 @@ function Branding() {
                     >
                       <GalleryGrid layout={3} images={images["EWEImages"]} />
                       <GalleryGrid layout={2} images={images["EWEWebImages"]} />
-                      <a
-                        href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bfc2329d-0c09-4c04-bd7a-959278e06393_rw_1920.png?h=3422d4a82310e61bf85f8bb1b642498d"
-                        className="w-full"
-                      >
-                        <img
+                      <div className="flex flex-col items-center">
+                        <a
+                          href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bfc2329d-0c09-4c04-bd7a-959278e06393_rw_1920.png?h=3422d4a82310e61bf85f8bb1b642498d"
                           className="w-full"
-                          src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bfc2329d-0c09-4c04-bd7a-959278e06393_rw_1920.png?h=3422d4a82310e61bf85f8bb1b642498d"
-                        />
-                      </a>
-                      <a
-                        href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/775a1cf7-390d-445c-a4f3-4a59949c5146_rw_1920.png?h=7dda4475373dc8f0e0f0854638853201"
-                        className="w-full"
-                      >
-                        <img
+                        >
+                          <img
+                            className="w-full"
+                            src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bfc2329d-0c09-4c04-bd7a-959278e06393_rw_1920.png?h=3422d4a82310e61bf85f8bb1b642498d"
+                          />
+                        </a>
+                        <p className="">Retail Rendering</p>
+                      </div>
+                      <div className="flex flex-col items-center">
+                        <a
+                          href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/775a1cf7-390d-445c-a4f3-4a59949c5146_rw_1920.png?h=7dda4475373dc8f0e0f0854638853201"
                           className="w-full"
-                          src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/775a1cf7-390d-445c-a4f3-4a59949c5146_rw_1920.png?h=7dda4475373dc8f0e0f0854638853201"
-                        />
-                      </a>
+                        >
+                          <img
+                            className="w-full"
+                            src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/775a1cf7-390d-445c-a4f3-4a59949c5146_rw_1920.png?h=7dda4475373dc8f0e0f0854638853201"
+                          />
+                        </a>
+                        <p>Event Activation: "Pet Art Contest & Auction"</p>
+                      </div>
                     </LightGallery>
                   </div>
                 </AccordionContent>
@@ -104,7 +110,7 @@ function Branding() {
                   <div className="flex items-center space-x-4">
                     <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
                     <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      Patterns
+                      Glossier PR Campaign
                     </h4>
                   </div>
                 </AccordionTrigger>
@@ -113,7 +119,7 @@ function Branding() {
                     <div className="flex items-center space-x-4 text-[#6d464c]">
                       <Brush className="w-5 h-5" />
                       <span className="italic">
-                        Materials used: Prismacolor marker, white gel pen
+                        Materials used: Adobe Photoshop, Illustrator
                       </span>
                     </div>
                   </div>
@@ -123,12 +129,10 @@ function Branding() {
                     elementClassNames="flex flex-col mt-4"
                     selector="a"
                   >
-                    <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/d159c223-f75a-4ba4-b907-86e854007485_rw_1920.jpg?h=2dd47ec831ea9b04a27703da957a8a64">
-                      <img
-                        src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/d159c223-f75a-4ba4-b907-86e854007485_rw_1920.jpg?h=2dd47ec831ea9b04a27703da957a8a64"
-                        className="w-full"
-                      />
-                    </a>
+                    <GalleryGrid
+                      layout={3}
+                      images={images["glossierPRImages"]}
+                    />
                   </LightGallery>
                 </AccordionContent>
               </AccordionItem>

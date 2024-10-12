@@ -4,7 +4,7 @@ import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
-import { Palette, Brush, Camera, Star, Anvil } from "lucide-react";
+import { Palette, Brush, Camera, Star } from "lucide-react";
 
 import {
   Accordion,
