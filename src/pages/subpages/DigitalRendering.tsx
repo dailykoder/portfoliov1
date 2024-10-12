@@ -77,10 +77,23 @@ function DigitalRendering() {
                       elementClassNames="flex flex-col mt-4"
                       selector="a"
                     >
-                      <GalleryGrid
-                        layout={3}
-                        images={images["gatsbyIntroImages"]}
-                      />
+                      <div className="grid grid-cols-3 gap-4 mb-4">
+                        <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/05bb0c99-63ed-4e5d-b131-6a2b2c94592a_rw_1920.jpg?h=51287d0eabf42ced280ceba44e00ca96">
+                          <img
+                            src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/05bb0c99-63ed-4e5d-b131-6a2b2c94592a_rw_1920.jpg?h=51287d0eabf42ced280ceba44e00ca96"
+                            className="h-[16rem]"
+                          />
+                        </a>
+                        <a
+                          href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bc56279f-d5cc-4670-a75d-f2c0ace61b61_rw_3840.jpg?h=4ed979cc21115621ddd4e8a1664515e5"
+                          className="col-span-2"
+                        >
+                          <img
+                            src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bc56279f-d5cc-4670-a75d-f2c0ace61b61_rw_3840.jpg?h=4ed979cc21115621ddd4e8a1664515e5"
+                            className="h-[16rem]"
+                          />
+                        </a>
+                      </div>
                       <GalleryGrid layout={2} images={images["gatsbyImages"]} />
                     </LightGallery>
                   </div>
@@ -94,28 +107,20 @@ function DigitalRendering() {
                   <div className="flex items-center space-x-4">
                     <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
                     <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      Astrology
+                      Glossier x The Ordinary: The "Face To Face" Experience
                     </h4>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
                   <div className="flex flex-col mt-6 space-y-4">
                     <h5 className="text-[0.93rem] font-semibold text-[#4a3034] ">
-                      This conceptual design is 1 of 4 windows, representing
-                      various zodiac signs with their corresponding color,
-                      stone, planet, and element.
+                      Original Concept
                     </h5>
                     <div className="flex items-center space-x-4 text-[#6d464c]">
                       <Brush className="w-5 h-5" />
                       <span className="italic">
-                        Materials used: Foam core, resin, fairy light, styrofoam
-                        half-sphere, air dry clay, paint, sapphire stone, chain,
-                        jump ring
+                        Materials used: Sketchup, Adobe Photoshop
                       </span>
-                    </div>
-                    <div className="flex items-center space-x-4 text-[#6d464c]">
-                      <Anvil className="w-5 h-5" />
-                      <span className="italic">Product: Necklaces, rings</span>
                     </div>
                   </div>
                   <LightGallery
@@ -124,7 +129,7 @@ function DigitalRendering() {
                     elementClassNames="flex flex-col mt-4"
                     selector="a"
                   >
-                    <GalleryGrid layout={2} images={images["astroImages"]} />
+                    <GalleryGrid layout={2} images={images["glossierImages"]} />
                   </LightGallery>
                 </AccordionContent>
               </AccordionItem>
@@ -149,8 +154,8 @@ function DigitalRendering() {
               {
                 icon: Star,
                 title: "Pieces",
-                value: "9+",
-                desc: "Unique Set Elements",
+                value: "16+",
+                desc: "Unique Digital Designs",
               },
               {
                 icon: Palette,

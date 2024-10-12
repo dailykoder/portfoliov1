@@ -12,7 +12,7 @@ const GalleryItem = memo(({ src, alt = "" }: GalleryItemProps) => {
         alt={alt}
         src={src}
         loading="lazy"
-        className="w-full h-auto border-s-black-light"
+        className="w-full h-auto border-s-black-medium"
       />
     </a>
   );

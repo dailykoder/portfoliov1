@@ -1,5 +1,181 @@
 export const images = {
   // Image arrays for different sections
+  EWEWebImages: [
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/8d5fd827-1500-4629-b9e8-0b109db479c1_rw_1920.jpg?h=daaf9bcc374aba0d3864de88617eaed7",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/7bf1595c-1856-4f5d-8956-54c8b26332e0_rw_1920.jpg?h=c6f7476deeaa8f78853f45a0026190f8",
+      alt: "Rendering",
+    },
+  ],
+  EWEImages: [
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/c7411c2f-d6e3-4777-b06d-43e301b3dcfc_rw_1920.jpg?h=10c9ab45525da06ad7f784198bd5683f",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/90ca60c4-e91e-4db5-a509-5bbdb73d3f1f_rw_1920.jpg?h=ca7b3555e297d67faa56df9048894dd0",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/1e26090f-851b-4018-8365-de53a93b2dcb_rw_1920.jpg?h=8e782537a2821299c2890955ac1ed94d",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/ff11640b-8d42-4f74-93fc-d3b0989f6336_rw_1920.jpg?h=6ef87e54e6fc9b0cb03517447b40025f",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/d550c322-e41a-41c4-8a71-321d115b96ce_rw_1920.jpg?h=8ee3ac57e9c5824c2c2e93e7d86eac20",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/2aa29190-b45e-444e-9d71-98a6b3873cc9_rw_1920.jpg?h=5c75732d4ae4b272c6115a980e08bec6",
+      alt: "Rendering",
+    },
+  ],
+  livingRoomImages: [
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/77dfdf42-fdf0-4ef9-aaee-6d2dbeee0a44_rw_600.jpg?h=4a091d79ce4109d0472092e581c16084",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/d8f3faf2-ae63-4b75-a881-99f44ce7790a_rw_600.jpg?h=520b2b496b39ebb30bec692c35bf28e1",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/0e5dc9f8-90b5-4c87-ac64-5c1c0525d05a_rw_600.jpg?h=ea9bc7285c255a910a6b042a593f2e97",
+      alt: "Rendering",
+    },
+  ],
+  glossierImages: [
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/b938bfaf-fe50-4ea1-b7b6-64a42afcdc48_rw_1920.jpg?h=b659b8f3427f46554da48dbcb2272130",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/b2972ff4-f1c0-476c-b088-1b7e4f7bf823_rw_1920.jpg?h=ccb63c1384868541c55b5ca8de413638",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/7decf6bf-1ba7-40b7-bfc0-ca54cf6885ed_rw_1920.jpg?h=33906d377b93132acb3d7f175d4b8a3a",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/b770528b-1710-4e90-a80c-1afd4e9f324c_rw_1920.jpg?h=0dac2b60a5cf7cc035cfabde8f1a3e27",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/149395b3-2867-4c8b-8020-351f43c44ab3_rw_1920.jpg?h=d8b9fdeca5a365e2983ac43f275904b2",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/7df8c89f-4e88-4d33-a09f-a68eb528981e_rw_1920.jpg?h=d5a44268aa586a4ed6044a36edfe3658",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/9dce3960-84b5-47bb-aa82-36296e6525f8_rw_1920.jpg?h=62ad05d5e6efbb78dabd918adfd09a12",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/ffa86729-da80-4208-9948-64ef06758593_rw_1920.jpg?h=98cdbfbd1fef47a1e5fd38fd23f12868",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/b941019b-93f7-4284-963b-a524f4339f0f_rw_1920.jpg?h=b7940bbbeed5354297b9d681509b6c79",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/1f7c5dd6-aeac-407d-9af7-f44ede3dbd44_rw_1920.jpg?h=896895b7afa0d1d2af8a1caa624ecbfb",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/31cdcbe4-ea4a-44d3-9c7b-c24ae70026d1_rw_1920.jpg?h=b71147e48794503e7c7ff5c0b3eb9283",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/c1118174-8e98-4559-8135-18f2ca6f45d4_rw_1920.jpg?h=254f7328ec6a0e0ece079bb793a7e8e4",
+      alt: "Rendering",
+    },
+  ],
+  gatsbyImages: [
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/0065b659-4125-464c-a6c3-30c882b5b8b4_rw_3840.jpg?h=888e7041787523b64bff5e0fa179504d",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/12dc52bb-192d-470b-a734-60c1b14c1976_rw_3840.jpg?h=a8efa4a314bf90723045292ab1be1c7b",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/8a0821c3-db7e-4314-80d8-aa612af2a8b4_rw_3840.jpg?h=f586bd167a5e778f00599d2103e702ea",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/52389097-ca1b-4263-8c24-4e7fc8a3a7f9_rw_3840.jpg?h=73de28f5bf18ec9ff4793048f0965e5d",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/665d290c-46e8-47e9-9809-0f616cdca707_rw_3840.jpg?h=f8036ac9c048a12a64fae46591cae587",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/8f4e72cb-432b-4dfe-aaca-49b170358e5d_rw_3840.jpg?h=d2ff5874047c8c843837c2029b60aed0",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/cd104db1-357f-4c94-931f-0abbff8defd0_rw_3840.jpg?h=4ff6ab652041ab0dffb145bf98783f01",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/54f9dce7-3597-4d39-947b-96476b79381c_rw_3840.jpg?h=8c606d61582930ed1784061a8d5afd79",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/feab03e7-f988-46b0-9948-5d15ab258415_rw_3840.jpg?h=c0729ec74b239e437b1e6e955e613d83",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/70156b3c-8efb-42fd-9956-84f330fbf146_rw_3840.jpg?h=9c11d7044d8abda985afc15d83c4599a",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/b1441cc7-d810-4aaa-a815-ddf63e6c446e_rw_3840.jpg?h=8964929e7b79db4cd7c024ee74a586f6",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/5058136f-24b3-432f-8825-dec4e421ae88_rw_3840.jpg?h=56014cb839927148cbe51ee2a290e57b",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/24158fde-e882-4017-a662-6463e754a436_rw_3840.jpg?h=74d8fdfc2ad24e358e100d74fc2c5566",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/2fa91aed-d7a4-4bfd-b83d-1bcd932fb4db_rw_3840.jpg?h=a4c360a53f8a5ee38553e015d1ccc2f2",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/04267a66-4666-48c2-b678-26acc8b0e150_rw_3840.jpg?h=3d67a925200244d6f719ebb3e2b349d8",
+      alt: "Rendering",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/87a3e1fe-8752-4c78-bf7b-1a7eea2c997e_rw_3840.jpg?h=07276e962c4f7e52a405c85422968e9a",
+      alt: "Rendering",
+    },
+  ],
+  gatsbyIntroImages: [
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/05bb0c99-63ed-4e5d-b131-6a2b2c94592a_rw_1920.jpg?h=51287d0eabf42ced280ceba44e00ca96",
+      alt: "Gatsby intro 1",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bc56279f-d5cc-4670-a75d-f2c0ace61b61_rw_3840.jpg?h=4ed979cc21115621ddd4e8a1664515e5",
+      alt: "Gatsby intro 2",
+    },
+  ],
   astroImages: [
     {
       src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/6e542c9f-c5a6-4eda-ad0e-ed86329bf73c_rw_1920.png?h=23d757cb2c0fc9be4154b4fd17273db7",

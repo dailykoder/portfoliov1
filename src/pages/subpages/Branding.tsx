@@ -52,27 +52,18 @@ function Branding() {
                   <div className="flex items-center space-x-4">
                     <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
                     <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      Optical Illusion
+                      Original Brand Concept
                     </h4>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
                   <div>
                     <div className="flex flex-col mt-6 space-y-4">
-                      <h5 className="text-lg font-semibold text-[#4a3034]">
-                        Inspired by Alice in Wonderland (1951), this conceptual
-                        design represents a world that seems real but is not.
-                      </h5>
                       <div className="flex items-center space-x-4 text-[#6d464c]">
                         <Brush className="w-5 h-5" />
                         <span className="italic">
-                          Materials used: Foam core, vinyl, paint, monofilament,
-                          cardstock
+                          Materials used: Adobe InDesign, Photoshop, Illustrator
                         </span>
-                      </div>
-                      <div className="flex items-center space-x-4 text-[#6d464c]">
-                        <Anvil className="w-5 h-5" />
-                        <span className="italic">Products used: Shoes</span>
                       </div>
                     </div>
                     <LightGallery
@@ -81,10 +72,26 @@ function Branding() {
                       elementClassNames="flex flex-col mt-4"
                       selector="a"
                     >
-                      <GalleryGrid
-                        layout={2}
-                        images={images["opticalIllImages"]}
-                      />
+                      <GalleryGrid layout={3} images={images["EWEImages"]} />
+                      <GalleryGrid layout={2} images={images["EWEWebImages"]} />
+                      <a
+                        href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bfc2329d-0c09-4c04-bd7a-959278e06393_rw_1920.png?h=3422d4a82310e61bf85f8bb1b642498d"
+                        className="w-full"
+                      >
+                        <img
+                          className="w-full"
+                          src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bfc2329d-0c09-4c04-bd7a-959278e06393_rw_1920.png?h=3422d4a82310e61bf85f8bb1b642498d"
+                        />
+                      </a>
+                      <a
+                        href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/775a1cf7-390d-445c-a4f3-4a59949c5146_rw_1920.png?h=7dda4475373dc8f0e0f0854638853201"
+                        className="w-full"
+                      >
+                        <img
+                          className="w-full"
+                          src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/775a1cf7-390d-445c-a4f3-4a59949c5146_rw_1920.png?h=7dda4475373dc8f0e0f0854638853201"
+                        />
+                      </a>
                     </LightGallery>
                   </div>
                 </AccordionContent>
@@ -97,28 +104,17 @@ function Branding() {
                   <div className="flex items-center space-x-4">
                     <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
                     <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      Astrology
+                      Patterns
                     </h4>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
                   <div className="flex flex-col mt-6 space-y-4">
-                    <h5 className="text-[0.93rem] font-semibold text-[#4a3034] ">
-                      This conceptual design is 1 of 4 windows, representing
-                      various zodiac signs with their corresponding color,
-                      stone, planet, and element.
-                    </h5>
                     <div className="flex items-center space-x-4 text-[#6d464c]">
                       <Brush className="w-5 h-5" />
                       <span className="italic">
-                        Materials used: Foam core, resin, fairy light, styrofoam
-                        half-sphere, air dry clay, paint, sapphire stone, chain,
-                        jump ring
+                        Materials used: Prismacolor marker, white gel pen
                       </span>
-                    </div>
-                    <div className="flex items-center space-x-4 text-[#6d464c]">
-                      <Anvil className="w-5 h-5" />
-                      <span className="italic">Product: Necklaces, rings</span>
                     </div>
                   </div>
                   <LightGallery
@@ -127,7 +123,12 @@ function Branding() {
                     elementClassNames="flex flex-col mt-4"
                     selector="a"
                   >
-                    <GalleryGrid layout={2} images={images["astroImages"]} />
+                    <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/d159c223-f75a-4ba4-b907-86e854007485_rw_1920.jpg?h=2dd47ec831ea9b04a27703da957a8a64">
+                      <img
+                        src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/d159c223-f75a-4ba4-b907-86e854007485_rw_1920.jpg?h=2dd47ec831ea9b04a27703da957a8a64"
+                        className="w-full"
+                      />
+                    </a>
                   </LightGallery>
                 </AccordionContent>
               </AccordionItem>

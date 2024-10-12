@@ -54,27 +54,18 @@ function HandRendering() {
                   <div className="flex items-center space-x-4">
                     <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
                     <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      Optical Illusion
+                      Living Room
                     </h4>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
                   <div>
                     <div className="flex flex-col mt-6 space-y-4">
-                      <h5 className="text-lg font-semibold text-[#4a3034]">
-                        Inspired by Alice in Wonderland (1951), this conceptual
-                        design represents a world that seems real but is not.
-                      </h5>
                       <div className="flex items-center space-x-4 text-[#6d464c]">
                         <Brush className="w-5 h-5" />
                         <span className="italic">
-                          Materials used: Foam core, vinyl, paint, monofilament,
-                          cardstock
+                          Materials used: Prismacolor marker, pen
                         </span>
-                      </div>
-                      <div className="flex items-center space-x-4 text-[#6d464c]">
-                        <Anvil className="w-5 h-5" />
-                        <span className="italic">Products used: Shoes</span>
                       </div>
                     </div>
                     <LightGallery
@@ -84,8 +75,8 @@ function HandRendering() {
                       selector="a"
                     >
                       <GalleryGrid
-                        layout={2}
-                        images={images["opticalIllImages"]}
+                        layout={3}
+                        images={images["livingRoomImages"]}
                       />
                     </LightGallery>
                   </div>
@@ -99,28 +90,17 @@ function HandRendering() {
                   <div className="flex items-center space-x-4">
                     <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
                     <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      Astrology
+                      Patterns
                     </h4>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
                   <div className="flex flex-col mt-6 space-y-4">
-                    <h5 className="text-[0.93rem] font-semibold text-[#4a3034] ">
-                      This conceptual design is 1 of 4 windows, representing
-                      various zodiac signs with their corresponding color,
-                      stone, planet, and element.
-                    </h5>
                     <div className="flex items-center space-x-4 text-[#6d464c]">
                       <Brush className="w-5 h-5" />
                       <span className="italic">
-                        Materials used: Foam core, resin, fairy light, styrofoam
-                        half-sphere, air dry clay, paint, sapphire stone, chain,
-                        jump ring
+                        Materials used: Prismacolor marker, white gel pen
                       </span>
-                    </div>
-                    <div className="flex items-center space-x-4 text-[#6d464c]">
-                      <Anvil className="w-5 h-5" />
-                      <span className="italic">Product: Necklaces, rings</span>
                     </div>
                   </div>
                   <LightGallery
@@ -129,7 +109,12 @@ function HandRendering() {
                     elementClassNames="flex flex-col mt-4"
                     selector="a"
                   >
-                    <GalleryGrid layout={2} images={images["astroImages"]} />
+                    <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/d159c223-f75a-4ba4-b907-86e854007485_rw_1920.jpg?h=2dd47ec831ea9b04a27703da957a8a64">
+                      <img
+                        src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/d159c223-f75a-4ba4-b907-86e854007485_rw_1920.jpg?h=2dd47ec831ea9b04a27703da957a8a64"
+                        className="w-full"
+                      />
+                    </a>
                   </LightGallery>
                 </AccordionContent>
               </AccordionItem>
