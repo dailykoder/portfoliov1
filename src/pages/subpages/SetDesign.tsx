@@ -73,7 +73,7 @@ function SetDesign() {
                       </div>
                     </div>
                     <LightGallery
-                      speed={100}
+                      speed={500}
                       plugins={[lgZoom, lgThumbnail]}
                       elementClassNames="flex flex-col"
                       selector="a"
@@ -126,7 +126,7 @@ function SetDesign() {
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
                   <LightGallery
-                    speed={100}
+                    speed={500}
                     plugins={[lgZoom, lgThumbnail]}
                     elementClassNames="flex flex-col"
                     selector="a"
@@ -169,7 +169,7 @@ function SetDesign() {
                 <AccordionContent className="px-6 pb-6">
                   <AccordionContent>
                     <LightGallery
-                      speed={100}
+                      speed={500}
                       plugins={[lgZoom, lgThumbnail]}
                       elementClassNames="flex flex-col"
                       selector="a"
@@ -192,12 +192,14 @@ function SetDesign() {
                           <img
                             src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/3d3f146c-102d-4812-8df1-39d7d70052c4_rw_1920.jpg?h=f304b7c30dbd003b49a86eadeecc188e"
                             className="h-[50em]"
+                            loading="lazy"
                           />
                         </a>
                         <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/0ad5d9de-8ed9-474d-bbe4-142f68f8c38d_rw_1920.jpg?h=02442fad0dcc0eec8be175487e4c0b2b">
                           <img
                             src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/0ad5d9de-8ed9-474d-bbe4-142f68f8c38d_rw_1920.jpg?h=02442fad0dcc0eec8be175487e4c0b2b"
                             className="h-[50em]"
+                            loading="lazy"
                           />
                         </a>
                       </div>
@@ -250,144 +252,6 @@ function SetDesign() {
               </Card>
             ))}
           </div>
-
-          {/* Process Section
-          <div className="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg">
-            <h5 className="text-3xl font-semibold text-center mb-12 text-[#4a3034]">
-              Design Process
-            </h5>
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8">
-              {[
-                {
-                  step: "Research",
-                  desc: "Immersing in the script and source material to understand the world we need to create",
-                  details: [
-                    "Script analysis",
-                    "Historical research",
-                    "Visual references",
-                    "Material exploration",
-                  ],
-                },
-                {
-                  step: "Conceptualize",
-                  desc: "Developing the visual language and technical approach for each set piece",
-                  details: [
-                    "Mood boards",
-                    "Sketches",
-                    "Color palettes",
-                    "Material selection",
-                  ],
-                },
-                {
-                  step: "Create",
-                  desc: "Bringing the vision to life through careful crafting and construction",
-                  details: [
-                    "Scale modeling",
-                    "Material manipulation",
-                    "Detail work",
-                    "Texture development",
-                  ],
-                },
-                {
-                  step: "Perfect",
-                  desc: "Refining every detail to ensure the set tells the right story",
-                  details: [
-                    "Fine-tuning",
-                    "Lighting tests",
-                    "Photography",
-                    "Final touches",
-                  ],
-                },
-              ].map(({ step, desc, details }, index) => (
-                <div key={step} className="relative group">
-                  <div className="bg-white/90 rounded-lg p-6 border border-[#e8b5bd] h-full hover:shadow-lg transition-all duration-300">
-                    <div className="text-[#d4848c] font-bold text-lg mb-2">
-                      0{index + 1}
-                    </div>
-                    <h6 className="font-semibold mb-3 text-[#4a3034]">
-                      {step}
-                    </h6>
-                    <p className="text-[#6d464c] text-sm mb-4">{desc}</p>
-                    <ul className="text-[#6d464c] text-sm space-y-2">
-                      {details.map((detail, i) => (
-                        <li key={i} className="flex items-center">
-                          <div className="w-1.5 h-1.5 rounded-full bg-[#e8b5bd] mr-2" />
-                          {detail}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  {index < 3 && (
-                    <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-[2px] bg-[#e8b5bd]" />
-                  )}
-                </div>
-              ))}
-            </div>
-          </div> */}
-
-          {/* Skills Section */}
-          {/* <div className="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg">
-            <h5 className="text-3xl font-semibold text-center mb-12 text-[#4a3034]">
-              Technical Skills
-            </h5>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {[
-                {
-                  category: "Materials",
-                  skills: [
-                    "Polymer Clay",
-                    "Resin Casting",
-                    "Woodworking",
-                    "Metal Work",
-                  ],
-                },
-                {
-                  category: "Techniques",
-                  skills: [
-                    "Scale Modeling",
-                    "Weathering",
-                    "Paint Effects",
-                    "Lighting Design",
-                  ],
-                },
-                {
-                  category: "Design",
-                  skills: [
-                    "Technical Drawing",
-                    "Color Theory",
-                    "Spatial Planning",
-                    "Texture Creation",
-                  ],
-                },
-              ].map(({ category, skills }) => (
-                <Card key={category} className="bg-white/90 border-[#e8b5bd]">
-                  <CardContent className="p-6">
-                    <h6 className="font-semibold text-lg text-[#4a3034] mb-4">
-                      {category}
-                    </h6>
-                    <div className="space-y-3">
-                      {skills.map((skill) => (
-                        <div
-                          key={skill}
-                          className="flex items-center space-x-2"
-                        >
-                          <div className="w-full bg-[#f8e1e6] rounded-full h-2">
-                            <div
-                              className="bg-[#d4848c] h-2 rounded-full"
-                              style={{ width: `${Math.random() * 30 + 70}%` }}
-                            />
-                          </div>
-                          <span className="text-sm text-[#6d464c] min-w-[100px]">
-                            {skill}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

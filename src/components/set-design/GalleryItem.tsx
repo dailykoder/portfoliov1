@@ -8,12 +8,7 @@ interface GalleryItemProps {
 const GalleryItem = memo(({ src, alt = "" }: GalleryItemProps) => {
   return (
     <a href={src}>
-      <img
-        alt={alt}
-        src={src}
-        loading="lazy"
-        className="w-full h-auto border-s-black-medium"
-      />
+      <img alt={alt} src={src} loading="lazy" className="w-full h-auto" />
     </a>
   );
 });

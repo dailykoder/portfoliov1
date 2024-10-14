@@ -14,7 +14,7 @@ function Home() {
   return (
     <div className="relative w-full">
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/100 to-white/60 rounded-md" />
+      <div className="absolute inset-0 bg-gradient-to-b rounded-md" />
 
       <div className="relative">
         {/* Hero Section */}
@@ -23,12 +23,12 @@ function Home() {
             {/* Name and Title */}
             <div className="relative inline-block group cursor-pointer mb-16">
               <div
-                className="absolute -inset-x-6 -inset-y-4 bg-white/60 backdrop-blur-sm 
+                className="absolute -inset-x-6 -inset-y-4 
                            rounded-2xl scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 
                            transition-all duration-500 shadow-lg border border-[#e8b5bd]/30"
               />
               <h1
-                className="relative text-7xl md:text-8xl lg:text-9xl font-semibold 
+                className="relative text-3xl md:text-4xl lg:text-7xl font-semibold 
                          bg-gradient-to-r from-[#4a3034] to-[#d4848c] 
                          bg-clip-text text-transparent animate-gradient-x"
               >
