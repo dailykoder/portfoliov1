@@ -12,7 +12,7 @@ const Sidebar = () => {
     <NavigationMenu>
       <NavigationMenuList className="flex flex-col items-start">
         <div className="flex pb-3">
-          <Link to="/portfoliov1">
+          <Link to="/v1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -28,7 +28,7 @@ const Sidebar = () => {
               />
             </svg>
           </Link>
-          <Link to="/portfoliov1" className="font-bold pl-1">
+          <Link to="/v1" className="font-bold pl-1">
             Home
           </Link>
         </div>
@@ -48,43 +48,41 @@ const Sidebar = () => {
             />
           </svg>
           <NavigationMenuLink className="pl-1">
-            <Link to="/portfoliov1/work" className="font-bold">
+            <Link to="/v1/work" className="font-bold">
               Work
             </Link>
             <NavigationMenuItem>
               <ul className="flex flex-col">
                 <NavigationMenuLink className="pt-1">
                   <div>
-                    <Link to="/portfoliov1/set-design">Set Design</Link>
+                    <Link to="/v1/set-design">Set Design</Link>
                   </div>
                 </NavigationMenuLink>
                 <NavigationMenuLink className="pt-1">
                   <div className="">
-                    <Link to="/portfoliov1/window-installation">
+                    <Link to="/v1/window-installation">
                       Window Installation
                     </Link>
                   </div>
                 </NavigationMenuLink>
                 <NavigationMenuLink className="pt-1">
                   <div className="">
-                    <Link to="/portfoliov1/digital-rendering">
-                      Digital Rendering
-                    </Link>
+                    <Link to="/v1/digital-rendering">Digital Rendering</Link>
                   </div>
                 </NavigationMenuLink>
                 <NavigationMenuLink className="pt-1">
                   <div className="">
-                    <Link to="/portfoliov1/hand-rendering">Hand Rendering</Link>
+                    <Link to="/v1/hand-rendering">Hand Rendering</Link>
                   </div>
                 </NavigationMenuLink>
                 <NavigationMenuLink className="pt-1">
                   <div className="">
-                    <Link to="/portfoliov1/branding">Branding</Link>
+                    <Link to="/v1/branding">Branding</Link>
                   </div>
                 </NavigationMenuLink>
                 <NavigationMenuLink className="pt-1">
                   <div className="">
-                    <Link to="/portfoliov1/styling">Styling</Link>
+                    <Link to="/v1/styling">Styling</Link>
                   </div>
                 </NavigationMenuLink>
               </ul>

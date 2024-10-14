@@ -16,159 +16,136 @@ import { Route as rootRoute } from './routes/__root'
 
 // Create Virtual Routes
 
-const Portfoliov1IndexLazyImport = createFileRoute('/portfoliov1/')()
-const Portfoliov1WorkLazyImport = createFileRoute('/portfoliov1/work')()
-const Portfoliov1WindowInstallationLazyImport = createFileRoute(
-  '/portfoliov1/window-installation',
+const V1IndexLazyImport = createFileRoute('/v1/')()
+const V1WorkLazyImport = createFileRoute('/v1/work')()
+const V1WindowInstallationLazyImport = createFileRoute(
+  '/v1/window-installation',
 )()
-const Portfoliov1StylingLazyImport = createFileRoute('/portfoliov1/styling')()
-const Portfoliov1SetDesignLazyImport = createFileRoute(
-  '/portfoliov1/set-design',
-)()
-const Portfoliov1HandRenderingLazyImport = createFileRoute(
-  '/portfoliov1/hand-rendering',
-)()
-const Portfoliov1DigitalRenderingLazyImport = createFileRoute(
-  '/portfoliov1/digital-rendering',
-)()
-const Portfoliov1BrandingLazyImport = createFileRoute('/portfoliov1/branding')()
-const Portfoliov1AboutLazyImport = createFileRoute('/portfoliov1/about')()
+const V1StylingLazyImport = createFileRoute('/v1/styling')()
+const V1SetDesignLazyImport = createFileRoute('/v1/set-design')()
+const V1HandRenderingLazyImport = createFileRoute('/v1/hand-rendering')()
+const V1DigitalRenderingLazyImport = createFileRoute('/v1/digital-rendering')()
+const V1BrandingLazyImport = createFileRoute('/v1/branding')()
+const V1AboutLazyImport = createFileRoute('/v1/about')()
 
 // Create/Update Routes
 
-const Portfoliov1IndexLazyRoute = Portfoliov1IndexLazyImport.update({
-  path: '/portfoliov1/',
+const V1IndexLazyRoute = V1IndexLazyImport.update({
+  path: '/v1/',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/v1/index.lazy').then((d) => d.Route))
+
+const V1WorkLazyRoute = V1WorkLazyImport.update({
+  path: '/v1/work',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/v1/work.lazy').then((d) => d.Route))
+
+const V1WindowInstallationLazyRoute = V1WindowInstallationLazyImport.update({
+  path: '/v1/window-installation',
   getParentRoute: () => rootRoute,
 } as any).lazy(() =>
-  import('./routes/portfoliov1/index.lazy').then((d) => d.Route),
+  import('./routes/v1/window-installation.lazy').then((d) => d.Route),
 )
 
-const Portfoliov1WorkLazyRoute = Portfoliov1WorkLazyImport.update({
-  path: '/portfoliov1/work',
+const V1StylingLazyRoute = V1StylingLazyImport.update({
+  path: '/v1/styling',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/v1/styling.lazy').then((d) => d.Route))
+
+const V1SetDesignLazyRoute = V1SetDesignLazyImport.update({
+  path: '/v1/set-design',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/v1/set-design.lazy').then((d) => d.Route))
+
+const V1HandRenderingLazyRoute = V1HandRenderingLazyImport.update({
+  path: '/v1/hand-rendering',
   getParentRoute: () => rootRoute,
 } as any).lazy(() =>
-  import('./routes/portfoliov1/work.lazy').then((d) => d.Route),
+  import('./routes/v1/hand-rendering.lazy').then((d) => d.Route),
 )
 
-const Portfoliov1WindowInstallationLazyRoute =
-  Portfoliov1WindowInstallationLazyImport.update({
-    path: '/portfoliov1/window-installation',
-    getParentRoute: () => rootRoute,
-  } as any).lazy(() =>
-    import('./routes/portfoliov1/window-installation.lazy').then(
-      (d) => d.Route,
-    ),
-  )
-
-const Portfoliov1StylingLazyRoute = Portfoliov1StylingLazyImport.update({
-  path: '/portfoliov1/styling',
+const V1DigitalRenderingLazyRoute = V1DigitalRenderingLazyImport.update({
+  path: '/v1/digital-rendering',
   getParentRoute: () => rootRoute,
 } as any).lazy(() =>
-  import('./routes/portfoliov1/styling.lazy').then((d) => d.Route),
+  import('./routes/v1/digital-rendering.lazy').then((d) => d.Route),
 )
 
-const Portfoliov1SetDesignLazyRoute = Portfoliov1SetDesignLazyImport.update({
-  path: '/portfoliov1/set-design',
+const V1BrandingLazyRoute = V1BrandingLazyImport.update({
+  path: '/v1/branding',
   getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import('./routes/portfoliov1/set-design.lazy').then((d) => d.Route),
-)
+} as any).lazy(() => import('./routes/v1/branding.lazy').then((d) => d.Route))
 
-const Portfoliov1HandRenderingLazyRoute =
-  Portfoliov1HandRenderingLazyImport.update({
-    path: '/portfoliov1/hand-rendering',
-    getParentRoute: () => rootRoute,
-  } as any).lazy(() =>
-    import('./routes/portfoliov1/hand-rendering.lazy').then((d) => d.Route),
-  )
-
-const Portfoliov1DigitalRenderingLazyRoute =
-  Portfoliov1DigitalRenderingLazyImport.update({
-    path: '/portfoliov1/digital-rendering',
-    getParentRoute: () => rootRoute,
-  } as any).lazy(() =>
-    import('./routes/portfoliov1/digital-rendering.lazy').then((d) => d.Route),
-  )
-
-const Portfoliov1BrandingLazyRoute = Portfoliov1BrandingLazyImport.update({
-  path: '/portfoliov1/branding',
+const V1AboutLazyRoute = V1AboutLazyImport.update({
+  path: '/v1/about',
   getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import('./routes/portfoliov1/branding.lazy').then((d) => d.Route),
-)
-
-const Portfoliov1AboutLazyRoute = Portfoliov1AboutLazyImport.update({
-  path: '/portfoliov1/about',
-  getParentRoute: () => rootRoute,
-} as any).lazy(() =>
-  import('./routes/portfoliov1/about.lazy').then((d) => d.Route),
-)
+} as any).lazy(() => import('./routes/v1/about.lazy').then((d) => d.Route))
 
 // Populate the FileRoutesByPath interface
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/portfoliov1/about': {
-      id: '/portfoliov1/about'
-      path: '/portfoliov1/about'
-      fullPath: '/portfoliov1/about'
-      preLoaderRoute: typeof Portfoliov1AboutLazyImport
+    '/v1/about': {
+      id: '/v1/about'
+      path: '/v1/about'
+      fullPath: '/v1/about'
+      preLoaderRoute: typeof V1AboutLazyImport
       parentRoute: typeof rootRoute
     }
-    '/portfoliov1/branding': {
-      id: '/portfoliov1/branding'
-      path: '/portfoliov1/branding'
-      fullPath: '/portfoliov1/branding'
-      preLoaderRoute: typeof Portfoliov1BrandingLazyImport
+    '/v1/branding': {
+      id: '/v1/branding'
+      path: '/v1/branding'
+      fullPath: '/v1/branding'
+      preLoaderRoute: typeof V1BrandingLazyImport
       parentRoute: typeof rootRoute
     }
-    '/portfoliov1/digital-rendering': {
-      id: '/portfoliov1/digital-rendering'
-      path: '/portfoliov1/digital-rendering'
-      fullPath: '/portfoliov1/digital-rendering'
-      preLoaderRoute: typeof Portfoliov1DigitalRenderingLazyImport
+    '/v1/digital-rendering': {
+      id: '/v1/digital-rendering'
+      path: '/v1/digital-rendering'
+      fullPath: '/v1/digital-rendering'
+      preLoaderRoute: typeof V1DigitalRenderingLazyImport
       parentRoute: typeof rootRoute
     }
-    '/portfoliov1/hand-rendering': {
-      id: '/portfoliov1/hand-rendering'
-      path: '/portfoliov1/hand-rendering'
-      fullPath: '/portfoliov1/hand-rendering'
-      preLoaderRoute: typeof Portfoliov1HandRenderingLazyImport
+    '/v1/hand-rendering': {
+      id: '/v1/hand-rendering'
+      path: '/v1/hand-rendering'
+      fullPath: '/v1/hand-rendering'
+      preLoaderRoute: typeof V1HandRenderingLazyImport
       parentRoute: typeof rootRoute
     }
-    '/portfoliov1/set-design': {
-      id: '/portfoliov1/set-design'
-      path: '/portfoliov1/set-design'
-      fullPath: '/portfoliov1/set-design'
-      preLoaderRoute: typeof Portfoliov1SetDesignLazyImport
+    '/v1/set-design': {
+      id: '/v1/set-design'
+      path: '/v1/set-design'
+      fullPath: '/v1/set-design'
+      preLoaderRoute: typeof V1SetDesignLazyImport
       parentRoute: typeof rootRoute
     }
-    '/portfoliov1/styling': {
-      id: '/portfoliov1/styling'
-      path: '/portfoliov1/styling'
-      fullPath: '/portfoliov1/styling'
-      preLoaderRoute: typeof Portfoliov1StylingLazyImport
+    '/v1/styling': {
+      id: '/v1/styling'
+      path: '/v1/styling'
+      fullPath: '/v1/styling'
+      preLoaderRoute: typeof V1StylingLazyImport
       parentRoute: typeof rootRoute
     }
-    '/portfoliov1/window-installation': {
-      id: '/portfoliov1/window-installation'
-      path: '/portfoliov1/window-installation'
-      fullPath: '/portfoliov1/window-installation'
-      preLoaderRoute: typeof Portfoliov1WindowInstallationLazyImport
+    '/v1/window-installation': {
+      id: '/v1/window-installation'
+      path: '/v1/window-installation'
+      fullPath: '/v1/window-installation'
+      preLoaderRoute: typeof V1WindowInstallationLazyImport
       parentRoute: typeof rootRoute
     }
-    '/portfoliov1/work': {
-      id: '/portfoliov1/work'
-      path: '/portfoliov1/work'
-      fullPath: '/portfoliov1/work'
-      preLoaderRoute: typeof Portfoliov1WorkLazyImport
+    '/v1/work': {
+      id: '/v1/work'
+      path: '/v1/work'
+      fullPath: '/v1/work'
+      preLoaderRoute: typeof V1WorkLazyImport
       parentRoute: typeof rootRoute
     }
-    '/portfoliov1/': {
-      id: '/portfoliov1/'
-      path: '/portfoliov1'
-      fullPath: '/portfoliov1'
-      preLoaderRoute: typeof Portfoliov1IndexLazyImport
+    '/v1/': {
+      id: '/v1/'
+      path: '/v1'
+      fullPath: '/v1'
+      preLoaderRoute: typeof V1IndexLazyImport
       parentRoute: typeof rootRoute
     }
   }
@@ -177,102 +154,101 @@ declare module '@tanstack/react-router' {
 // Create and export the route tree
 
 export interface FileRoutesByFullPath {
-  '/portfoliov1/about': typeof Portfoliov1AboutLazyRoute
-  '/portfoliov1/branding': typeof Portfoliov1BrandingLazyRoute
-  '/portfoliov1/digital-rendering': typeof Portfoliov1DigitalRenderingLazyRoute
-  '/portfoliov1/hand-rendering': typeof Portfoliov1HandRenderingLazyRoute
-  '/portfoliov1/set-design': typeof Portfoliov1SetDesignLazyRoute
-  '/portfoliov1/styling': typeof Portfoliov1StylingLazyRoute
-  '/portfoliov1/window-installation': typeof Portfoliov1WindowInstallationLazyRoute
-  '/portfoliov1/work': typeof Portfoliov1WorkLazyRoute
-  '/portfoliov1': typeof Portfoliov1IndexLazyRoute
+  '/v1/about': typeof V1AboutLazyRoute
+  '/v1/branding': typeof V1BrandingLazyRoute
+  '/v1/digital-rendering': typeof V1DigitalRenderingLazyRoute
+  '/v1/hand-rendering': typeof V1HandRenderingLazyRoute
+  '/v1/set-design': typeof V1SetDesignLazyRoute
+  '/v1/styling': typeof V1StylingLazyRoute
+  '/v1/window-installation': typeof V1WindowInstallationLazyRoute
+  '/v1/work': typeof V1WorkLazyRoute
+  '/v1': typeof V1IndexLazyRoute
 }
 
 export interface FileRoutesByTo {
-  '/portfoliov1/about': typeof Portfoliov1AboutLazyRoute
-  '/portfoliov1/branding': typeof Portfoliov1BrandingLazyRoute
-  '/portfoliov1/digital-rendering': typeof Portfoliov1DigitalRenderingLazyRoute
-  '/portfoliov1/hand-rendering': typeof Portfoliov1HandRenderingLazyRoute
-  '/portfoliov1/set-design': typeof Portfoliov1SetDesignLazyRoute
-  '/portfoliov1/styling': typeof Portfoliov1StylingLazyRoute
-  '/portfoliov1/window-installation': typeof Portfoliov1WindowInstallationLazyRoute
-  '/portfoliov1/work': typeof Portfoliov1WorkLazyRoute
-  '/portfoliov1': typeof Portfoliov1IndexLazyRoute
+  '/v1/about': typeof V1AboutLazyRoute
+  '/v1/branding': typeof V1BrandingLazyRoute
+  '/v1/digital-rendering': typeof V1DigitalRenderingLazyRoute
+  '/v1/hand-rendering': typeof V1HandRenderingLazyRoute
+  '/v1/set-design': typeof V1SetDesignLazyRoute
+  '/v1/styling': typeof V1StylingLazyRoute
+  '/v1/window-installation': typeof V1WindowInstallationLazyRoute
+  '/v1/work': typeof V1WorkLazyRoute
+  '/v1': typeof V1IndexLazyRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
-  '/portfoliov1/about': typeof Portfoliov1AboutLazyRoute
-  '/portfoliov1/branding': typeof Portfoliov1BrandingLazyRoute
-  '/portfoliov1/digital-rendering': typeof Portfoliov1DigitalRenderingLazyRoute
-  '/portfoliov1/hand-rendering': typeof Portfoliov1HandRenderingLazyRoute
-  '/portfoliov1/set-design': typeof Portfoliov1SetDesignLazyRoute
-  '/portfoliov1/styling': typeof Portfoliov1StylingLazyRoute
-  '/portfoliov1/window-installation': typeof Portfoliov1WindowInstallationLazyRoute
-  '/portfoliov1/work': typeof Portfoliov1WorkLazyRoute
-  '/portfoliov1/': typeof Portfoliov1IndexLazyRoute
+  '/v1/about': typeof V1AboutLazyRoute
+  '/v1/branding': typeof V1BrandingLazyRoute
+  '/v1/digital-rendering': typeof V1DigitalRenderingLazyRoute
+  '/v1/hand-rendering': typeof V1HandRenderingLazyRoute
+  '/v1/set-design': typeof V1SetDesignLazyRoute
+  '/v1/styling': typeof V1StylingLazyRoute
+  '/v1/window-installation': typeof V1WindowInstallationLazyRoute
+  '/v1/work': typeof V1WorkLazyRoute
+  '/v1/': typeof V1IndexLazyRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    | '/portfoliov1/about'
-    | '/portfoliov1/branding'
-    | '/portfoliov1/digital-rendering'
-    | '/portfoliov1/hand-rendering'
-    | '/portfoliov1/set-design'
-    | '/portfoliov1/styling'
-    | '/portfoliov1/window-installation'
-    | '/portfoliov1/work'
-    | '/portfoliov1'
+    | '/v1/about'
+    | '/v1/branding'
+    | '/v1/digital-rendering'
+    | '/v1/hand-rendering'
+    | '/v1/set-design'
+    | '/v1/styling'
+    | '/v1/window-installation'
+    | '/v1/work'
+    | '/v1'
   fileRoutesByTo: FileRoutesByTo
   to:
-    | '/portfoliov1/about'
-    | '/portfoliov1/branding'
-    | '/portfoliov1/digital-rendering'
-    | '/portfoliov1/hand-rendering'
-    | '/portfoliov1/set-design'
-    | '/portfoliov1/styling'
-    | '/portfoliov1/window-installation'
-    | '/portfoliov1/work'
-    | '/portfoliov1'
+    | '/v1/about'
+    | '/v1/branding'
+    | '/v1/digital-rendering'
+    | '/v1/hand-rendering'
+    | '/v1/set-design'
+    | '/v1/styling'
+    | '/v1/window-installation'
+    | '/v1/work'
+    | '/v1'
   id:
     | '__root__'
-    | '/portfoliov1/about'
-    | '/portfoliov1/branding'
-    | '/portfoliov1/digital-rendering'
-    | '/portfoliov1/hand-rendering'
-    | '/portfoliov1/set-design'
-    | '/portfoliov1/styling'
-    | '/portfoliov1/window-installation'
-    | '/portfoliov1/work'
-    | '/portfoliov1/'
+    | '/v1/about'
+    | '/v1/branding'
+    | '/v1/digital-rendering'
+    | '/v1/hand-rendering'
+    | '/v1/set-design'
+    | '/v1/styling'
+    | '/v1/window-installation'
+    | '/v1/work'
+    | '/v1/'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
-  Portfoliov1AboutLazyRoute: typeof Portfoliov1AboutLazyRoute
-  Portfoliov1BrandingLazyRoute: typeof Portfoliov1BrandingLazyRoute
-  Portfoliov1DigitalRenderingLazyRoute: typeof Portfoliov1DigitalRenderingLazyRoute
-  Portfoliov1HandRenderingLazyRoute: typeof Portfoliov1HandRenderingLazyRoute
-  Portfoliov1SetDesignLazyRoute: typeof Portfoliov1SetDesignLazyRoute
-  Portfoliov1StylingLazyRoute: typeof Portfoliov1StylingLazyRoute
-  Portfoliov1WindowInstallationLazyRoute: typeof Portfoliov1WindowInstallationLazyRoute
-  Portfoliov1WorkLazyRoute: typeof Portfoliov1WorkLazyRoute
-  Portfoliov1IndexLazyRoute: typeof Portfoliov1IndexLazyRoute
+  V1AboutLazyRoute: typeof V1AboutLazyRoute
+  V1BrandingLazyRoute: typeof V1BrandingLazyRoute
+  V1DigitalRenderingLazyRoute: typeof V1DigitalRenderingLazyRoute
+  V1HandRenderingLazyRoute: typeof V1HandRenderingLazyRoute
+  V1SetDesignLazyRoute: typeof V1SetDesignLazyRoute
+  V1StylingLazyRoute: typeof V1StylingLazyRoute
+  V1WindowInstallationLazyRoute: typeof V1WindowInstallationLazyRoute
+  V1WorkLazyRoute: typeof V1WorkLazyRoute
+  V1IndexLazyRoute: typeof V1IndexLazyRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
-  Portfoliov1AboutLazyRoute: Portfoliov1AboutLazyRoute,
-  Portfoliov1BrandingLazyRoute: Portfoliov1BrandingLazyRoute,
-  Portfoliov1DigitalRenderingLazyRoute: Portfoliov1DigitalRenderingLazyRoute,
-  Portfoliov1HandRenderingLazyRoute: Portfoliov1HandRenderingLazyRoute,
-  Portfoliov1SetDesignLazyRoute: Portfoliov1SetDesignLazyRoute,
-  Portfoliov1StylingLazyRoute: Portfoliov1StylingLazyRoute,
-  Portfoliov1WindowInstallationLazyRoute:
-    Portfoliov1WindowInstallationLazyRoute,
-  Portfoliov1WorkLazyRoute: Portfoliov1WorkLazyRoute,
-  Portfoliov1IndexLazyRoute: Portfoliov1IndexLazyRoute,
+  V1AboutLazyRoute: V1AboutLazyRoute,
+  V1BrandingLazyRoute: V1BrandingLazyRoute,
+  V1DigitalRenderingLazyRoute: V1DigitalRenderingLazyRoute,
+  V1HandRenderingLazyRoute: V1HandRenderingLazyRoute,
+  V1SetDesignLazyRoute: V1SetDesignLazyRoute,
+  V1StylingLazyRoute: V1StylingLazyRoute,
+  V1WindowInstallationLazyRoute: V1WindowInstallationLazyRoute,
+  V1WorkLazyRoute: V1WorkLazyRoute,
+  V1IndexLazyRoute: V1IndexLazyRoute,
 }
 
 export const routeTree = rootRoute
@@ -287,43 +263,43 @@ export const routeTree = rootRoute
     "__root__": {
       "filePath": "__root.tsx",
       "children": [
-        "/portfoliov1/about",
-        "/portfoliov1/branding",
-        "/portfoliov1/digital-rendering",
-        "/portfoliov1/hand-rendering",
-        "/portfoliov1/set-design",
-        "/portfoliov1/styling",
-        "/portfoliov1/window-installation",
-        "/portfoliov1/work",
-        "/portfoliov1/"
+        "/v1/about",
+        "/v1/branding",
+        "/v1/digital-rendering",
+        "/v1/hand-rendering",
+        "/v1/set-design",
+        "/v1/styling",
+        "/v1/window-installation",
+        "/v1/work",
+        "/v1/"
       ]
     },
-    "/portfoliov1/about": {
-      "filePath": "portfoliov1/about.lazy.tsx"
+    "/v1/about": {
+      "filePath": "v1/about.lazy.tsx"
     },
-    "/portfoliov1/branding": {
-      "filePath": "portfoliov1/branding.lazy.tsx"
+    "/v1/branding": {
+      "filePath": "v1/branding.lazy.tsx"
     },
-    "/portfoliov1/digital-rendering": {
-      "filePath": "portfoliov1/digital-rendering.lazy.tsx"
+    "/v1/digital-rendering": {
+      "filePath": "v1/digital-rendering.lazy.tsx"
     },
-    "/portfoliov1/hand-rendering": {
-      "filePath": "portfoliov1/hand-rendering.lazy.tsx"
+    "/v1/hand-rendering": {
+      "filePath": "v1/hand-rendering.lazy.tsx"
     },
-    "/portfoliov1/set-design": {
-      "filePath": "portfoliov1/set-design.lazy.tsx"
+    "/v1/set-design": {
+      "filePath": "v1/set-design.lazy.tsx"
     },
-    "/portfoliov1/styling": {
-      "filePath": "portfoliov1/styling.lazy.tsx"
+    "/v1/styling": {
+      "filePath": "v1/styling.lazy.tsx"
     },
-    "/portfoliov1/window-installation": {
-      "filePath": "portfoliov1/window-installation.lazy.tsx"
+    "/v1/window-installation": {
+      "filePath": "v1/window-installation.lazy.tsx"
     },
-    "/portfoliov1/work": {
-      "filePath": "portfoliov1/work.lazy.tsx"
+    "/v1/work": {
+      "filePath": "v1/work.lazy.tsx"
     },
-    "/portfoliov1/": {
-      "filePath": "portfoliov1/index.lazy.tsx"
+    "/v1/": {
+      "filePath": "v1/index.lazy.tsx"
     }
   }
 }

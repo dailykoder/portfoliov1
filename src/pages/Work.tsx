@@ -2,14 +2,15 @@ import { Link } from "@tanstack/react-router";
 import { Palette } from "lucide-react";
 type Routes =
   | "/"
-  | "/about"
-  | "/branding"
-  | "/styling"
-  | "/set-design"
-  | "/work"
-  | "/hand-rendering"
-  | "/window-installation"
-  | "/digital-rendering";
+  | "/v1"
+  | "/v1/about"
+  | "/v1/branding"
+  | "/v1/styling"
+  | "/v1/set-design"
+  | "/v1/work"
+  | "/v1/hand-rendering"
+  | "/v1/window-installation"
+  | "/v1/digital-rendering";
 
 function Work() {
   return (
@@ -18,6 +19,9 @@ function Work() {
         <div className="md:min-w-[25rem] lg:min-w-[40rem] bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
           <Palette className="w-12 h-12 text-[#d4848c] mb-4 mx-auto" />
           <h4 className="font-bold text-5xl mb-4 text-[#4a3034]">My Work</h4>
+          {/* <p className="text-lg text-[#6d464c] max-w-2xl">
+            Here's everything I've worked on so far!
+          </p> */}
         </div>
       </div>
       {/* Process Section */}
@@ -93,7 +97,7 @@ function Work() {
       </div>
       <div className="grid lg:grid-cols-1 xl:grid-cols-2 gap-2">
         <div className="relative">
-          <Link to={"/set-design" as Routes}>
+          <Link to={"/v1/set-design" as Routes}>
             <img
               className=""
               src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/0e96b101-8d11-4fa7-9ed7-a638e49015fa_rwc_0x401x3840x2164x1280.jpg?h=82af8d907ba3768107c35f4a9d0235bf"
@@ -104,7 +108,7 @@ function Work() {
           </Link>
         </div>
         <div className="relative">
-          <Link to={"/window-installation" as Routes}>
+          <Link to={"/v1/window-installation" as Routes}>
             <img
               className=""
               src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/a4da34a4-6c3d-4967-bbd3-5a1aaa0fd40d_rwc_0x951x1920x1082x1280.jpg?h=4e2b14d5905df56dc7ed0d8732cf6da9"
@@ -117,7 +121,7 @@ function Work() {
           </Link>
         </div>
         <div className="relative">
-          <Link to={"/digital-rendering" as Routes}>
+          <Link to={"/v1/digital-rendering" as Routes}>
             <img
               className=""
               src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/20e9ad46-b0d7-4c90-8c33-a8949851781a_carw_16x9x1280.png?h=78bd95ec8db66b697edad56da380d14b"
@@ -128,7 +132,7 @@ function Work() {
           </Link>
         </div>
         <div className="relative">
-          <Link to={"/hand-rendering" as Routes}>
+          <Link to={"/v1/hand-rendering" as Routes}>
             <img
               className=""
               src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/a47f96cd-b2ae-4320-b0fe-19f71a4ec126_rwc_97x307x1782x1004x1280.jpg?h=a7092deb0d09512ec428422ee8f1253d"
@@ -139,7 +143,7 @@ function Work() {
           </Link>
         </div>
         <div className="relative">
-          <Link to={"/branding" as Routes}>
+          <Link to={"/v1/branding" as Routes}>
             <img
               className=""
               src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/8aee71d0-d6a5-438c-ab39-9fc321b5f14a_carw_16x9x1280.png?h=ae750fb66b5b20feb787cd5d420b7226"
@@ -150,7 +154,7 @@ function Work() {
           </Link>
         </div>
         <div className="relative">
-          <Link to={"/styling" as Routes}>
+          <Link to={"/v1/styling" as Routes}>
             <img
               className=""
               src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/59ec1fca-cd5f-4b5b-9fce-7d24a64a30cc_rwc_0x122x3840x2164x1280.jpg?h=872d998f2102a330da8f36347699e17c"
