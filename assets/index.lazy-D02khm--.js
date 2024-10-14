@@ -1,14 +1,14 @@
-import{c as a,j as e,a as i}from"./index-B2asK8wJ.js";import{C as l}from"./camera-C5aeCyjB.js";import{P as d}from"./palette-BwQloZVA.js";/**
+import{c as a,j as e,a as i}from"./index-CM0CjvOO.js";import{C as l}from"./camera-BUn5eQnd.js";import{P as d}from"./palette-w6NN3VFs.js";/**
  * @license lucide-react v0.446.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const o=a("ArrowRight",[["path",{d:"M5 12h14",key:"1ays0h"}],["path",{d:"m12 5 7 7-7 7",key:"xquz4c"}]]);/**
+ */const n=a("ArrowRight",[["path",{d:"M5 12h14",key:"1ays0h"}],["path",{d:"m12 5 7 7-7 7",key:"xquz4c"}]]);/**
  * @license lucide-react v0.446.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const n=a("Clock",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["polyline",{points:"12 6 12 12 16 14",key:"68esgv"}]]);/**
+ */const o=a("Clock",[["circle",{cx:"12",cy:"12",r:"10",key:"1mglay"}],["polyline",{points:"12 6 12 12 16 14",key:"68esgv"}]]);/**
  * @license lucide-react v0.446.0 - ISC
  *
  * This source code is licensed under the ISC license.
@@ -42,7 +42,7 @@ import{c as a,j as e,a as i}from"./index-B2asK8wJ.js";import{C as l}from"./camer
                            transform hover:scale-[1.02] transition-transform duration-500`,children:[e.jsxs("p",{className:"text-2xl md:text-3xl font-bold text-[#4a3034] leading-relaxed mb-6",children:["I'm a visual concept designer based in SD,",e.jsxs("span",{className:"text-[#d4848c]",children:[" ","crafting miniature worlds that tell stories."]})]}),e.jsx("div",{className:"flex flex-wrap gap-3",children:[{icon:m,text:"Set Design"},{icon:c,text:"Visual Concepts"},{icon:h,text:"Miniature Crafting"},{icon:l,text:"Creative Direction"}].map(({icon:t,text:r})=>e.jsxs("div",{className:`flex items-center gap-2 px-4 py-2 bg-white/50 \r
                                   rounded-full border border-[#e8b5bd]/30 \r
                                   hover:bg-white/70 transition-all duration-300\r
-                                  hover:shadow-md`,children:[e.jsx(t,{className:"w-4 h-4 text-[#d4848c]"}),e.jsx("span",{className:"text-[#6d464c]",children:r})]},r))})]}),e.jsx("div",{className:"grid sm:grid-cols-1 lg:grid-cols-2 gap-4",children:[{number:"2+",label:"Years Experience",icon:n},{number:"5+",label:"Projects Completed",icon:x},{number:"20+",label:"Set Pieces Created",icon:d},{number:"3",label:"Some achievement",icon:p}].map(({number:t,label:r,icon:s})=>e.jsxs("div",{className:`bg-white/60 backdrop-blur-sm p-6 rounded-2xl\r
+                                  hover:shadow-md`,children:[e.jsx(t,{className:"w-4 h-4 text-[#d4848c]"}),e.jsx("span",{className:"text-[#6d464c]",children:r})]},r))})]}),e.jsx("div",{className:"grid sm:grid-cols-1 lg:grid-cols-2 gap-4",children:[{number:"2+",label:"Years Experience",icon:o},{number:"5+",label:"Projects Completed",icon:x},{number:"20+",label:"Set Pieces Created",icon:d},{number:"3",label:"Some achievement",icon:p}].map(({number:t,label:r,icon:s})=>e.jsxs("div",{className:`bg-white/60 backdrop-blur-sm p-6 rounded-2xl\r
                                 shadow-lg border border-[#e8b5bd]/30\r
                                 hover:bg-white/70 transition-all duration-300\r
                                 group`,children:[e.jsx(s,{className:`w-6 h-6 text-[#d4848c] mb-3 \r
@@ -51,5 +51,5 @@ import{c as a,j as e,a as i}from"./index-B2asK8wJ.js";import{C as l}from"./camer
                                 border border-[#e8b5bd]/30 hover:bg-white/70 \r
                                 transition-all duration-300 cursor-pointer`,children:[e.jsx("div",{className:`absolute bottom-0 left-0 h-1 bg-[#d4848c]/30 \r
                                   rounded-full w-full overflow-hidden`,children:e.jsx("div",{className:"h-full bg-[#d4848c] rounded-full",style:{width:s}})}),e.jsx("h3",{className:`text-xl font-semibold text-[#4a3034] mb-2 \r
-                                 group-hover:text-[#d4848c] transition-colors duration-300`,children:t}),e.jsx("p",{className:"text-[#6d464c] mb-6",children:r}),e.jsxs("div",{className:"flex items-center text-[#d4848c] font-medium",children:["View Project",e.jsx(o,{className:`w-4 h-4 ml-2 \r
-                                          group-hover:translate-x-2 transition-transform duration-300`})]})]},t))})]})]})})})]})}const y=i("/portfoliov1/")({component:()=>e.jsx(b,{})});export{y as Route};
+                                 group-hover:text-[#d4848c] transition-colors duration-300`,children:t}),e.jsx("p",{className:"text-[#6d464c] mb-6",children:r}),e.jsxs("div",{className:"flex items-center text-[#d4848c] font-medium",children:["View Project",e.jsx(n,{className:`w-4 h-4 ml-2 \r
+                                          group-hover:translate-x-2 transition-transform duration-300`})]})]},t))})]})]})})})]})}const y=i("/v1/")({component:()=>e.jsx(b,{})});export{y as Route};
