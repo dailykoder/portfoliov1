@@ -55,7 +55,7 @@ const Sidebar = () => {
               <ul className="flex flex-col">
                 <NavigationMenuLink className="pt-1">
                   <div>
-                    <Link to="/portfoliov1/setdesign">Set Design</Link>
+                    <Link to="/portfoliov1/set-design">Set Design</Link>
                   </div>
                 </NavigationMenuLink>
                 <NavigationMenuLink className="pt-1">
