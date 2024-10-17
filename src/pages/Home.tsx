@@ -44,7 +44,7 @@ function Home() {
                            shadow-lg border border-[#e8b5bd]/30 
                            transform hover:scale-[1.02] transition-transform duration-500"
               >
-                <p className="sm:text-md text-2xl md:text-3xl font-bold text-[#4a3034] leading-relaxed mb-6">
+                <p className="sm:text-[1.4rem] md:text-3xl font-bold text-[#4a3034] leading-relaxed mb-6">
                   I'm a visual concept designer based in SD,
                   <span className="text-[#d4848c]">
                     {" "}

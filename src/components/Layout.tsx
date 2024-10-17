@@ -14,7 +14,7 @@ function Layout() {
       <div
         className={`
         hidden md:flex md:flex-col
-        ${isOpen ? "fixed inset-0 z-50 bg-white" : ""}
+        ${isOpen ? "fixed bg-white" : ""}
       `}
       >
         {/* Logo */}
