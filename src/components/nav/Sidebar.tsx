@@ -12,7 +12,7 @@ const Sidebar = () => {
     <NavigationMenu>
       <NavigationMenuList className="flex flex-col items-start">
         <div className="flex pb-3">
-          <Link to="/v1">
+          <Link to="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -28,7 +28,7 @@ const Sidebar = () => {
               />
             </svg>
           </Link>
-          <Link to="/v1" className="font-bold pl-1">
+          <Link to="/" className="font-bold pl-1">
             Home
           </Link>
         </div>

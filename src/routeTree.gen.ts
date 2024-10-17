@@ -16,6 +16,7 @@ import { Route as rootRoute } from './routes/__root'
 
 // Create Virtual Routes
 
+const IndexLazyImport = createFileRoute('/')()
 const V1IndexLazyImport = createFileRoute('/v1/')()
 const V1WorkLazyImport = createFileRoute('/v1/work')()
 const V1WindowInstallationLazyImport = createFileRoute(
@@ -29,6 +30,11 @@ const V1BrandingLazyImport = createFileRoute('/v1/branding')()
 const V1AboutLazyImport = createFileRoute('/v1/about')()
 
 // Create/Update Routes
+
+const IndexLazyRoute = IndexLazyImport.update({
+  path: '/',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/index.lazy').then((d) => d.Route))
 
 const V1IndexLazyRoute = V1IndexLazyImport.update({
   path: '/v1/',
@@ -85,6 +91,13 @@ const V1AboutLazyRoute = V1AboutLazyImport.update({
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexLazyImport
+      parentRoute: typeof rootRoute
+    }
     '/v1/about': {
       id: '/v1/about'
       path: '/v1/about'
@@ -154,6 +167,7 @@ declare module '@tanstack/react-router' {
 // Create and export the route tree
 
 export interface FileRoutesByFullPath {
+  '/': typeof IndexLazyRoute
   '/v1/about': typeof V1AboutLazyRoute
   '/v1/branding': typeof V1BrandingLazyRoute
   '/v1/digital-rendering': typeof V1DigitalRenderingLazyRoute
@@ -166,6 +180,7 @@ export interface FileRoutesByFullPath {
 }
 
 export interface FileRoutesByTo {
+  '/': typeof IndexLazyRoute
   '/v1/about': typeof V1AboutLazyRoute
   '/v1/branding': typeof V1BrandingLazyRoute
   '/v1/digital-rendering': typeof V1DigitalRenderingLazyRoute
@@ -179,6 +194,7 @@ export interface FileRoutesByTo {
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
+  '/': typeof IndexLazyRoute
   '/v1/about': typeof V1AboutLazyRoute
   '/v1/branding': typeof V1BrandingLazyRoute
   '/v1/digital-rendering': typeof V1DigitalRenderingLazyRoute
@@ -193,6 +209,7 @@ export interface FileRoutesById {
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
+    | '/'
     | '/v1/about'
     | '/v1/branding'
     | '/v1/digital-rendering'
@@ -204,6 +221,7 @@ export interface FileRouteTypes {
     | '/v1'
   fileRoutesByTo: FileRoutesByTo
   to:
+    | '/'
     | '/v1/about'
     | '/v1/branding'
     | '/v1/digital-rendering'
@@ -215,6 +233,7 @@ export interface FileRouteTypes {
     | '/v1'
   id:
     | '__root__'
+    | '/'
     | '/v1/about'
     | '/v1/branding'
     | '/v1/digital-rendering'
@@ -228,6 +247,7 @@ export interface FileRouteTypes {
 }
 
 export interface RootRouteChildren {
+  IndexLazyRoute: typeof IndexLazyRoute
   V1AboutLazyRoute: typeof V1AboutLazyRoute
   V1BrandingLazyRoute: typeof V1BrandingLazyRoute
   V1DigitalRenderingLazyRoute: typeof V1DigitalRenderingLazyRoute
@@ -240,6 +260,7 @@ export interface RootRouteChildren {
 }
 
 const rootRouteChildren: RootRouteChildren = {
+  IndexLazyRoute: IndexLazyRoute,
   V1AboutLazyRoute: V1AboutLazyRoute,
   V1BrandingLazyRoute: V1BrandingLazyRoute,
   V1DigitalRenderingLazyRoute: V1DigitalRenderingLazyRoute,
@@ -263,6 +284,7 @@ export const routeTree = rootRoute
     "__root__": {
       "filePath": "__root.tsx",
       "children": [
+        "/",
         "/v1/about",
         "/v1/branding",
         "/v1/digital-rendering",
@@ -273,6 +295,9 @@ export const routeTree = rootRoute
         "/v1/work",
         "/v1/"
       ]
+    },
+    "/": {
+      "filePath": "index.lazy.tsx"
     },
     "/v1/about": {
       "filePath": "v1/about.lazy.tsx"

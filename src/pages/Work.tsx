@@ -2,7 +2,6 @@ import { Link } from "@tanstack/react-router";
 import { Palette } from "lucide-react";
 type Routes =
   | "/"
-  | "/v1"
   | "/v1/about"
   | "/v1/branding"
   | "/v1/styling"
