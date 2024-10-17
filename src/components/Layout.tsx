@@ -13,7 +13,7 @@ function Layout() {
       {/* Sidebar Container */}
       <div
         className={`
-        hidden md:flex md:flex-col
+        hidden lg:flex lg:flex-col
         ${isOpen ? "fixed bg-white" : ""}
       `}
       >
@@ -24,7 +24,7 @@ function Layout() {
           alt="Logo"
         />
         {/* Sidebar Navigation */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Sidebar />
         </div>
       </div>
@@ -32,7 +32,7 @@ function Layout() {
       {/* Mobile Menu Button */}
       <button
         onClick={toggleSidebar}
-        className="md:hidden fixed top-4 right-4 p-2 z-50 bg-white rounded-lg shadow-lg"
+        className="lg:hidden fixed top-4 right-4 p-2 z-50 bg-white rounded-lg shadow-lg"
       >
         <svg
           className="w-6 h-6"
@@ -51,7 +51,7 @@ function Layout() {
       </button>
 
       {/* Main Content */}
-      <div className="flex-grow w-full md:w-2/4 md:ml-10">
+      <div className="flex-grow w-full lg:w-2/4 lg:ml-10">
         <Outlet />
       </div>
     </div>

@@ -25,7 +25,7 @@ function SetDesign() {
       <div className="fixed inset-0 pointer-events-none" />
 
       {/* Content wrapper */}
-      <div className="w-[]">
+      <div>
         {/* Hero Section */}
         <div className="flex flex-col items-center relative mb-24">
           <div className="" />
@@ -50,7 +50,7 @@ function SetDesign() {
                 value="item-1"
                 className="border border-[#e8b5bd] rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
               >
-                <AccordionTrigger className="px-6 py-4 hover:no-underline group">
+                <AccordionTrigger className="px-4 py-4 hover:no-underline group">
                   <div className="flex items-center space-x-4">
                     <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
                     <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
@@ -58,10 +58,10 @@ function SetDesign() {
                     </h4>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
+                <AccordionContent className="px-4 pb-6">
                   <div>
-                    <div className="flex flex-col mt-6 space-y-4">
-                      <h5 className="text-lg font-semibold text-[#4a3034]">
+                    <div className="flex flex-col items-center mt-6 space-y-4">
+                      <h5 className="md:text-md text-center lg:text-lg font-semibold text-[#4a3034]">
                         Written by Brian Gatewood & Alessandro Tanaka
                       </h5>
                       <div className="flex items-center space-x-4 text-[#6d464c]">
@@ -116,7 +116,7 @@ function SetDesign() {
                 value="item-2"
                 className="border border-[#e8b5bd] rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
               >
-                <AccordionTrigger className="px-6 py-4 hover:no-underline group">
+                <AccordionTrigger className="px-4 py-4 hover:no-underline group">
                   <div className="flex items-center space-x-4">
                     <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
                     <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
@@ -124,7 +124,7 @@ function SetDesign() {
                     </h4>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
+                <AccordionContent className="px-4 pb-6">
                   <LightGallery
                     speed={500}
                     plugins={[lgZoom, lgThumbnail]}
@@ -158,7 +158,7 @@ function SetDesign() {
                 value="item-3"
                 className="border border-[#e8b5bd] rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
               >
-                <AccordionTrigger className="px-6 py-4 hover:no-underline group">
+                <AccordionTrigger className="px-4 py-4 hover:no-underline group">
                   <div className="flex items-center space-x-4">
                     <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
                     <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
@@ -166,7 +166,7 @@ function SetDesign() {
                     </h4>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
+                <AccordionContent className="px-4 pb-6">
                   <AccordionContent>
                     <LightGallery
                       speed={500}
