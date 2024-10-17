@@ -14,17 +14,14 @@ type Routes =
 function Work() {
   return (
     <div>
-      <div className="flex flex-col items-center  mb-24 ">
+      <div className="sm:mx-10 flex flex-col items-center mb-24 ">
         <div className="md:min-w-[25rem] lg:min-w-[40rem] bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
           <Palette className="w-12 h-12 text-[#d4848c] mb-4 mx-auto" />
           <h4 className="font-bold text-5xl mb-4 text-[#4a3034]">My Work</h4>
-          {/* <p className="text-lg text-[#6d464c] max-w-2xl">
-            Here's everything I've worked on so far!
-          </p> */}
         </div>
       </div>
       {/* Process Section */}
-      <div className="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg mb-10">
+      <div className=" bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg mb-10">
         <h5 className="text-3xl font-semibold text-center mb-12 text-[#4a3034]">
           Design Process
         </h5>
@@ -94,7 +91,7 @@ function Work() {
           ))}
         </div>
       </div>
-      <div className="grid lg:grid-cols-1 xl:grid-cols-2 gap-2">
+      <div className="grid lg:grid-cols-1 xl:grid-cols-2 gap-2 mb-24">
         <div className="relative">
           <Link to={"/v1/set-design" as Routes}>
             <img
