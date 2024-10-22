@@ -28,7 +28,6 @@ function SetDesign() {
       <div>
         {/* Hero Section */}
         <div className="flex flex-col items-center relative mb-24">
-          <div className="" />
           <div className="bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
             <Palette className="w-12 h-12 text-[#d4848c] mb-4 mx-auto" />
             <h4 className="font-bold text-5xl mb-4 text-[#4a3034]">

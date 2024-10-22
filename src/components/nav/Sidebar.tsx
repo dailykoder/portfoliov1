@@ -106,7 +106,9 @@ const Sidebar = () => {
           </svg>
 
           <NavigationMenuLink className="font-bold pl-1">
-            About Me
+            <div>
+              <Link to="/v1/about">About</Link>
+            </div>
           </NavigationMenuLink>
         </div>
         <div className="flex pb-3">
