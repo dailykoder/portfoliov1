@@ -1,5 +1,15 @@
 export const images = {
   // Image arrays for different sections
+  faceCleanerImages: [
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/296462c2-72d4-41d2-a7b0-f7b5b99fe395_rw_1200.jpg?h=0aa80875ef97164a7bcec7d29cd6ef0c",
+      alt: "Face Cleaner 1",
+    },
+    {
+      src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/af48d29d-5219-4e02-a211-d54240b035f7_rw_1200.jpg?h=28a5cb420d107988805dbdbf90dd671f",
+      alt: "Face Cleaner 2",
+    },
+  ],
   glossierPRImages: [
     {
       src: "https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/e0387b78-b02d-4689-aae7-c9422b309e6e_rw_600.jpeg?h=bff2c45ac3fb6a28fb8c1cd2e3bc2b63",

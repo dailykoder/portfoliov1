@@ -52,22 +52,17 @@ function Styling() {
                   <div className="flex items-center space-x-4">
                     <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
                     <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      Optical Illusion
+                      Commercial Campaign
                     </h4>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
                   <div>
                     <div className="flex flex-col mt-6 space-y-4">
-                      <h5 className="text-lg font-semibold text-[#4a3034]">
-                        Inspired by Alice in Wonderland (1951), this conceptual
-                        design represents a world that seems real but is not.
-                      </h5>
                       <div className="flex items-center space-x-4 text-[#6d464c]">
                         <Brush className="w-5 h-5" />
                         <span className="italic">
-                          Materials used: Foam core, vinyl, paint, monofilament,
-                          cardstock
+                          Material used: Camera, Adobe Photoshop, InDesign
                         </span>
                       </div>
                       <div className="flex items-center space-x-4 text-[#6d464c]">
@@ -81,10 +76,48 @@ function Styling() {
                       elementClassNames="flex flex-col mt-4"
                       selector="a"
                     >
-                      <GalleryGrid
-                        layout={2}
-                        images={images["opticalIllImages"]}
-                      />
+                      <a
+                        href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/f02d97f3-50c2-4d00-9ee9-1e604f6d6b69_rw_3840.JPEG?h=348d17aca9b5d29ccfab36c5130bc1e0"
+                        className="py-2"
+                      >
+                        <img
+                          loading="lazy"
+                          alt=""
+                          src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/f02d97f3-50c2-4d00-9ee9-1e604f6d6b69_rw_3840.JPEG?h=348d17aca9b5d29ccfab36c5130bc1e0"
+                        />
+                      </a>
+                      <div className="w-full flex flex-col items-center">
+                        <span className="font-bold py-2">FALL</span>
+                        <p className="py-2">Sunglasses - Gentle Monster</p>
+                      </div>
+                      <a
+                        href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/fd731e63-b8da-45f6-8a55-58d9f7926581_rw_3840.jpg?h=beb824f9c4d287f8d5fd7f35bd0d58b3"
+                        className="py-2"
+                      >
+                        <img
+                          loading="lazy"
+                          alt=""
+                          src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/fd731e63-b8da-45f6-8a55-58d9f7926581_rw_3840.jpg?h=beb824f9c4d287f8d5fd7f35bd0d58b3"
+                        />
+                      </a>
+                      <div className="w-full flex flex-col items-center">
+                        <span className="font-bold py-2">SPRING</span>
+                        <p className="py-2">Merino Wool - Balenciaga</p>
+                      </div>
+                      <a
+                        href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/cfe7f26f-943b-41ca-b09d-cd42a6b9d990_rw_3840.jpg?h=6d8a35690e1dcd7ad9e05fcfbd22ddd3"
+                        className="py-2"
+                      >
+                        <img
+                          loading="lazy"
+                          alt=""
+                          src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/cfe7f26f-943b-41ca-b09d-cd42a6b9d990_rw_3840.jpg?h=6d8a35690e1dcd7ad9e05fcfbd22ddd3"
+                        />
+                      </a>
+                      <div className="w-full flex flex-col items-center">
+                        <span className="font-bold py-2">WINTER</span>
+                        <p className="py-2">Sapphire Jewelry - Cartier</p>
+                      </div>
                     </LightGallery>
                   </div>
                 </AccordionContent>
@@ -97,37 +130,31 @@ function Styling() {
                   <div className="flex items-center space-x-4">
                     <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
                     <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      Astrology
+                      Fresh Soy Face Cleanser
                     </h4>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <div className="flex flex-col mt-6 space-y-4">
-                    <h5 className="text-[0.93rem] font-semibold text-[#4a3034] ">
-                      This conceptual design is 1 of 4 windows, representing
-                      various zodiac signs with their corresponding color,
-                      stone, planet, and element.
-                    </h5>
-                    <div className="flex items-center space-x-4 text-[#6d464c]">
-                      <Brush className="w-5 h-5" />
-                      <span className="italic">
-                        Materials used: Foam core, resin, fairy light, styrofoam
-                        half-sphere, air dry clay, paint, sapphire stone, chain,
-                        jump ring
-                      </span>
-                    </div>
-                    <div className="flex items-center space-x-4 text-[#6d464c]">
-                      <Anvil className="w-5 h-5" />
-                      <span className="italic">Product: Necklaces, rings</span>
-                    </div>
-                  </div>
                   <LightGallery
                     speed={100}
                     plugins={[lgZoom, lgThumbnail]}
                     elementClassNames="flex flex-col mt-4"
                     selector="a"
                   >
-                    <GalleryGrid layout={2} images={images["astroImages"]} />
+                    <a
+                      href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/0823420c-dc1a-4261-a106-a9c6127ac56e_rw_1920.jpg?h=42826269ea091ecf3854f4ef768003c8"
+                      className="py-4"
+                    >
+                      <img
+                        loading="lazy"
+                        alt="Face Cleaner Notes"
+                        src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/0823420c-dc1a-4261-a106-a9c6127ac56e_rw_1920.jpg?h=42826269ea091ecf3854f4ef768003c8"
+                      />
+                    </a>
+                    <GalleryGrid
+                      layout={2}
+                      images={images["faceCleanerImages"]}
+                    />
                   </LightGallery>
                 </AccordionContent>
               </AccordionItem>
