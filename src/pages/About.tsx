@@ -30,7 +30,7 @@ const About = () => {
                   <div className="flex items-center gap-3 mb-6">
                     <Briefcase className="w-6 h-6 text-[#d4848c]" />
                     <h2 className="text-2xl font-bold text-[#4a3034]">
-                      Professional Summary
+                      Summary
                     </h2>
                   </div>
                   <p className="text-lg leading-relaxed text-[#4a3034] mb-4">
@@ -118,12 +118,12 @@ const About = () => {
               <div className="grid gap-4">
                 {[
                   {
-                    icon: GraduationCap,
-                    title: "BA in Economics",
-                    details: "University of California, Riverside",
-                    subtitle: "Marketing Emphasis • 2017",
+                    icon: Trophy,
+                    title: "Visual Communications Award",
+                    details: "FIDM Graduate Recognition",
+                    subtitle: "Excellence in Visual Communication",
                     description:
-                      "Focused on marketing strategy and consumer behavior",
+                      "Awarded for exceptional achievement in visual communications",
                   },
                   {
                     icon: Book,
@@ -134,12 +134,12 @@ const About = () => {
                       "Specialized in visual design and creative direction",
                   },
                   {
-                    icon: Trophy,
-                    title: "Visual Communications Award",
-                    details: "FIDM Graduate Recognition",
-                    subtitle: "Excellence in Visual Communication",
+                    icon: GraduationCap,
+                    title: "BA in Economics",
+                    details: "University of California, Riverside",
+                    subtitle: "Marketing Emphasis • 2017",
                     description:
-                      "Awarded for exceptional achievement in visual communications",
+                      "Focused on marketing strategy and consumer behavior",
                   },
                   {
                     icon: Palette,

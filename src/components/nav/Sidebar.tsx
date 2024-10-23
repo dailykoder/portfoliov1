@@ -128,7 +128,9 @@ const Sidebar = () => {
           </svg>
 
           <NavigationMenuLink className="font-bold pl-1">
-            Resume
+            <div>
+              <Link to="/v1/resume">Resume</Link>
+            </div>
           </NavigationMenuLink>
         </div>
         <div className="flex pb-3">
@@ -148,7 +150,9 @@ const Sidebar = () => {
           </svg>
 
           <NavigationMenuLink className="font-bold pl-1">
-            Contact
+            <div>
+              <Link to="/v1/contact">Contact</Link>
+            </div>
           </NavigationMenuLink>
         </div>
       </NavigationMenuList>

@@ -9,7 +9,9 @@ type Routes =
   | "/v1/work"
   | "/v1/hand-rendering"
   | "/v1/window-installation"
-  | "/v1/digital-rendering";
+  | "/v1/digital-rendering"
+  | "/v1/resume"
+  | "/v1/contact";
 
 function Work() {
   return (

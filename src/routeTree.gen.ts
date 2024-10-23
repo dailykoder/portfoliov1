@@ -24,8 +24,10 @@ const V1WindowInstallationLazyImport = createFileRoute(
 )()
 const V1StylingLazyImport = createFileRoute('/v1/styling')()
 const V1SetDesignLazyImport = createFileRoute('/v1/set-design')()
+const V1ResumeLazyImport = createFileRoute('/v1/resume')()
 const V1HandRenderingLazyImport = createFileRoute('/v1/hand-rendering')()
 const V1DigitalRenderingLazyImport = createFileRoute('/v1/digital-rendering')()
+const V1ContactLazyImport = createFileRoute('/v1/contact')()
 const V1BrandingLazyImport = createFileRoute('/v1/branding')()
 const V1AboutLazyImport = createFileRoute('/v1/about')()
 
@@ -63,6 +65,11 @@ const V1SetDesignLazyRoute = V1SetDesignLazyImport.update({
   getParentRoute: () => rootRoute,
 } as any).lazy(() => import('./routes/v1/set-design.lazy').then((d) => d.Route))
 
+const V1ResumeLazyRoute = V1ResumeLazyImport.update({
+  path: '/v1/resume',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/v1/resume.lazy').then((d) => d.Route))
+
 const V1HandRenderingLazyRoute = V1HandRenderingLazyImport.update({
   path: '/v1/hand-rendering',
   getParentRoute: () => rootRoute,
@@ -76,6 +83,11 @@ const V1DigitalRenderingLazyRoute = V1DigitalRenderingLazyImport.update({
 } as any).lazy(() =>
   import('./routes/v1/digital-rendering.lazy').then((d) => d.Route),
 )
+
+const V1ContactLazyRoute = V1ContactLazyImport.update({
+  path: '/v1/contact',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/v1/contact.lazy').then((d) => d.Route))
 
 const V1BrandingLazyRoute = V1BrandingLazyImport.update({
   path: '/v1/branding',
@@ -112,6 +124,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof V1BrandingLazyImport
       parentRoute: typeof rootRoute
     }
+    '/v1/contact': {
+      id: '/v1/contact'
+      path: '/v1/contact'
+      fullPath: '/v1/contact'
+      preLoaderRoute: typeof V1ContactLazyImport
+      parentRoute: typeof rootRoute
+    }
     '/v1/digital-rendering': {
       id: '/v1/digital-rendering'
       path: '/v1/digital-rendering'
@@ -124,6 +143,13 @@ declare module '@tanstack/react-router' {
       path: '/v1/hand-rendering'
       fullPath: '/v1/hand-rendering'
       preLoaderRoute: typeof V1HandRenderingLazyImport
+      parentRoute: typeof rootRoute
+    }
+    '/v1/resume': {
+      id: '/v1/resume'
+      path: '/v1/resume'
+      fullPath: '/v1/resume'
+      preLoaderRoute: typeof V1ResumeLazyImport
       parentRoute: typeof rootRoute
     }
     '/v1/set-design': {
@@ -170,8 +196,10 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexLazyRoute
   '/v1/about': typeof V1AboutLazyRoute
   '/v1/branding': typeof V1BrandingLazyRoute
+  '/v1/contact': typeof V1ContactLazyRoute
   '/v1/digital-rendering': typeof V1DigitalRenderingLazyRoute
   '/v1/hand-rendering': typeof V1HandRenderingLazyRoute
+  '/v1/resume': typeof V1ResumeLazyRoute
   '/v1/set-design': typeof V1SetDesignLazyRoute
   '/v1/styling': typeof V1StylingLazyRoute
   '/v1/window-installation': typeof V1WindowInstallationLazyRoute
@@ -183,8 +211,10 @@ export interface FileRoutesByTo {
   '/': typeof IndexLazyRoute
   '/v1/about': typeof V1AboutLazyRoute
   '/v1/branding': typeof V1BrandingLazyRoute
+  '/v1/contact': typeof V1ContactLazyRoute
   '/v1/digital-rendering': typeof V1DigitalRenderingLazyRoute
   '/v1/hand-rendering': typeof V1HandRenderingLazyRoute
+  '/v1/resume': typeof V1ResumeLazyRoute
   '/v1/set-design': typeof V1SetDesignLazyRoute
   '/v1/styling': typeof V1StylingLazyRoute
   '/v1/window-installation': typeof V1WindowInstallationLazyRoute
@@ -197,8 +227,10 @@ export interface FileRoutesById {
   '/': typeof IndexLazyRoute
   '/v1/about': typeof V1AboutLazyRoute
   '/v1/branding': typeof V1BrandingLazyRoute
+  '/v1/contact': typeof V1ContactLazyRoute
   '/v1/digital-rendering': typeof V1DigitalRenderingLazyRoute
   '/v1/hand-rendering': typeof V1HandRenderingLazyRoute
+  '/v1/resume': typeof V1ResumeLazyRoute
   '/v1/set-design': typeof V1SetDesignLazyRoute
   '/v1/styling': typeof V1StylingLazyRoute
   '/v1/window-installation': typeof V1WindowInstallationLazyRoute
@@ -212,8 +244,10 @@ export interface FileRouteTypes {
     | '/'
     | '/v1/about'
     | '/v1/branding'
+    | '/v1/contact'
     | '/v1/digital-rendering'
     | '/v1/hand-rendering'
+    | '/v1/resume'
     | '/v1/set-design'
     | '/v1/styling'
     | '/v1/window-installation'
@@ -224,8 +258,10 @@ export interface FileRouteTypes {
     | '/'
     | '/v1/about'
     | '/v1/branding'
+    | '/v1/contact'
     | '/v1/digital-rendering'
     | '/v1/hand-rendering'
+    | '/v1/resume'
     | '/v1/set-design'
     | '/v1/styling'
     | '/v1/window-installation'
@@ -236,8 +272,10 @@ export interface FileRouteTypes {
     | '/'
     | '/v1/about'
     | '/v1/branding'
+    | '/v1/contact'
     | '/v1/digital-rendering'
     | '/v1/hand-rendering'
+    | '/v1/resume'
     | '/v1/set-design'
     | '/v1/styling'
     | '/v1/window-installation'
@@ -250,8 +288,10 @@ export interface RootRouteChildren {
   IndexLazyRoute: typeof IndexLazyRoute
   V1AboutLazyRoute: typeof V1AboutLazyRoute
   V1BrandingLazyRoute: typeof V1BrandingLazyRoute
+  V1ContactLazyRoute: typeof V1ContactLazyRoute
   V1DigitalRenderingLazyRoute: typeof V1DigitalRenderingLazyRoute
   V1HandRenderingLazyRoute: typeof V1HandRenderingLazyRoute
+  V1ResumeLazyRoute: typeof V1ResumeLazyRoute
   V1SetDesignLazyRoute: typeof V1SetDesignLazyRoute
   V1StylingLazyRoute: typeof V1StylingLazyRoute
   V1WindowInstallationLazyRoute: typeof V1WindowInstallationLazyRoute
@@ -263,8 +303,10 @@ const rootRouteChildren: RootRouteChildren = {
   IndexLazyRoute: IndexLazyRoute,
   V1AboutLazyRoute: V1AboutLazyRoute,
   V1BrandingLazyRoute: V1BrandingLazyRoute,
+  V1ContactLazyRoute: V1ContactLazyRoute,
   V1DigitalRenderingLazyRoute: V1DigitalRenderingLazyRoute,
   V1HandRenderingLazyRoute: V1HandRenderingLazyRoute,
+  V1ResumeLazyRoute: V1ResumeLazyRoute,
   V1SetDesignLazyRoute: V1SetDesignLazyRoute,
   V1StylingLazyRoute: V1StylingLazyRoute,
   V1WindowInstallationLazyRoute: V1WindowInstallationLazyRoute,
@@ -287,8 +329,10 @@ export const routeTree = rootRoute
         "/",
         "/v1/about",
         "/v1/branding",
+        "/v1/contact",
         "/v1/digital-rendering",
         "/v1/hand-rendering",
+        "/v1/resume",
         "/v1/set-design",
         "/v1/styling",
         "/v1/window-installation",
@@ -305,11 +349,17 @@ export const routeTree = rootRoute
     "/v1/branding": {
       "filePath": "v1/branding.lazy.tsx"
     },
+    "/v1/contact": {
+      "filePath": "v1/contact.lazy.tsx"
+    },
     "/v1/digital-rendering": {
       "filePath": "v1/digital-rendering.lazy.tsx"
     },
     "/v1/hand-rendering": {
       "filePath": "v1/hand-rendering.lazy.tsx"
+    },
+    "/v1/resume": {
+      "filePath": "v1/resume.lazy.tsx"
     },
     "/v1/set-design": {
       "filePath": "v1/set-design.lazy.tsx"

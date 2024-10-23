@@ -1,15 +1,25 @@
 import { Outlet } from "@tanstack/react-router";
 import Sidebar from "@/components/nav/Sidebar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import MobileNavbar from "./nav/MobileNavbar";
 
 function Layout() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isOpen]);
+
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className="container mx-auto pt-10 flex gap-4">
+    <div className="container mx-auto flex gap-4 pt-6">
       {/* Sidebar Container */}
       <div
         className={`
@@ -20,7 +30,7 @@ function Layout() {
         {/* Logo */}
         <img
           src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/7d4af942-2eb7-432a-ba45-3c87d527e99a_rwc_0x0x505x332x4096.png?h=6ae60d8c1ab1d4dba799240765f01f4c"
-          className="w-[20rem] h-auto mb-10"
+          className="w-[20rem] h-auto mb-10 mt-6"
           alt="Logo"
         />
         {/* Sidebar Navigation */}
@@ -30,6 +40,11 @@ function Layout() {
       </div>
 
       {/* Mobile Menu Button */}
+      <MobileNavbar
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        className={isOpen ? "fixed inset-0 bg-white z-50" : "hidden"}
+      />
       <button
         onClick={toggleSidebar}
         className="lg:hidden fixed top-4 right-4 p-2 z-50 bg-white rounded-lg shadow-lg"

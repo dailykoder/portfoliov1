@@ -27,11 +27,7 @@ function Home() {
                            rounded-2xl scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 
                            transition-all duration-500 shadow-lg border border-[#e8b5bd]/30"
               />
-              <h1
-                className="relative text-3xl md:text-4xl lg:text-7xl font-semibold 
-                         bg-gradient-to-r from-[#4a3034] to-[#d4848c] 
-                         bg-clip-text text-transparent animate-gradient-x"
-              >
+              <h1 className="relative text-3xl md:text-4xl lg:text-7xl font-semibold">
                 Gina Kim
               </h1>
             </div>
