@@ -25,7 +25,7 @@ function Branding() {
       <div className="fixed inset-0 pointer-events-none" />
 
       {/* Content wrapper */}
-      <div className="w-[]">
+      <div>
         {/* Hero Section */}
         <div className="flex flex-col items-center relative mb-24">
           <div className="" />
@@ -84,7 +84,7 @@ function Branding() {
                             src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bfc2329d-0c09-4c04-bd7a-959278e06393_rw_1920.png?h=3422d4a82310e61bf85f8bb1b642498d"
                           />
                         </a>
-                        <p className="">Retail Rendering</p>
+                        <p>Retail Rendering</p>
                       </div>
                       <div className="flex flex-col items-center">
                         <a
@@ -133,6 +133,45 @@ function Branding() {
                       layout={3}
                       images={images["glossierPRImages"]}
                     />
+                  </LightGallery>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem
+                value="item-3"
+                className="border border-[#e8b5bd] rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
+              >
+                <AccordionTrigger className="px-4 py-4 hover:no-underline group">
+                  <div className="flex items-center space-x-4">
+                    <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
+                    <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                      adidas Infographic
+                    </h4>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-4 pb-6">
+                  <div className="flex flex-col mt-6 space-y-4">
+                    <div className="flex items-center space-x-4 text-[#6d464c]">
+                      <Brush className="w-5 h-5" />
+                      <span className="italic">
+                        Materials used: Adobe Photoshop, Illustrator
+                      </span>
+                    </div>
+                  </div>
+                  <LightGallery
+                    speed={100}
+                    plugins={[lgZoom, lgThumbnail]}
+                    elementClassNames="flex flex-col mt-4"
+                    selector="a"
+                  >
+                    <a
+                      href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/2ce8ea07-a3e5-4207-9375-b60fafb269c6_rw_1920.png?h=9e5e979ca3d777d85dc261aa9acad957"
+                      className="w-full"
+                    >
+                      <img
+                        className="w-full"
+                        src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/2ce8ea07-a3e5-4207-9375-b60fafb269c6_rw_1920.png?h=9e5e979ca3d777d85dc261aa9acad957"
+                      />
+                    </a>
                   </LightGallery>
                 </AccordionContent>
               </AccordionItem>

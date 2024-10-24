@@ -25,7 +25,7 @@ function Styling() {
       <div className="fixed inset-0 pointer-events-none" />
 
       {/* Content wrapper */}
-      <div className="w-[]">
+      <div className="w-full">
         {/* Hero Section */}
         <div className="flex flex-col items-center relative mb-24">
           <div className="" />
@@ -64,10 +64,6 @@ function Styling() {
                         <span className="italic">
                           Material used: Camera, Adobe Photoshop, InDesign
                         </span>
-                      </div>
-                      <div className="flex items-center space-x-4 text-[#6d464c]">
-                        <Anvil className="w-5 h-5" />
-                        <span className="italic">Products used: Shoes</span>
                       </div>
                     </div>
                     <LightGallery

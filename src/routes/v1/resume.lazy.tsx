@@ -1,5 +1,6 @@
-function Resume() {
-  return <div>Resume page</div>;
-}
+import { createLazyFileRoute } from "@tanstack/react-router";
+import Resume from "@/pages/Resume";
 
-export default Resume;
+export const Route = createLazyFileRoute(`/v1/resume`)({
+  component: () => <Resume />,
+});

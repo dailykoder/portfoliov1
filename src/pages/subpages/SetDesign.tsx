@@ -202,6 +202,22 @@ function SetDesign() {
                           />
                         </a>
                       </div>
+                      <div className="flex gap-2">
+                        <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/ebff52b0-48cb-4240-bd77-abb3c77636ae_rw_1920.jpg?h=ee055e914f0f6d24349c9c9a4ccb3391">
+                          <img
+                            src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/ebff52b0-48cb-4240-bd77-abb3c77636ae_rw_1920.jpg?h=ee055e914f0f6d24349c9c9a4ccb3391"
+                            className=""
+                            loading="lazy"
+                          />
+                        </a>
+                        <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/d9badb57-304d-4bc3-b0bf-00359ac324cf_rw_1920.jpg?h=d7e5f25483933faed8a835414fcd7ae4">
+                          <img
+                            src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/d9badb57-304d-4bc3-b0bf-00359ac324cf_rw_1920.jpg?h=d7e5f25483933faed8a835414fcd7ae4"
+                            className=""
+                            loading="lazy"
+                          />
+                        </a>
+                      </div>
                     </LightGallery>
                   </AccordionContent>
                 </AccordionContent>
