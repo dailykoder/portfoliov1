@@ -25,19 +25,18 @@ function WindowInstallation() {
       <div className="fixed inset-0 pointer-events-none" />
 
       {/* Content wrapper */}
-      <div className="w-[]">
+      <div>
         {/* Hero Section */}
         <div className="flex flex-col items-center relative mb-24">
-          <div className="" />
           <div className="bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
             <Palette className="w-12 h-12 text-[#d4848c] mb-4 mx-auto" />
             <h4 className="font-bold text-5xl mb-4 text-[#4a3034]">
               Window Installation
             </h4>
-            <p className="text-lg text-[#6d464c] max-w-2xl">
+            {/* <p className="text-lg text-[#6d464c] max-w-2xl">
               Crafting miniature worlds that tell stories through carefully
               designed environments
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -60,8 +59,8 @@ function WindowInstallation() {
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
                   <div>
-                    <div className="flex flex-col mt-6 space-y-4">
-                      <h5 className="text-lg font-semibold text-[#4a3034]">
+                    <div className="flex flex-col items-center mt-6 space-y-4">
+                      <h5 className="md:text-md text-center lg:text-lg font-semibold text-[#4a3034]">
                         Inspired by Alice in Wonderland (1951), this conceptual
                         design represents a world that seems real but is not.
                       </h5>

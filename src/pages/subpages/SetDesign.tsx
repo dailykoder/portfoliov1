@@ -33,10 +33,10 @@ function SetDesign() {
             <h4 className="font-bold text-5xl mb-4 text-[#4a3034]">
               Set Design
             </h4>
-            <p className="text-lg text-[#6d464c] max-w-2xl">
+            {/* <p className="text-lg text-[#6d464c] max-w-2xl">
               Crafting miniature worlds that tell stories through carefully
               designed environments
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -130,8 +130,8 @@ function SetDesign() {
                     elementClassNames="flex flex-col"
                     selector="a"
                   >
-                    <div className="flex flex-col mt-6 space-y-4">
-                      <h5 className="text-lg font-semibold text-[#4a3034]">
+                    <div className="flex items-center flex-col mt-6 space-y-4">
+                      <h5 className="md:text-md text-center lg:text-lg font-semibold text-[#4a3034]">
                         Based on The Disney Villains Series of Books by Serena
                         Valentino
                       </h5>
@@ -173,8 +173,8 @@ function SetDesign() {
                       elementClassNames="flex flex-col"
                       selector="a"
                     >
-                      <div className="flex flex-col mt-6 space-y-4">
-                        <h5 className="text-lg font-semibold text-[#4a3034]">
+                      <div className="flex items-center flex-col mt-6 space-y-4">
+                        <h5 className="md:text-md text-center lg:text-lg font-semibold text-[#4a3034]">
                           This conceptual design represents the two timelines of
                           the story: 1920s and modern day
                         </h5>

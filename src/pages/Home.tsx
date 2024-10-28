@@ -30,9 +30,8 @@ function Home() {
         <div className="grid lg:grid-cols-1 xl:grid-cols-2 gap-8 mb-20">
           {/* Main Introduction */}
           <div
-            className="bg-white/70 backdrop-blur-sm p-8 rounded-2xl 
-                           shadow-lg border border-[#e8b5bd]/30 
-                           transform hover:scale-[1.02] transition-transform duration-500"
+            className="bg-white/70 p-8 rounded-2xl 
+                           shadow-lg border border-[#e8b5bd]/30"
           >
             <p className="sm:text-[1.4rem] md:text-3xl font-bold text-[#4a3034] leading-relaxed mb-6">
               I'm a visual concept designer based in SD,
@@ -76,7 +75,7 @@ function Home() {
             ].map(({ number, label, icon: Icon }) => (
               <div
                 key={label}
-                className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl
+                className="bg-white/70 p-6 rounded-2xl
                                 shadow-lg border border-[#e8b5bd]/30
                                 hover:bg-white/70 transition-all duration-300
                                 group"
