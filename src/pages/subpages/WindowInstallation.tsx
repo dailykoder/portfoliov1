@@ -5,6 +5,7 @@ import "lightgallery/css/lg-thumbnail.css";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 import { Palette, Brush, Camera, Star, Anvil } from "lucide-react";
+import Header from "@/components/Header";
 
 import {
   Accordion,
@@ -27,18 +28,7 @@ function WindowInstallation() {
       {/* Content wrapper */}
       <div>
         {/* Hero Section */}
-        <div className="flex flex-col items-center relative mb-24">
-          <div className="bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
-            <Palette className="w-12 h-12 text-[#d4848c] mb-4 mx-auto" />
-            <h4 className="font-bold text-5xl mb-4 text-[#4a3034]">
-              Window Installation
-            </h4>
-            {/* <p className="text-lg text-[#6d464c] max-w-2xl">
-              Crafting miniature worlds that tell stories through carefully
-              designed environments
-            </p> */}
-          </div>
-        </div>
+        <Header title="Window Installation" />
 
         {/* Main Content */}
         <div className="mx-auto space-y-20">

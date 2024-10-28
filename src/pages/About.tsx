@@ -6,6 +6,7 @@ import {
   Briefcase,
   Award,
 } from "lucide-react";
+import Header from "@/components/Header";
 
 const About = () => {
   return (
@@ -14,12 +15,7 @@ const About = () => {
         <div>
           <div className="mx-auto">
             {/* Title with hover effect */}
-            <div className="flex flex-col items-center relative mb-24">
-              <div className="bg-white/60 backdrop-blur-md p-8 px-24 rounded-2xl shadow-lg text-center">
-                <Palette className="w-12 h-12 text-[#d4848c] mx-auto" />
-                <h4 className="font-bold text-5xl text-[#4a3034]">About Me</h4>
-              </div>
-            </div>
+            <Header title="About me" />
 
             {/* Main Content */}
             <div className="grid lg:grid-cols-1 xl:grid-cols-2 gap-8 mb-20">

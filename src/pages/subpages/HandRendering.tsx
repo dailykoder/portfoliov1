@@ -17,6 +17,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 import GalleryGrid from "@/components/set-design/GalleryGrid";
 import { images } from "@/components/set-design/constants";
+import Header from "@/components/Header";
 
 function HandRendering() {
   return (
@@ -25,22 +26,9 @@ function HandRendering() {
       <div className="fixed inset-0 pointer-events-none" />
 
       {/* Content wrapper */}
-      <div className="w-[]">
+      <div>
         {/* Hero Section */}
-        <div className="flex flex-col items-center relative mb-24">
-          <div className="" />
-          <div className="bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
-            <Palette className="w-12 h-12 text-[#d4848c] mb-4 mx-auto" />
-            <h4 className="font-bold text-5xl mb-4 text-[#4a3034]">
-              Hand Rendering
-            </h4>
-            {/* <p className="text-lg text-[#6d464c] max-w-2xl">
-              Crafting miniature worlds that tell stories through carefully
-              designed environments
-            </p> */}
-          </div>
-        </div>
-
+        <Header title="Hand Rendering" />
         {/* Main Content */}
         <div className="mx-auto space-y-20">
           {/* Accordion Section */}
