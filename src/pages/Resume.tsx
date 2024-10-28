@@ -8,7 +8,7 @@ import Header from "@/components/Header";
 
 const Resume = () => {
   return (
-    <div>
+    <div className="py-6">
       <Header title="Resume" />
       <LightGallery
         speed={100}

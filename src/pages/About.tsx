@@ -10,7 +10,7 @@ import Header from "@/components/Header";
 
 const About = () => {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full py-6">
       <div className="relative">
         <div>
           <div className="mx-auto">

@@ -16,7 +16,7 @@ type Routes =
 
 function Work() {
   return (
-    <div>
+    <div className="py-6">
       <Header title="My Work" />
       {/* Process Section */}
       <div className=" bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg mb-10">

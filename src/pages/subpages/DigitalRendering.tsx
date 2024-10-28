@@ -21,7 +21,7 @@ import { images } from "@/components/set-design/constants";
 
 function DigitalRendering() {
   return (
-    <div className="w-full py-12 px-4 md:px-8">
+    <div className="w-full py-6 px-4 md:px-8">
       {/* Overlay to improve content readability */}
       <div className="fixed inset-0 pointer-events-none" />
 

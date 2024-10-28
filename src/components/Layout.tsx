@@ -19,7 +19,7 @@ function Layout() {
   };
 
   return (
-    <div className="container mx-auto flex gap-4 pt-6">
+    <div className="container mx-auto flex gap-4">
       {/* Sidebar Container */}
       <div
         className={`

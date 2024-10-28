@@ -21,7 +21,7 @@ import Header from "@/components/Header";
 
 function HandRendering() {
   return (
-    <div className="w-full py-12 px-4 md:px-8">
+    <div className="w-full py-6 px-4 md:px-8">
       {/* Overlay to improve content readability */}
       <div className="fixed inset-0 pointer-events-none" />
 
