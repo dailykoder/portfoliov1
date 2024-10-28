@@ -103,8 +103,8 @@ function WindowInstallation() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <div className="flex flex-col mt-6 space-y-4">
-                    <h5 className="text-[0.93rem] font-semibold text-[#4a3034] ">
+                  <div className="flex flex-col items-center mt-6 space-y-4">
+                    <h5 className="md:text-md text-center lg:text-lg font-semibold text-[#4a3034] text-[0.93rem]">
                       This conceptual design is 1 of 4 windows, representing
                       various zodiac signs with their corresponding color,
                       stone, planet, and element.
