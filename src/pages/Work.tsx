@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Palette } from "lucide-react";
+import Header from "@/components/Header";
+
 type Routes =
   | "/"
   | "/v1/about"
@@ -16,12 +17,7 @@ type Routes =
 function Work() {
   return (
     <div>
-      <div className="sm:mx-10 flex flex-col items-center mb-24 ">
-        <div className="md:min-w-[25rem] lg:min-w-[40rem] bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
-          <Palette className="w-12 h-12 text-[#d4848c] mb-4 mx-auto" />
-          <h4 className="font-bold text-5xl mb-4 text-[#4a3034]">My Work</h4>
-        </div>
-      </div>
+      <Header title="My Work" />
       {/* Process Section */}
       <div className=" bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg mb-10">
         <h5 className="text-3xl font-semibold text-center mb-12 text-[#4a3034]">

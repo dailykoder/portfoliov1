@@ -28,14 +28,13 @@ function Branding() {
       <div>
         {/* Hero Section */}
         <div className="flex flex-col items-center relative mb-24">
-          <div className="" />
           <div className="bg-white/60 backdrop-blur-md p-8 rounded-2xl shadow-lg text-center">
             <Palette className="w-12 h-12 text-[#d4848c] mb-4 mx-auto" />
             <h4 className="font-bold text-5xl mb-4 text-[#4a3034]">Branding</h4>
-            <p className="text-lg text-[#6d464c] max-w-2xl">
+            {/* <p className="text-lg text-[#6d464c] max-w-2xl">
               Crafting miniature worlds that tell stories through carefully
               designed environments
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -58,7 +57,7 @@ function Branding() {
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-6">
                   <div>
-                    <div className="flex flex-col mt-6 space-y-4">
+                    <div className="flex flex-col items-center mt-6 space-y-4">
                       <div className="flex items-center space-x-4 text-[#6d464c]">
                         <Brush className="w-5 h-5" />
                         <span className="italic">
@@ -115,7 +114,7 @@ function Branding() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-6">
-                  <div className="flex flex-col mt-6 space-y-4">
+                  <div className="flex flex-col items-center mt-6 space-y-4">
                     <div className="flex items-center space-x-4 text-[#6d464c]">
                       <Brush className="w-5 h-5" />
                       <span className="italic">
