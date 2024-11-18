@@ -10,11 +10,9 @@ import { Textarea } from "@/components/ui/textarea";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
 } from "@/components/ui/form";
 
 const formSchema = z.object({
@@ -65,7 +63,10 @@ export default function Contact() {
     <div className="mx-auto py-6">
       <Header title="Contact" />
       <Form {...form}>
-        <form className="flex flex-col" onSubmit={form.handleSubmit(sendEmail)}>
+        <form
+          className="flex flex-col px-6 lg:w-3/4 mx-auto"
+          onSubmit={form.handleSubmit(sendEmail)}
+        >
           <FormField
             control={form.control}
             name="email"
@@ -105,7 +106,9 @@ export default function Contact() {
               </FormItem>
             )}
           />
-          <Button type="submit">Send</Button>
+          <Button className="my-6" type="submit">
+            Send
+          </Button>
         </form>
       </Form>
     </div>
