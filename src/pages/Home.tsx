@@ -10,6 +10,8 @@ import {
   Clock,
 } from "lucide-react";
 
+import { Link } from "@tanstack/react-router";
+
 function Home() {
   return (
     <div className="px-3 md:px-6 pt-6 pb-12">
@@ -71,7 +73,7 @@ function Home() {
                 label: "Set Pieces Created",
                 icon: Palette,
               },
-              { number: "3", label: "Some achievement", icon: Sparkles },
+              { number: "3+", label: "Awards Achieved", icon: Sparkles },
             ].map(({ number, label, icon: Icon }) => (
               <div
                 key={label}
@@ -119,36 +121,32 @@ function Home() {
                 progress: "100%",
               },
             ].map(({ title, desc, progress }) => (
-              <div
-                key={title}
-                className="group relative bg-white/60 p-6 rounded-xl
-                                border border-[#e8b5bd]/30 hover:bg-white/70 
-                                transition-all duration-300 cursor-pointer"
-              >
+              <Link to="/v1/set-design">
                 <div
-                  className="absolute bottom-0 left-0 h-1 bg-[#d4848c]/30 
-                                  rounded-full w-full overflow-hidden"
+                  key={title}
+                  className="flex flex-col justify-between group relative bg-white/60 p-6 rounded-xl
+                                border border-[#e8b5bd]/30 hover:bg-white/70 
+                                transition-all duration-300 cursor-pointer h-full"
                 >
                   <div
-                    className="h-full bg-[#d4848c] rounded-full"
-                    style={{ width: progress }}
-                  />
+                    className="absolute bottom-0 left-0 h-1 bg-[#d4848c]/30 
+                                  rounded-full w-full overflow-hidden"
+                  >
+                    <div
+                      className="h-full bg-[#d4848c] rounded-full"
+                      style={{ width: progress }}
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold text-[#4a3034] mb-2 group-hover:text-[#d4848c] transition-colors duration-300">
+                    {title}
+                  </h3>
+                  <p className="text-[#6d464c] mb-6">{desc}</p>
+                  <div className="flex items-center text-[#d4848c] font-medium">
+                    View Details
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform duration-300" />
+                  </div>
                 </div>
-                <h3
-                  className="text-xl font-semibold text-[#4a3034] mb-2 
-                                 group-hover:text-[#d4848c] transition-colors duration-300"
-                >
-                  {title}
-                </h3>
-                <p className="text-[#6d464c] mb-6">{desc}</p>
-                <div className="flex items-center text-[#d4848c] font-medium">
-                  View Project
-                  <ArrowRight
-                    className="w-4 h-4 ml-2 
-                                          group-hover:translate-x-2 transition-transform duration-300"
-                  />
-                </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

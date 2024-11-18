@@ -2,6 +2,7 @@ import { Outlet } from "@tanstack/react-router";
 import Sidebar from "@/components/nav/Sidebar";
 import { useState, useEffect } from "react";
 import MobileNavbar from "./nav/MobileNavbar";
+import { Toaster } from "@/components/ui/toaster";
 
 function Layout() {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,6 +68,7 @@ function Layout() {
 
       {/* Main Content */}
       <div className="flex-grow w-full lg:w-2/4 lg:ml-10">
+        <Toaster />
         <Outlet />
       </div>
     </div>
