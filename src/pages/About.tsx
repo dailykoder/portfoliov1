@@ -67,7 +67,7 @@ const About = () => {
                       {
                         category: "Marketing",
                         skills: [
-                          "Campaign Management",
+                          "Campaign Managing",
                           "Event Planning",
                           "Branding Strategy",
                         ],
@@ -76,14 +76,14 @@ const About = () => {
                         category: "Technical",
                         skills: [
                           "Computer Rendering",
-                          "Visual Conceptualization",
+                          "Visual Concepts",
                           "Digital Tools",
                         ],
                       },
                       {
                         category: "Other",
                         skills: [
-                          "Bilingual Communication",
+                          "Communication",
                           "Project Management",
                           "Creative Direction",
                         ],

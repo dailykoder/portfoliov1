@@ -49,7 +49,7 @@ function Styling() {
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
                   <div>
-                    <div className="flex flex-col items-center mt-6 space-y-4">
+                    <div className="mt-6 space-y-4">
                       <div className="flex items-center space-x-4 text-[#6d464c]">
                         <Brush className="w-5 h-5" />
                         <span className="italic">

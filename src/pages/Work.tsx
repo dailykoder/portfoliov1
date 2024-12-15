@@ -19,7 +19,7 @@ function Work() {
     <div className="py-6">
       <Header title="My Work" />
       {/* Process Section */}
-      <div className=" bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg mb-10">
+      {/* <div className=" bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg mb-10">
         <h5 className="text-3xl font-semibold text-center mb-12 text-[#4a3034]">
           Design Process
         </h5>
@@ -88,7 +88,7 @@ function Work() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
       <div className="grid lg:grid-cols-1 xl:grid-cols-2 gap-2 mb-24">
         <div className="relative">
           <Link to={"/v1/set-design" as Routes}>

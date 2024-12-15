@@ -49,7 +49,7 @@ function Branding() {
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-6">
                   <div>
-                    <div className="flex flex-col items-center mt-6 space-y-4">
+                    <div className="mt-6 space-y-4">
                       <div className="flex items-center space-x-4 text-[#6d464c]">
                         <Brush className="w-5 h-5" />
                         <span className="italic">
@@ -106,8 +106,8 @@ function Branding() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-6">
-                  <div className="flex flex-col items-center mt-6 space-y-4">
-                    <div className="flex items-center space-x-4 text-[#6d464c]">
+                  <div className="mt-6 space-y-4">
+                    <div className="flex space-x-4 text-[#6d464c]">
                       <Brush className="w-5 h-5" />
                       <span className="italic">
                         Materials used: Adobe Photoshop, Illustrator
@@ -140,8 +140,8 @@ function Branding() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-6">
-                  <div className="flex flex-col mt-6 space-y-4">
-                    <div className="flex items-center space-x-4 text-[#6d464c]">
+                  <div className="mt-6 space-y-4">
+                    <div className="flex space-x-4 text-[#6d464c]">
                       <Brush className="w-5 h-5" />
                       <span className="italic">
                         Materials used: Adobe Photoshop, Illustrator
