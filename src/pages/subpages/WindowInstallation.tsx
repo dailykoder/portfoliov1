@@ -94,11 +94,11 @@ function WindowInstallation() {
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
                   <div className="mt-6 space-y-4">
-                    <h5 className="m-auto font-semibold text-[#4a3034]">
+                    <p className="font-semibold text-[#4a3034]">
                       This conceptual design is 1 of 4 windows, representing
                       various zodiac signs with their corresponding color,
                       stone, planet, and element.
-                    </h5>
+                    </p>
                     <div className="flex items-center space-x-4 text-[#6d464c]">
                       <Brush className="w-5 h-5" />
                       <span className="italic">
