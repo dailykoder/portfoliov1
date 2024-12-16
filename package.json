@@ -2,7 +2,7 @@
   "name": "bbyport-v1",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://dailykoder.github.io/portfoliov1/",
+  "homepage": "https://www.ginakimdesign.com/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
