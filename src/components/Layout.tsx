@@ -33,6 +33,7 @@ function Layout() {
           src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/7d4af942-2eb7-432a-ba45-3c87d527e99a_rwc_0x0x505x332x4096.png?h=6ae60d8c1ab1d4dba799240765f01f4c"
           className="w-[20rem] h-auto mb-10 mt-6"
           alt="Logo"
+          loading="lazy"
         />
         {/* Sidebar Navigation */}
         <div className="hidden lg:block">
