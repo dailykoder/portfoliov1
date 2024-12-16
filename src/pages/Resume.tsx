@@ -16,8 +16,13 @@ const Resume = () => {
         elementClassNames="flex flex-col mt-4"
         selector="a"
       >
-        <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/c4b49ef8-0d2f-4fc9-a2ab-783794f70303_rw_1920.png?h=2aea4330be14e502fdaecd3de1b4daa9">
-          <img src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/c4b49ef8-0d2f-4fc9-a2ab-783794f70303_rw_1920.png?h=2aea4330be14e502fdaecd3de1b4daa9" />
+        <a href="https://drive.google.com/file/d/1i17RKvT7FyGlg5dc5Nb606K8HiRY4vKC/preview">
+          {/* <img src="https://drive.google.com/file/d/1i17RKvT7FyGlg5dc5Nb606K8HiRY4vKC/preview" /> */}
+          <iframe
+            src="https://drive.google.com/file/d/1i17RKvT7FyGlg5dc5Nb606K8HiRY4vKC/preview"
+            className="w-full h-screen"
+            allow="autoplay"
+          ></iframe>
         </a>
       </LightGallery>
     </div>

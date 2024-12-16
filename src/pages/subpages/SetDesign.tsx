@@ -91,10 +91,9 @@ function SetDesign() {
                         />
                       </a>
                       <a
-                        data-src="https://www.youtube.com/embed/j-M5YU2v-kc?si=A4XGHyh7vOifiIFb"
+                        data-src="https://www.youtube.com/embed/tBNz1mwTYF8?si=QiRqVQWDgQPF7rng"
                         data-lg-size="1280-720"
                         data-iframe="true"
-                        data-poster="https://drive.google.com/thumbnail?id=1wdChTjl6T8wT00gZ_zHw17jRPbcSGhO6"
                       >
                         <iframe
                           className="w-full h-[500px] mb-2"
