@@ -110,7 +110,7 @@ function HandRendering() {
           </div>
 
           {/* Project Stats Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 bg-white/100 backdrop-blur-sm ">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 bg-white/100 backdrop-blur-sm ">
             {[
               {
                 icon: Brush,
@@ -150,7 +150,7 @@ function HandRendering() {
                 </CardContent>
               </Card>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
