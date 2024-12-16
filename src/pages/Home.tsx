@@ -36,7 +36,7 @@ function Home() {
                            shadow-lg border border-[#e8b5bd]/30"
           >
             <p className="sm:text-[1.4rem] md:text-3xl font-bold text-[#4a3034] leading-relaxed mb-6">
-              I'm a visual concept designer based in San Diego,
+              I'm a visual concept designer based in Orange County,
               <span className="text-[#d4848c]">
                 {" "}
                 crafting miniature worlds that tell stories.

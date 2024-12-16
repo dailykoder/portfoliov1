@@ -4,6 +4,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
+import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 
 import { Link } from "@tanstack/react-router";
 
@@ -53,35 +54,31 @@ const Sidebar = () => {
             </Link>
             <NavigationMenuItem>
               <ul className="flex flex-col">
+                <Link to="/v1/set-design" className="pt-1">
+                  <NavigationMenuLink href="/v1/set-design">
+                    Set Design
+                  </NavigationMenuLink>
+                </Link>
+                <Link to="/v1/window-installation" className="pt-1">
+                  <NavigationMenuLink>Window Installation</NavigationMenuLink>
+                </Link>
                 <NavigationMenuLink className="pt-1">
                   <div>
-                    <Link to="/v1/set-design">Set Design</Link>
-                  </div>
-                </NavigationMenuLink>
-                <NavigationMenuLink className="pt-1">
-                  <div className="">
-                    <Link to="/v1/window-installation">
-                      Window Installation
-                    </Link>
-                  </div>
-                </NavigationMenuLink>
-                <NavigationMenuLink className="pt-1">
-                  <div className="">
                     <Link to="/v1/digital-rendering">Digital Rendering</Link>
                   </div>
                 </NavigationMenuLink>
                 <NavigationMenuLink className="pt-1">
-                  <div className="">
+                  <div>
                     <Link to="/v1/hand-rendering">Hand Rendering</Link>
                   </div>
                 </NavigationMenuLink>
                 <NavigationMenuLink className="pt-1">
-                  <div className="">
+                  <div>
                     <Link to="/v1/branding">Branding</Link>
                   </div>
                 </NavigationMenuLink>
                 <NavigationMenuLink className="pt-1">
-                  <div className="">
+                  <div>
                     <Link to="/v1/styling">Styling</Link>
                   </div>
                 </NavigationMenuLink>

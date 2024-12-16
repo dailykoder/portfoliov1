@@ -2,8 +2,11 @@ import LightGallery from "lightgallery/react";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
+import "lightgallery/css/lg-video.css";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
+import lgVideo from "lightgallery/plugins/video";
+import lgFullScreen from "lightgallery/plugins/fullscreen";
 import { Brush } from "lucide-react";
 // import { Palette, Camera, Star } from "lucide-react";
 import Header from "@/components/Header";
@@ -64,7 +67,7 @@ function SetDesign() {
                     </div>
                     <LightGallery
                       speed={500}
-                      plugins={[lgZoom, lgThumbnail]}
+                      plugins={[lgFullScreen, lgVideo, lgZoom, lgThumbnail]}
                       elementClassNames="flex flex-col"
                       selector="a"
                     >
@@ -86,6 +89,20 @@ function SetDesign() {
                           alt=""
                           src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/edadcdd1-fc84-43e6-98de-bc91668471af_rw_1920.png?h=5b1c6aa12db089c432da5625583e6d69"
                         />
+                      </a>
+                      <a
+                        data-src="https://www.youtube.com/embed/j-M5YU2v-kc?si=A4XGHyh7vOifiIFb"
+                        data-lg-size="1280-720"
+                        data-iframe="true"
+                        data-poster="https://drive.google.com/thumbnail?id=1wdChTjl6T8wT00gZ_zHw17jRPbcSGhO6"
+                      >
+                        <iframe
+                          className="w-full h-[500px] mb-2"
+                          src="https://www.youtube.com/embed/tBNz1mwTYF8?si=QiRqVQWDgQPF7rng"
+                          title="BookStore video"
+                          referrerPolicy="strict-origin-when-cross-origin"
+                          allowFullScreen
+                        ></iframe>
                       </a>
                       <GalleryGrid
                         layout={2}
