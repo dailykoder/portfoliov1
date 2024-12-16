@@ -49,8 +49,8 @@ function DigitalRendering() {
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
                   <div>
-                    <div className="flex flex-col items-center mt-6 space-y-4">
-                      <h5 className="md:text-md text-center lg:text-lg font-semibold text-[#4a3034]">
+                    <div className="mt-6 space-y-4">
+                      <h5 className="md:text-md lg:text-lg font-semibold text-[#4a3034]">
                         Daisy Buchanan's Sitting Room
                       </h5>
                       <div className="flex items-center space-x-4 text-[#6d464c]">
@@ -95,14 +95,14 @@ function DigitalRendering() {
                 <AccordionTrigger className="px-6 py-4 hover:no-underline group">
                   <div className="flex items-center space-x-4">
                     <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
-                    <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                    <h4 className="lg:text-md text-lg font-semibold text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
                       Glossier x The Ordinary: The "Face To Face" Experience
                     </h4>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <div className="flex flex-col items-center mt-6 space-y-4">
-                    <h5 className="md:text-md text-center lg:text-lg font-semibold text-[#4a3034]">
+                  <div className="mt-6 space-y-4">
+                    <h5 className="md:text-md lg:text-lg font-semibold text-[#4a3034]">
                       Original Concept
                     </h5>
                     <div className="flex items-center space-x-4 text-[#6d464c]">

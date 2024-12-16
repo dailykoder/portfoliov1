@@ -49,8 +49,8 @@ function SetDesign() {
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-6">
                   <div>
-                    <div className="flex flex-col items-center mt-6 space-y-4">
-                      <h5 className="md:text-md text-center lg:text-lg font-semibold text-[#4a3034]">
+                    <div className="mt-6 space-y-4">
+                      <h5 className="md:text-md lg:text-lg ml-5 font-semibold text-[#4a3034]">
                         Written by Brian Gatewood & Alessandro Tanaka
                       </h5>
                       <div className="flex items-center space-x-4 text-[#6d464c]">
@@ -120,8 +120,8 @@ function SetDesign() {
                     elementClassNames="flex flex-col"
                     selector="a"
                   >
-                    <div className="flex flex-col items-center mt-6 space-y-4">
-                      <h5 className="md:text-md text-center lg:text-lg font-semibold text-[#4a3034]">
+                    <div className="mt-6 space-y-4">
+                      <h5 className="md:text-md lg:text-lg ml-5 font-semibold text-[#4a3034]">
                         Based on The Disney Villains Series of Books by Serena
                         Valentino
                       </h5>
@@ -163,8 +163,8 @@ function SetDesign() {
                       elementClassNames="flex flex-col"
                       selector="a"
                     >
-                      <div className="flex flex-col items-center mt-6 space-y-4">
-                        <h5 className="md:text-md text-center lg:text-lg font-semibold text-[#4a3034]">
+                      <div className="mt-6 space-y-4">
+                        <h5 className="ml-5 font-semibold text-[#4a3034]">
                           This conceptual design represents the two timelines of
                           the story: 1920s and modern day
                         </h5>

@@ -63,7 +63,7 @@ function HandRendering() {
                       selector="a"
                     >
                       <GalleryGrid
-                        layout={3}
+                        layout={1}
                         images={images["livingRoomImages"]}
                       />
                     </LightGallery>

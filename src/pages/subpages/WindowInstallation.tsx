@@ -49,8 +49,8 @@ function WindowInstallation() {
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
                   <div>
-                    <div className="flex flex-col items-center mt-6 space-y-4">
-                      <h5 className="md:text-md text-center lg:text-lg font-semibold text-[#4a3034]">
+                    <div className="mt-6 space-y-4">
+                      <h5 className="m-auto font-semibold text-[#4a3034]">
                         Inspired by Alice in Wonderland (1951), this conceptual
                         design represents a world that seems real but is not.
                       </h5>
@@ -93,8 +93,8 @@ function WindowInstallation() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <div className="flex flex-col items-center mt-6 space-y-4">
-                    <h5 className="md:text-md text-center lg:text-lg font-semibold text-[#4a3034] text-[0.93rem]">
+                  <div className="mt-6 space-y-4">
+                    <h5 className="m-auto font-semibold text-[#4a3034]">
                       This conceptual design is 1 of 4 windows, representing
                       various zodiac signs with their corresponding color,
                       stone, planet, and element.
