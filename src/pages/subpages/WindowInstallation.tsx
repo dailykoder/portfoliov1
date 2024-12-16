@@ -4,7 +4,8 @@ import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
 import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
-import { Palette, Brush, Camera, Star, Anvil } from "lucide-react";
+import { Brush, Anvil } from "lucide-react";
+// import { Palette, Camera, Star } from "lucide-react";
 import Header from "@/components/Header";
 
 import {
@@ -14,7 +15,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import { Card, CardContent } from "@/components/ui/card";
+// import { Card, CardContent } from "@/components/ui/card";
 
 import GalleryGrid from "@/components/set-design/GalleryGrid";
 import { images } from "@/components/set-design/constants";
