@@ -21,8 +21,7 @@ const Resume = () => {
           <iframe
             src="https://drive.google.com/file/d/1i17RKvT7FyGlg5dc5Nb606K8HiRY4vKC/preview"
             className="w-full h-screen"
-            allow="autoplay"
-          ></iframe>
+          />
         </a>
       </LightGallery>
     </div>
