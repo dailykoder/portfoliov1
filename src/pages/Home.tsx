@@ -6,7 +6,6 @@ import {
   ArrowRight,
   Eye,
   Camera,
-  Ruler,
   Clock,
 } from "lucide-react";
 
