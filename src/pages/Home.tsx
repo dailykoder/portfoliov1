@@ -19,7 +19,7 @@ function Home() {
         {/* Name and Title */}
         <div className="relative inline-block group cursor-pointer mb-16">
           <div
-            className="absolute -inset-x-6 -inset-y-4 
+            className="absolute-inset-x-6 inset-y-4 
                            rounded-2xl scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 
                            transition-all duration-500 shadow-lg border border-[#e8b5bd]/30"
           />
@@ -35,18 +35,13 @@ function Home() {
             className="bg-white/70 p-8 rounded-2xl 
                            shadow-lg border border-[#e8b5bd]/30"
           >
-            <p className="sm:text-[1.4rem] md:text-3xl font-bold text-[#4a3034] leading-relaxed mb-6">
-              I'm a visual concept designer based in Orange County,
-              <span className="text-[#d4848c]">
-                {" "}
-                crafting miniature worlds that tell stories.
-              </span>
+            <p className="md:text-3xl font-bold text-[#4a3034] leading-relaxed mb-6">
+              I'm a visual-concept scenic designer based in Orange County
             </p>
             <div className="flex flex-wrap gap-3">
               {[
                 { icon: Paintbrush, text: "Set Design" },
                 { icon: Eye, text: "Visual Concepts" },
-                { icon: Ruler, text: "Miniature Crafting" },
                 { icon: Camera, text: "Creative Direction" },
               ].map(({ icon: Icon, text }) => (
                 <div
@@ -107,17 +102,17 @@ function Home() {
             {[
               {
                 title: '"Sharper" Set Design',
-                desc: "Miniature world crafting for dramatic scenes",
+                desc: "Feature Film Design",
                 progress: "100%",
               },
               {
                 title: "The Book of Enchantment",
-                desc: "Disney Villains-inspired creative direction",
+                desc: "Disney Villains-inspired adaptation",
                 progress: "100%",
               },
               {
                 title: "Midnight in Paris (2011)",
-                desc: "Period-accurate set piece recreation",
+                desc: "Conceptual Time-Period Design",
                 progress: "100%",
               },
             ].map(({ title, desc, progress }) => (

@@ -23,7 +23,36 @@ import {
 import GalleryGrid from "@/components/set-design/GalleryGrid";
 import { images } from "@/components/set-design/constants";
 
-function SetDesign() {
+const SetDesign = () => {
+  const sharperMaterials = [
+    "Polymer Clay",
+    "Metal Wire",
+    "Foamboard",
+    "Resin",
+    "Paper",
+    "Paint",
+    "Wood",
+    "Glue",
+  ];
+  const enchantmentMaterials = [
+    "Coffee Grounds",
+    "Polymer Clay",
+    "Tea Leaves",
+    "Hot Glue",
+    "Paint",
+    "Resin",
+    "Foil",
+  ];
+  const parisMaterials = [
+    "Fairy Light",
+    "Metal Leaf",
+    "Foam Core",
+    "Task Board",
+    "Resin",
+    "Paint",
+    "Sand",
+  ];
+
   return (
     <div className="w-full py-6 px-4 md:px-8">
       {/* Overlay to improve content readability */}
@@ -41,28 +70,41 @@ function SetDesign() {
             <Accordion type="multiple" className="w-full space-y-6">
               <AccordionItem
                 value="item-1"
-                className="border border-[#e8b5bd] rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
+                className="border border-border-pink rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
               >
                 <AccordionTrigger className="px-4 py-4 hover:no-underline group">
                   <div className="flex items-center space-x-4">
-                    <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
-                    <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      Script: "Sharper"
-                    </h4>
+                    <div className="relative">
+                      <div className="w-10 h-10 flex items-center justify-center">
+                        <Brush className="w-6 h-6" />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                        Script: "Sharper"
+                      </h4>
+                      <p className="text-sm text-gray-700">
+                        Feature Film Set Design
+                      </p>
+                    </div>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="px-4 pb-6">
+                <AccordionContent className="p-4 pt-0">
                   <div>
-                    <div className="mt-6 space-y-4">
-                      <h5 className="md:text-md lg:text-lg ml-5 font-semibold text-[#4a3034]">
+                    <hr className="border-main-pink w-full" />
+                    <div className="flex flex-col gap-4 mb-4 p-2">
+                      <h5 className="text-center md:text-left md:text-lg lg:text-lg font-semibold text-[#4a3034]">
                         Written by Brian Gatewood & Alessandro Tanaka
                       </h5>
-                      <div className="flex items-center space-x-4 text-[#6d464c]">
-                        <Brush className="w-5 h-5" />
-                        <span className="italic">
-                          Materials: Polymer Clay, Foamboard, Wood, Resin,
-                          Paper, Paint, Metal Wire, Glue
-                        </span>
+                      <div className="flex flex-wrap gap-2 text-[#6d464c]">
+                        {sharperMaterials.map((material, index) => (
+                          <span
+                            key={index}
+                            className="px-3 py-1.5 text-xs p-2 border-2 rounded-lg"
+                          >
+                            {material}
+                          </span>
+                        ))}
                       </div>
                     </div>
                     <LightGallery
@@ -71,7 +113,8 @@ function SetDesign() {
                       elementClassNames="flex flex-col"
                       selector="a"
                     >
-                      <GalleryGrid layout={3} images={images["scriptPages"]} />
+                      {/* Removed 12/10/2025 */}
+                      {/* <GalleryGrid layout={3} images={images["scriptPages"]} /> */}
                       <GalleryGrid
                         layout={2}
                         images={images["moodboardImages"]}
@@ -120,14 +163,23 @@ function SetDesign() {
               </AccordionItem>
               <AccordionItem
                 value="item-2"
-                className="border border-[#e8b5bd] rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
+                className="border border-border-pink rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
               >
                 <AccordionTrigger className="px-4 py-4 hover:no-underline group">
                   <div className="flex items-center space-x-4">
-                    <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
-                    <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      TV Pilot Script: "The Book of Enchantment"
-                    </h4>
+                    <div className="relative">
+                      <div className="w-10 h-10 flex items-center justify-center">
+                        <Brush className="w-6 h-6" />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                        TV Pilot Script: "The Book of Enchantment"
+                      </h4>
+                      <p className="text-sm text-gray-700">
+                        Disney Villains Series Adaptation
+                      </p>
+                    </div>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-6">
@@ -137,23 +189,29 @@ function SetDesign() {
                     elementClassNames="flex flex-col"
                     selector="a"
                   >
-                    <div className="mt-6 space-y-4">
-                      <h5 className="md:text-md lg:text-lg ml-5 font-semibold text-[#4a3034]">
-                        Based on The Disney Villains Series of Books by Serena
-                        Valentino
-                      </h5>
-                      <div className="flex items-center space-x-4 text-[#6d464c]">
-                        <Brush className="w-5 h-5" />
-                        <span className="italic">
-                          Materials used: Polymer Clay, Resin, Hot Glue, Foil,
-                          Coffee Grounds, Tea Leaves, Paint
-                        </span>
+                    <div>
+                      <hr className="border-main-pink w-full" />
+                      <div className="flex flex-col gap-4 mb-4 p-2">
+                        <h5 className="text-center md:text-left md:text-lg lg:text-lg font-semibold text-[#4a3034]">
+                          Based on The Disney Villains Series of Books by Serena
+                          Valentino
+                        </h5>
+                        <div className="flex flex-wrap gap-2 text-[#6d464c]">
+                          {enchantmentMaterials.map((material, index) => (
+                            <span
+                              key={index}
+                              className="px-3 py-1.5 text-xs p-2 border-2 rounded-lg"
+                            >
+                              {material}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
                     <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bfd23547-b05e-4649-8d3d-19b3c94a58a7_rw_3840.jpg?h=218e0fe56f1feb1e0ba265b5e88f361d">
                       <img
                         src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bfd23547-b05e-4649-8d3d-19b3c94a58a7_rw_3840.jpg?h=218e0fe56f1feb1e0ba265b5e88f361d"
-                        className="w-3/4 ml-auto mr-auto mb-4 mt-6"
+                        className="mb-4"
                       />
                     </a>
                     <GalleryGrid layout={4} images={images["tHouseImages"]} />
@@ -162,14 +220,23 @@ function SetDesign() {
               </AccordionItem>
               <AccordionItem
                 value="item-3"
-                className="border border-[#e8b5bd] rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
+                className="border border-border-pink rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
               >
                 <AccordionTrigger className="px-4 py-4 hover:no-underline group">
                   <div className="flex items-center space-x-4">
-                    <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
-                    <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      "Midnight in Paris" (2011)
-                    </h4>
+                    <div className="relative">
+                      <div className="w-10 h-10 flex items-center justify-center">
+                        <Brush className="w-6 h-6" />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                        "Midnight in Paris" (2011)
+                      </h4>
+                      <p className="text-sm text-gray-700">
+                        Conceptual Time-Period Design
+                      </p>
+                    </div>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-6">
@@ -180,20 +247,26 @@ function SetDesign() {
                       elementClassNames="flex flex-col"
                       selector="a"
                     >
-                      <div className="mt-6 space-y-4">
-                        <h5 className="ml-5 font-semibold text-[#4a3034]">
-                          This conceptual design represents the two timelines of
-                          the story: 1920s and modern day
-                        </h5>
-                        <div className="flex items-center space-x-4 text-[#6d464c]">
-                          <Brush className="w-5 h-5" />
-                          <span className="italic">
-                            Materials used: Foam core, task board, resin, paint,
-                            metal leaf, sand, fairy light
-                          </span>
+                      <div>
+                        <hr className="border-main-pink w-full" />
+                        <div className="flex flex-col gap-4 mb-4 p-2">
+                          <h5 className="text-left lg:text-lg font-semibold text-[#4a3034]">
+                            This conceptual design represents the two timelines
+                            of the story: 1920s and modern day
+                          </h5>
+                          <div className="flex flex-wrap gap-2 text-[#6d464c]">
+                            {parisMaterials.map((material, index) => (
+                              <span
+                                key={index}
+                                className="px-3 py-1.5 text-xs p-2 border-2 rounded-lg"
+                              >
+                                {material}
+                              </span>
+                            ))}
+                          </div>
                         </div>
                       </div>
-                      <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-2 mb-4 mt-6">
+                      <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-2 mb-4">
                         <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/3d3f146c-102d-4812-8df1-39d7d70052c4_rw_1920.jpg?h=f304b7c30dbd003b49a86eadeecc188e">
                           <img
                             src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/3d3f146c-102d-4812-8df1-39d7d70052c4_rw_1920.jpg?h=f304b7c30dbd003b49a86eadeecc188e"
@@ -231,53 +304,10 @@ function SetDesign() {
               </AccordionItem>
             </Accordion>
           </div>
-
-          {/* Project Stats Section */}
-          {/* <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 bg-white/100 backdrop-blur-sm ">
-            {[
-              {
-                icon: Brush,
-                title: "Projects",
-                value: "3+",
-                desc: "Major Set Designs",
-              },
-              {
-                icon: Camera,
-                title: "Hours",
-                value: "100+",
-                desc: "Of Detailed Crafting",
-              },
-              {
-                icon: Star,
-                title: "Pieces",
-                value: "15+",
-                desc: "Unique Set Elements",
-              },
-              {
-                icon: Palette,
-                title: "Materials",
-                value: "8+",
-                desc: "Different Media Used",
-              },
-            ].map(({ icon: Icon, title, value, desc }) => (
-              <Card
-                key={title}
-                className="bg-white/80 backdrop-blur-sm border-[#e8b5bd] hover:shadow-lg transition-shadow duration-300"
-              >
-                <CardContent className="p-6 text-center">
-                  <Icon className="w-8 h-8 text-[#d4848c] mx-auto mb-3" />
-                  <div className="text-4xl font-bold text-[#4a3034] mb-2">
-                    {value}
-                  </div>
-                  <div className="text-[#6d464c] font-medium">{desc}</div>
-                </CardContent>
-              </Card>
-            ))}
-          </div> */}
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default SetDesign;
