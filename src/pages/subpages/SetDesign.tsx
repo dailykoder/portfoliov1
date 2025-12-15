@@ -80,7 +80,7 @@ const SetDesign = () => {
                       </div>
                     </div>
                     <div className="flex flex-col items-start">
-                      <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                      <h4 className="font-semibold text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
                         Script: "Sharper"
                       </h4>
                       <p className="text-sm text-gray-700">
@@ -90,21 +90,33 @@ const SetDesign = () => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="p-4 pt-0">
+                  <hr className="border-border-pink w-full mb-4" />
                   <div>
-                    <hr className="border-main-pink w-full" />
-                    <div className="flex flex-col gap-4 mb-4 p-2">
-                      <h5 className="text-center md:text-left md:text-lg lg:text-lg font-semibold text-[#4a3034]">
-                        Written by Brian Gatewood & Alessandro Tanaka
-                      </h5>
-                      <div className="flex flex-wrap gap-2 text-[#6d464c]">
-                        {sharperMaterials.map((material, index) => (
-                          <span
-                            key={index}
-                            className="px-3 py-1.5 text-xs p-2 border-2 rounded-lg"
-                          >
-                            {material}
-                          </span>
-                        ))}
+                    <div className="flex flex-col gap-4 mb-4">
+                      <div className="md:border-l-2 md:border-[#d4848c] pl-2">
+                        <p className="text-center test-xs md:text-left text-[#6d464c]">
+                          Source Material
+                        </p>
+                        <h5 className="text-center md:text-left md:text-lg font-semibold text-[#4a3034]">
+                          Written by Brian Gatewood & Alessandro Tanaka
+                        </h5>
+                      </div>
+                      <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
+                        <div>
+                          <p className="text-center test-xs md:text-left text-[#6d464c]">
+                            Materials Used
+                          </p>
+                        </div>
+                        <div className="flex flex-wrap gap-2 text-[#6d464c]">
+                          {sharperMaterials.map((material, index) => (
+                            <span
+                              key={index}
+                              className="px-2 py-1.5 text-xs border-2 rounded-lg"
+                            >
+                              {material}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
                     <LightGallery
@@ -133,19 +145,22 @@ const SetDesign = () => {
                           src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/edadcdd1-fc84-43e6-98de-bc91668471af_rw_1920.png?h=5b1c6aa12db089c432da5625583e6d69"
                         />
                       </a>
-                      <a
-                        data-src="https://www.youtube.com/embed/tBNz1mwTYF8?si=QiRqVQWDgQPF7rng"
-                        data-lg-size="1280-720"
-                        data-iframe="true"
-                      >
-                        <iframe
-                          className="w-full h-[500px] mb-2"
-                          src="https://www.youtube.com/embed/tBNz1mwTYF8?si=QiRqVQWDgQPF7rng"
-                          title="BookStore video"
-                          referrerPolicy="strict-origin-when-cross-origin"
-                          allowFullScreen
-                        ></iframe>
-                      </a>
+                      <div className="w-full aspect-video mb-2">
+                        <a
+                          className="block w-full h-full"
+                          data-src="https://www.youtube.com/embed/tBNz1mwTYF8?si=QiRqVQWDgQPF7rng"
+                          data-lg-size="1280-720"
+                          data-iframe="true"
+                        >
+                          <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube.com/embed/tBNz1mwTYF8?si=QiRqVQWDgQPF7rng"
+                            title="BookStore video"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                          ></iframe>
+                        </a>
+                      </div>
                       <GalleryGrid
                         layout={2}
                         images={images["conceptImages"]}
@@ -173,7 +188,7 @@ const SetDesign = () => {
                       </div>
                     </div>
                     <div className="flex flex-col items-start">
-                      <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                      <h4 className="font-semibold text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
                         TV Pilot Script: "The Book of Enchantment"
                       </h4>
                       <p className="text-sm text-gray-700">
@@ -189,18 +204,28 @@ const SetDesign = () => {
                     elementClassNames="flex flex-col"
                     selector="a"
                   >
-                    <div>
-                      <hr className="border-main-pink w-full" />
-                      <div className="flex flex-col gap-4 mb-4 p-2">
-                        <h5 className="text-center md:text-left md:text-lg lg:text-lg font-semibold text-[#4a3034]">
-                          Based on The Disney Villains Series of Books by Serena
+                    <hr className="border-border-pink w-full mb-4" />
+                    <div className="flex flex-col gap-4 mb-4">
+                      <div className="md:border-l-2 md:border-[#d4848c] pl-2">
+                        <p className="text-center test-xs md:text-left text-[#6d464c]">
+                          Source Material
+                        </p>
+                        <h5 className="text-center md:text-left md:text-lg font-semibold text-[#4a3034]">
+                          Based on the Disney Villains Series of Books by Serena
                           Valentino
                         </h5>
+                      </div>
+                      <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
+                        <div>
+                          <p className="text-center test-xs md:text-left text-[#6d464c]">
+                            Materials Used
+                          </p>
+                        </div>
                         <div className="flex flex-wrap gap-2 text-[#6d464c]">
                           {enchantmentMaterials.map((material, index) => (
                             <span
                               key={index}
-                              className="px-3 py-1.5 text-xs p-2 border-2 rounded-lg"
+                              className="px-2 py-1.5 text-xs border-2 rounded-lg"
                             >
                               {material}
                             </span>
@@ -230,7 +255,7 @@ const SetDesign = () => {
                       </div>
                     </div>
                     <div className="flex flex-col items-start">
-                      <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                      <h4 className="font-semibold text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
                         "Midnight in Paris" (2011)
                       </h4>
                       <p className="text-sm text-gray-700">
@@ -247,18 +272,28 @@ const SetDesign = () => {
                       elementClassNames="flex flex-col"
                       selector="a"
                     >
-                      <div>
-                        <hr className="border-main-pink w-full" />
-                        <div className="flex flex-col gap-4 mb-4 p-2">
-                          <h5 className="text-left lg:text-lg font-semibold text-[#4a3034]">
+                      <hr className="border-border-pink w-full mb-2" />
+                      <div className="flex flex-col gap-4 mb-4">
+                        <div className="md:border-l-2 md:border-[#d4848c] pl-2">
+                          <p className="text-center test-xs md:text-left text-[#6d464c]">
+                            Source Material
+                          </p>
+                          <h5 className="text-center md:text-left md:text-lg font-semibold text-[#4a3034]">
                             This conceptual design represents the two timelines
                             of the story: 1920s and modern day
                           </h5>
+                        </div>
+                        <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
+                          <div>
+                            <p className="text-center test-xs md:text-left text-[#6d464c]">
+                              Materials Used
+                            </p>
+                          </div>
                           <div className="flex flex-wrap gap-2 text-[#6d464c]">
                             {parisMaterials.map((material, index) => (
                               <span
                                 key={index}
-                                className="px-3 py-1.5 text-xs p-2 border-2 rounded-lg"
+                                className="px-2 py-1.5 text-xs border-2 rounded-lg"
                               >
                                 {material}
                               </span>

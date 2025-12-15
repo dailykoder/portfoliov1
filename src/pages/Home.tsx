@@ -15,27 +15,12 @@ function Home() {
   return (
     <div className="px-3 md:px-6 pt-6 pb-12">
       <div className="mx-auto">
-        {/* Name and Title */}
-        <div className="relative inline-block group cursor-pointer mb-16">
-          <div
-            className="absolute-inset-x-6 inset-y-4 
-                           rounded-2xl scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 
-                           transition-all duration-500 shadow-lg border border-[#e8b5bd]/30"
-          />
-          <h1 className="relative text-3xl md:text-4xl lg:text-7xl font-semibold">
-            Gina Kim
-          </h1>
-        </div>
-
         {/* Introduction Grid */}
         <div className="grid lg:grid-cols-1 xl:grid-cols-2 gap-8 mb-20">
           {/* Main Introduction */}
-          <div
-            className="bg-white/70 p-8 rounded-2xl 
-                           shadow-lg border border-[#e8b5bd]/30"
-          >
+          <div className="bg-white/70 p-8 rounded-2xl shadow-lg border border-[#e8b5bd]/30 flex flex-col justify-between">
             <p className="md:text-3xl font-bold text-[#4a3034] leading-relaxed mb-6">
-              I'm a visual-concept scenic designer based in Orange County
+              Hi i'm Gina Kim, and i'm a scenic designer based in Orange County
             </p>
             <div className="flex flex-wrap gap-3">
               {[
