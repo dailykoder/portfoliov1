@@ -766,74 +766,60 @@ export const images = {
   ],
   productionImages3HOTS: [
     {
-      // Original image you provided: aaDSCF5731_copy
-      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790242/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aaDSCF5731_copy_vznuji.jpg",
-      alt: "Production photo of the stage set, scene 1",
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790242/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aaDSCF5731_copy_vznuji.jpg",
+      alt: "Production photo of the stage set 1",
     },
     {
-      // New image 1: aaDSCF5704_copy
-      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790225/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aaDSCF5704_copy_xzrriv.jpg",
-      alt: "Production photo of the stage set, scene 2",
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790225/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aaDSCF5704_copy_xzrriv.jpg",
+      alt: "Production photo of the stage set 2",
     },
     {
-      // New image 2: aDSCF4037_copy
-      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790262/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF4037_copy_luzqes.jpg",
-      alt: "Production photo of the stage set, scene 3",
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790262/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF4037_copy_luzqes.jpg",
+      alt: "Production photo of the stage set 3",
     },
     {
-      // New image 3: aDSCF2258_copy
-      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790249/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF2258_copy_lfzzsp.jpg",
-      alt: "Production photo of the stage set, scene 4",
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790249/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF2258_copy_lfzzsp.jpg",
+      alt: "Production photo of the stage set 4",
     },
     {
-      // New image 4: aaDSCF3232_copy
-      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790218/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aaDSCF3232_copy_peh2uu.jpg",
-      alt: "Production photo of the stage set, scene 5",
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790218/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aaDSCF3232_copy_peh2uu.jpg",
+      alt: "Production photo of the stage set 5",
     },
     {
-      // New image 5: aDSCF5076_copy
-      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790263/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF5076_copy_t8kbe6.jpg",
-      alt: "Production photo of the stage set, scene 6",
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790263/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF5076_copy_t8kbe6.jpg",
+      alt: "Production photo of the stage set 6",
     },
     {
-      // New image 6: aDSCF3145_copy
-      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790252/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF3145_copy_ijm00b.jpg",
-      alt: "Production photo of the stage set, scene 7",
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790252/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF3145_copy_ijm00b.jpg",
+      alt: "Production photo of the stage set 7",
     },
     {
-      // New image 7: aDSCF3069_copy
-      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790253/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF3069_copy_yoaslp.jpg",
-      alt: "Production photo of the stage set, scene 8",
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790253/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF3069_copy_yoaslp.jpg",
+      alt: "Production photo of the stage set 8",
     },
     {
-      // New image 8: aDSCF0488_copy
-      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790244/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF0488_copy_fjxypd.jpg",
-      alt: "Production photo of the stage set, scene 9",
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790244/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF0488_copy_fjxypd.jpg",
+      alt: "Production photo of the stage set 9",
     },
     {
-      // New image 9: aDSCF3645_copy
-      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790259/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF3645_copy_wdtat0.jpg",
-      alt: "Production photo of the stage set, scene 10",
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790259/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF3645_copy_wdtat0.jpg",
+      alt: "Production photo of the stage set 10",
     },
     {
-      // New image 10: aaDSCF4853_copy
-      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790235/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aaDSCF4853_copy_vgyp3d.jpg",
-      alt: "Production photo of the stage set, scene 11",
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790235/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aaDSCF4853_copy_vgyp3d.jpg",
+      alt: "Production photo of the stage set 11",
     },
     {
-      // New image 11: DSCF1816_copy
-      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790273/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/DSCF1816_copy_i807hc.jpg",
-      alt: "Production photo of the stage set, scene 12",
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790273/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/DSCF1816_copy_i807hc.jpg",
+      alt: "Production photo of the stage set 12",
     },
     {
-      // New image 12: aDSCF5142_copy
-      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790264/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF5142_copy_wffa8p.jpg",
-      alt: "Production photo of the stage set, scene 13",
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790264/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF5142_copy_wffa8p.jpg",
+      alt: "Production photo of the stage set 13",
     },
     {
-      // New image 13: aDSCF2977_copy
-      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790250/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF2977_copy_l1kxge.jpg",
-      alt: "Production photo of the stage set, scene 14",
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790250/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF2977_copy_l1kxge.jpg",
+      alt: "Production photo of the stage set 14",
     },
   ],
 };

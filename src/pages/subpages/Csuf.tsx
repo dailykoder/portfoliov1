@@ -206,12 +206,6 @@ const Csuf = () => {
                       layout={1}
                       images={images["fallDanceProductionStageImages1"]}
                     />
-                    <a href={images["fallDanceProductionStageImage"]}>
-                      <img
-                        src={images["fallDanceProductionStageImage"]}
-                        loading="lazy"
-                      />
-                    </a>
                     <GalleryGrid
                       layout={3}
                       images={images["fallDanceProductionStageImages"]}
