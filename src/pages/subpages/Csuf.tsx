@@ -93,6 +93,10 @@ const Csuf = () => {
                       selector="a"
                     >
                       <GalleryGrid
+                        layout={2}
+                        images={images["modelImages2HOTS"]}
+                      />
+                      <GalleryGrid
                         layout={3}
                         images={images["paintingElevationsHOTS"]}
                       />

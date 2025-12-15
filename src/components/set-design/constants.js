@@ -580,6 +580,24 @@ export const images = {
     src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790176/The%20House%20of%20the%20Spirits/DRAFTING%20PHOTOS/IMG_1540_s85zn5.jpg",
     alt: "Model Picture 2",
   },
+  modelImages2HOTS: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765801507/The%20House%20of%20the%20Spirits/DRAFTING%20PHOTOS/Sht-2-Front_House_Wall_csbeg7.jpg",
+      alt: "Drafting Image 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765801511/The%20House%20of%20the%20Spirits/DRAFTING%20PHOTOS/Sht-5-Back_Building_Wall_rfwpd8.jpg",
+      alt: "Drafting Image 2",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765801517/The%20House%20of%20the%20Spirits/DRAFTING%20PHOTOS/Sht-6-Hanging_Picture_Frame_Elevation_zzyc32.jpg",
+      alt: "Drafting Image 3",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765801522/The%20House%20of%20the%20Spirits/DRAFTING%20PHOTOS/Sht-8-Floor_Scenery_Elevation_ajohzh.jpg",
+      alt: "Drafting Image 4",
+    },
+  ],
   springDanceDrafts: [
     {
       src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790152/Spring%20Dance%202025%EF%80%A2Fall%20Dance%202026/Drafting/Fall_Dance_FINAL_10-22_yx7uqh.jpg",
