@@ -21,19 +21,15 @@ import GalleryGrid from "@/components/set-design/GalleryGrid";
 import { images } from "@/components/set-design/constants";
 
 function Branding() {
+  const originalBrandMaterials = ["Adobe InDesign", "Photoshop", "Illustrator"];
+  const otherMaterials = ["Adobe Photoshop", "Illustrator"];
+
   return (
     <div className="w-full py-6 px-4 md:px-8">
-      {/* Overlay to improve content readability */}
       <div className="fixed inset-0 pointer-events-none" />
-
-      {/* Content wrapper */}
       <div>
-        {/* Hero Section */}
         <Header title="Branding" />
-
-        {/* Main Content */}
         <div className="mx-auto space-y-20">
-          {/* Accordion Section */}
           <div className="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg">
             <Accordion type="multiple" className="w-full space-y-6">
               <AccordionItem
@@ -42,20 +38,39 @@ function Branding() {
               >
                 <AccordionTrigger className="px-4 py-4 hover:no-underline group">
                   <div className="flex items-center space-x-4">
-                    <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
-                    <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      Original Brand Concept
-                    </h4>
+                    <div className="relative">
+                      <div className="w-10 h-10 flex items-center justify-center">
+                        <Brush className="w-6 h-6" />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <h4 className="font-semibold italic text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                        Original Brand Concept
+                      </h4>
+                      <p className="text-sm text-gray-700">2025</p>
+                    </div>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-6">
+                  <hr className="border-border-pink w-full mb-4" />
                   <div>
-                    <div className="mt-6 space-y-4">
-                      <div className="flex items-center space-x-4 text-[#6d464c]">
-                        <Brush className="w-5 h-5" />
-                        <span className="italic">
-                          Materials used: Adobe InDesign, Photoshop, Illustrator
-                        </span>
+                    <div className="flex flex-col gap-4 mb-4">
+                      <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
+                        <div>
+                          <p className="text-center test-xs md:text-left text-[#6d464c]">
+                            Materials Used
+                          </p>
+                        </div>
+                        <div className="flex flex-wrap gap-2 text-[#6d464c]">
+                          {originalBrandMaterials.map((material, index) => (
+                            <span
+                              key={index}
+                              className="px-2 py-1.5 text-xs border-2 rounded-lg"
+                            >
+                              {material}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
                     <LightGallery
@@ -100,19 +115,38 @@ function Branding() {
               >
                 <AccordionTrigger className="px-4 py-4 hover:no-underline group">
                   <div className="flex items-center space-x-4">
-                    <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
-                    <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      Glossier PR Campaign
-                    </h4>
+                    <div className="relative">
+                      <div className="w-10 h-10 flex items-center justify-center">
+                        <Brush className="w-6 h-6" />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <h4 className="font-semibold italic text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                        Glossier PR Campaign
+                      </h4>
+                      <p className="text-sm text-gray-700">Original Concept</p>
+                    </div>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-6">
-                  <div className="mt-6 space-y-4">
-                    <div className="flex space-x-4 text-[#6d464c]">
-                      <Brush className="w-5 h-5" />
-                      <span className="italic">
-                        Materials used: Adobe Photoshop, Illustrator
-                      </span>
+                  <hr className="border-border-pink w-full mb-4" />
+                  <div className="flex flex-col gap-4 mb-4">
+                    <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
+                      <div>
+                        <p className="text-center test-xs md:text-left text-[#6d464c]">
+                          Materials Used
+                        </p>
+                      </div>
+                      <div className="flex flex-wrap gap-2 text-[#6d464c]">
+                        {otherMaterials.map((material, index) => (
+                          <span
+                            key={index}
+                            className="px-2 py-1.5 text-xs border-2 rounded-lg"
+                          >
+                            {material}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                   <LightGallery
@@ -134,19 +168,37 @@ function Branding() {
               >
                 <AccordionTrigger className="px-4 py-4 hover:no-underline group">
                   <div className="flex items-center space-x-4">
-                    <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
-                    <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      adidas Infographic
-                    </h4>
+                    <div className="relative">
+                      <div className="w-10 h-10 flex items-center justify-center">
+                        <Brush className="w-6 h-6" />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <h4 className="font-semibold italic text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                        adidas Infographic
+                      </h4>
+                    </div>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-6">
-                  <div className="mt-6 space-y-4">
-                    <div className="flex space-x-4 text-[#6d464c]">
-                      <Brush className="w-5 h-5" />
-                      <span className="italic">
-                        Materials used: Adobe Photoshop, Illustrator
-                      </span>
+                  <hr className="border-border-pink w-full mb-4" />
+                  <div className="flex flex-col gap-4 mb-4">
+                    <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
+                      <div>
+                        <p className="text-center test-xs md:text-left text-[#6d464c]">
+                          Materials Used
+                        </p>
+                      </div>
+                      <div className="flex flex-wrap gap-2 text-[#6d464c]">
+                        {otherMaterials.map((material, index) => (
+                          <span
+                            key={index}
+                            className="px-2 py-1.5 text-xs border-2 rounded-lg"
+                          >
+                            {material}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                   <LightGallery

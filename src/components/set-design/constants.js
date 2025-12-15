@@ -552,4 +552,288 @@ export const images = {
       alt: "Curtain",
     },
   ],
+  paintingElevationsHOTS: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790203/The%20House%20of%20the%20Spirits/DRAFTING%20PHOTOS/HOUSE_Paint_Elevations_9-3_ffn45b.jpg",
+      alt: "Paint Elevations 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790176/The%20House%20of%20the%20Spirits/DRAFTING%20PHOTOS/HOUSE_Paint_Elevations_9-3_4_fyziux.jpg",
+      alt: "Paint Elevations 2",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790174/The%20House%20of%20the%20Spirits/DRAFTING%20PHOTOS/HOUSE_Paint_Elevations_9-3_5_sr8c9o.jpg",
+      alt: "Paint Elevations 3",
+    },
+  ],
+  modelImagesHOTS: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790174/The%20House%20of%20the%20Spirits/DRAFTING%20PHOTOS/IMG_1537_ugpzgo.jpg",
+      alt: "Model Picture 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790156/The%20House%20of%20the%20Spirits/DRAFTING%20PHOTOS/Top_View_ysaen8.jpg",
+      alt: "Model Picture 3",
+    },
+  ],
+  modelImage3HOTS: {
+    src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790176/The%20House%20of%20the%20Spirits/DRAFTING%20PHOTOS/IMG_1540_s85zn5.jpg",
+    alt: "Model Picture 2",
+  },
+  springDanceDrafts: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790152/Spring%20Dance%202025%EF%80%A2Fall%20Dance%202026/Drafting/Fall_Dance_FINAL_10-22_yx7uqh.jpg",
+      alt: "Drafting 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790151/Spring%20Dance%202025%EF%80%A2Fall%20Dance%202026/Drafting/Fall_Dance_FINAL_10-22_2_booi6s.jpg",
+      alt: "Drafting 2",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790152/Spring%20Dance%202025%EF%80%A2Fall%20Dance%202026/Drafting/Fall_Dance_FINAL_10-22_3_syu1db.jpg",
+      alt: "Drafting 3",
+    },
+  ],
+  springDanceProduction: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790153/Spring%20Dance%202025%EF%80%A2Fall%20Dance%202026/Production/Front_View_w_Scale_Figure_ojhw12.jpg",
+      alt: "Model Picture",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765793899/Spring%20Dance%202025%EF%80%A2Fall%20Dance%202026/Production/IMG_8988_bcecgb.jpg",
+      alt: "Arch Design",
+    },
+  ],
+  springDanceProduction2: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790180/Spring%20Dance%202025%EF%80%A2Fall%20Dance%202026/Production/20250508_CSUF_SkyeSchmidtVarga_256_brj28v.jpg",
+      alt: "Production Image 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790168/Spring%20Dance%202025%EF%80%A2Fall%20Dance%202026/Production/20250508_CSUF_SkyeSchmidtVarga_367_iihkkv.jpg",
+      alt: "Production Image 2",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790163/Spring%20Dance%202025%EF%80%A2Fall%20Dance%202026/Production/20250508_CSUF_SkyeSchmidtVarga_158_vav7m7.jpg",
+      alt: "Production Image 3",
+    },
+  ],
+  fallDanceModelImages: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790156/Spring%20Dance%202025%EF%80%A2Fall%20Dance%202026/Production/IMG_1389_b7vug7.jpg",
+      alt: "Model Image 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790155/Spring%20Dance%202025%EF%80%A2Fall%20Dance%202026/Production/IMG_1385_rx0pks.jpg",
+      alt: "Model Image 2",
+    },
+  ],
+  fallDanceProductionStageImages1: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790174/Spring%20Dance%202025%EF%80%A2Fall%20Dance%202026/Production/IMG_4554_bbqbcn.jpg",
+      alt: "Production Image 1",
+    },
+  ],
+  fallDanceProductionStageImages: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790170/Spring%20Dance%202025%EF%80%A2Fall%20Dance%202026/Production/IMG_4548_rzs0el.jpg",
+      alt: "Stage Image 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790186/Spring%20Dance%202025%EF%80%A2Fall%20Dance%202026/Production/IMG_4464_fmytrs.jpg",
+      alt: "Stage Image 2",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790154/Spring%20Dance%202025%EF%80%A2Fall%20Dance%202026/Production/IMG_4578_tyxyds.jpg",
+      alt: "Stage Image 3",
+    },
+  ],
+  magicFluteModelImages: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790188/The%20Magic%20Flute/Production%20Photos/IMG_0795_wggqvt.jpg",
+      alt: "Model Image 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790170/The%20Magic%20Flute/Production%20Photos/IMG_0790_z7zubk.jpg",
+      alt: "Model Image 2",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790166/The%20Magic%20Flute/Production%20Photos/IMG_0778_y3ytsh.jpg",
+      alt: "Model Image 3",
+    },
+  ],
+  magicFluteStageImages1: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790168/The%20Magic%20Flute/Production%20Photos/IMG_1257_s46kul.jpg",
+      alt: "Stage Image 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790191/The%20Magic%20Flute/Production%20Photos/IMG_1097_skgexu.jpg",
+      alt: "Stage Image 2",
+    },
+  ],
+  magicFluteStageImages2: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790288/The%20Magic%20Flute/Production%20Photos/_DSC0558_gmzo6k.jpg",
+      alt: "Model Image 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790213/The%20Magic%20Flute/Production%20Photos/_DSC0587_il2myk.jpg",
+      alt: "Model Image 2",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790294/The%20Magic%20Flute/Production%20Photos/_DSC0733_ttobft.jpg",
+      alt: "Model Image 3",
+    },
+  ],
+  magicFluteStageImages3: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790289/The%20Magic%20Flute/Production%20Photos/_DSC0583_fg57t7.jpg",
+      alt: "Model Image 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790460/The%20Magic%20Flute/Production%20Photos/_DSC0804_iiy9hj.jpg",
+      alt: "Model Image 2",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790294/The%20Magic%20Flute/Production%20Photos/_DSC0671_dl7btk.jpg",
+      alt: "Model Image 3",
+    },
+  ],
+  magicFluteStageImages4: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790192/The%20Magic%20Flute/Production%20Photos/_DSC0625_ewevfi.jpg",
+      alt: "Model Image 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790288/The%20Magic%20Flute/Production%20Photos/_DSC0571_abc7us.jpg",
+      alt: "Model Image 2",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790212/The%20Magic%20Flute/Production%20Photos/_DSC0710_wgom0p.jpg",
+      alt: "Model Image 3",
+    },
+  ],
+  magicFluteStageImages5: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790214/The%20Magic%20Flute/Production%20Photos/_DSC0778_lbn1hc.jpg",
+      alt: "Model Image 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790457/The%20Magic%20Flute/Production%20Photos/_DSC0834_qam9w0.jpg",
+      alt: "Model Image 2",
+    },
+  ],
+  schoolProjectExteriorImages1: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790194/School%20Projects/IMG_1283_arotsu.jpg",
+      alt: "Exterior Image 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790194/School%20Projects/IMG_1293_kuhm7h.jpg",
+      alt: "Exterior Image 2",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790193/School%20Projects/IMG_1287_tdnzxd.jpg",
+      alt: "Exterior Image 3",
+    },
+  ],
+  schoolProjectInteriorImages1: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790168/School%20Projects/IMG_1028_wk2xx9.jpg",
+      alt: "Interior Image 1",
+    },
+  ],
+  productionImages1HOTS: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790178/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/IMG_2539_g1nyxv.jpg",
+      alt: "Film Extras",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790276/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/IMG_2728_jwmajx.jpg",
+      alt: "Back Wall Fabric",
+    },
+  ],
+  productionImages2HOTS: [
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790284/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/IMG_3603_hphxbj.jpg",
+      alt: "Production Image 1",
+    },
+    {
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790283/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/IMG_3664_z9jaxg.jpg",
+      alt: "Production Image 2",
+    },
+  ],
+  productionImages3HOTS: [
+    {
+      // Original image you provided: aaDSCF5731_copy
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790242/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aaDSCF5731_copy_vznuji.jpg",
+      alt: "Production photo of the stage set, scene 1",
+    },
+    {
+      // New image 1: aaDSCF5704_copy
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790225/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aaDSCF5704_copy_xzrriv.jpg",
+      alt: "Production photo of the stage set, scene 2",
+    },
+    {
+      // New image 2: aDSCF4037_copy
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790262/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF4037_copy_luzqes.jpg",
+      alt: "Production photo of the stage set, scene 3",
+    },
+    {
+      // New image 3: aDSCF2258_copy
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790249/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF2258_copy_lfzzsp.jpg",
+      alt: "Production photo of the stage set, scene 4",
+    },
+    {
+      // New image 4: aaDSCF3232_copy
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790218/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aaDSCF3232_copy_peh2uu.jpg",
+      alt: "Production photo of the stage set, scene 5",
+    },
+    {
+      // New image 5: aDSCF5076_copy
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790263/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF5076_copy_t8kbe6.jpg",
+      alt: "Production photo of the stage set, scene 6",
+    },
+    {
+      // New image 6: aDSCF3145_copy
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790252/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF3145_copy_ijm00b.jpg",
+      alt: "Production photo of the stage set, scene 7",
+    },
+    {
+      // New image 7: aDSCF3069_copy
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790253/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF3069_copy_yoaslp.jpg",
+      alt: "Production photo of the stage set, scene 8",
+    },
+    {
+      // New image 8: aDSCF0488_copy
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790244/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF0488_copy_fjxypd.jpg",
+      alt: "Production photo of the stage set, scene 9",
+    },
+    {
+      // New image 9: aDSCF3645_copy
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790259/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF3645_copy_wdtat0.jpg",
+      alt: "Production photo of the stage set, scene 10",
+    },
+    {
+      // New image 10: aaDSCF4853_copy
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790235/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aaDSCF4853_copy_vgyp3d.jpg",
+      alt: "Production photo of the stage set, scene 11",
+    },
+    {
+      // New image 11: DSCF1816_copy
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790273/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/DSCF1816_copy_i807hc.jpg",
+      alt: "Production photo of the stage set, scene 12",
+    },
+    {
+      // New image 12: aDSCF5142_copy
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790264/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF5142_copy_wffa8p.jpg",
+      alt: "Production photo of the stage set, scene 13",
+    },
+    {
+      // New image 13: aDSCF2977_copy
+      src: "https://res.cloudinary.com/dm2me9rsd/image/upload/w_400,q_auto:low,f_auto/v1765790250/The%20House%20of%20the%20Spirits/PRODUCTION%20PHOTOS/aDSCF2977_copy_l1kxge.jpg",
+      alt: "Production photo of the stage set, scene 14",
+    },
+  ],
 };

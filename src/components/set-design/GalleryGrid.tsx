@@ -16,7 +16,7 @@ interface GalleryGridProps {
 
 const GalleryGrid = memo(({ layout, images }: GalleryGridProps) => {
   const gridLayouts: { [key: number]: string } = {
-    1: "w-full mb-4",
+    1: "grid grid-cols-1 gap-2 w-full mb-4",
     2: "grid grid-cols-2 gap-2 mb-4",
     3: "grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mb-4",
     4: "grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 mb-4",

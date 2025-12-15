@@ -21,19 +21,28 @@ import GalleryGrid from "@/components/set-design/GalleryGrid";
 import { images } from "@/components/set-design/constants";
 
 function WindowInstallation() {
+  const opticalMaterials = ["Foam Core", "Monofilament", "Vinyl", "Paint"];
+  const opticalProducts = ["Shoes"];
+  const astrologyMaterials = [
+    "Styrofoam Half-Sphere",
+    "Sapphire Stone",
+    "Air Dry Clay",
+    "Fairy Light",
+    "Foam Core",
+    "Jump Ring",
+    "Resin",
+    "Paint",
+    "Chain",
+  ];
+  const astrologyProducts = ["Necklaces", "Rings"];
   return (
     <div className="w-full py-6 px-4 md:px-8">
-      {/* Overlay to improve content readability */}
       <div className="fixed inset-0 pointer-events-none" />
 
-      {/* Content wrapper */}
       <div>
-        {/* Hero Section */}
         <Header title="Window Installation" />
 
-        {/* Main Content */}
         <div className="mx-auto space-y-20">
-          {/* Accordion Section */}
           <div className="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg">
             <Accordion type="multiple" className="w-full space-y-6">
               <AccordionItem
@@ -57,29 +66,58 @@ function WindowInstallation() {
                     </div>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
+                <AccordionContent className="p-4 pt-0">
+                  <hr className="border-border-pink w-full mb-4" />
                   <div>
-                    <div className="mt-6 space-y-4">
-                      <h5 className="m-auto font-semibold text-[#4a3034]">
-                        Inspired by Alice in Wonderland (1951), this conceptual
-                        design represents a world that seems real but is not.
-                      </h5>
-                      <div className="flex items-center space-x-4 text-[#6d464c]">
-                        <Brush className="w-5 h-5" />
-                        <span className="italic">
-                          Materials used: Foam core, vinyl, paint, monofilament,
-                          cardstock
-                        </span>
+                    <div className="flex flex-col gap-4 mb-4">
+                      <div className="md:border-l-2 md:border-[#d4848c] pl-2">
+                        <p className="text-center test-xs md:text-left text-[#6d464c]">
+                          Description
+                        </p>
+                        <h5 className="text-center md:text-left md:text-lg font-semibold text-[#4a3034]">
+                          Inspired by Alice in Wonderland (1951), this
+                          conceptual design represents a world that seems real
+                          but is not.
+                        </h5>
                       </div>
-                      <div className="flex items-center space-x-4 text-[#6d464c]">
-                        <Anvil className="w-5 h-5" />
-                        <span className="italic">Products used: Shoes</span>
+                      <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
+                        <div>
+                          <p className="text-center test-xs md:text-left text-[#6d464c]">
+                            Materials Used
+                          </p>
+                        </div>
+                        <div className="flex flex-wrap gap-2 text-[#6d464c]">
+                          {opticalMaterials.map((material, index) => (
+                            <span
+                              key={index}
+                              className="px-2 py-1.5 text-xs border-2 rounded-lg"
+                            >
+                              {material}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
+                        <div>
+                          <p className="text-center test-xs md:text-left text-[#6d464c]">
+                            Products Used
+                          </p>
+                        </div>
+                        <div className="flex flex-wrap gap-2 text-[#6d464c]">
+                          {opticalProducts.map((material, index) => (
+                            <span
+                              key={index}
+                              className="px-2 py-1.5 text-xs border-2 rounded-lg"
+                            >
+                              {material}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
                     <LightGallery
                       speed={100}
                       plugins={[lgZoom, lgThumbnail]}
-                      elementClassNames="flex flex-col mt-4"
                       selector="a"
                     >
                       <GalleryGrid
@@ -106,38 +144,65 @@ function WindowInstallation() {
                         Astrology
                       </h4>
                       <p className="text-sm text-gray-700">
-                        Zodiac Symbol conceptual design
+                        Zodiac symbol conceptual design
                       </p>
                     </div>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
-                  <div className="mt-6 space-y-4">
-                    <p className="font-semibold text-[#4a3034]">
-                      This conceptual design is 1 of 4 windows, representing
-                      various zodiac signs with their corresponding color,
-                      stone, planet, and element.
-                    </p>
-                    <div className="flex items-center space-x-4 text-[#6d464c]">
-                      <Brush className="w-5 h-5" />
-                      <span className="italic">
-                        Materials used: Foam core, resin, fairy light, styrofoam
-                        half-sphere, air dry clay, paint, sapphire stone, chain,
-                        jump ring
-                      </span>
+                <AccordionContent className="p-4 pt-0">
+                  <hr className="border-border-pink w-full mb-4" />
+                  <div className="flex flex-col gap-4 mb-4">
+                    <div className="md:border-l-2 md:border-[#d4848c] pl-2">
+                      <p className="text-center test-xs md:text-left text-[#6d464c]">
+                        Description
+                      </p>
+                      <h5 className="text-center md:text-left md:text-md font-semibold text-[#4a3034]">
+                        This conceptual design is 1 of 4 windows, representing
+                        various zodiac signs with their corresponding color,
+                        stone, planet, and element.
+                      </h5>
                     </div>
-                    <div className="flex items-center space-x-4 text-[#6d464c]">
-                      <Anvil className="w-5 h-5" />
-                      <span className="italic">Product: Necklaces, rings</span>
+                    <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
+                      <div>
+                        <p className="text-center test-xs md:text-left text-[#6d464c]">
+                          Materials Used
+                        </p>
+                      </div>
+                      <div className="flex flex-wrap gap-2 text-[#6d464c]">
+                        {astrologyMaterials.map((material, index) => (
+                          <span
+                            key={index}
+                            className="px-2 py-1.5 text-xs border-2 rounded-lg"
+                          >
+                            {material}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
+                      <div>
+                        <p className="text-center test-xs md:text-left text-[#6d464c]">
+                          Products Used
+                        </p>
+                      </div>
+                      <div className="flex flex-wrap gap-2 text-[#6d464c]">
+                        {astrologyProducts.map((material, index) => (
+                          <span
+                            key={index}
+                            className="px-2 py-1.5 text-xs border-2 rounded-lg"
+                          >
+                            {material}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                   <LightGallery
                     speed={100}
                     plugins={[lgZoom, lgThumbnail]}
-                    elementClassNames="flex flex-col mt-4"
                     selector="a"
                   >
-                    <GalleryGrid layout={2} images={images["astroImages"]} />
+                    <GalleryGrid layout={1} images={images["astroImages"]} />
                   </LightGallery>
                 </AccordionContent>
               </AccordionItem>

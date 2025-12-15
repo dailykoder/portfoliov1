@@ -53,6 +53,11 @@ const Sidebar = () => {
             </Link>
             <NavigationMenuItem>
               <ul className="flex flex-col">
+                <Link to="/v1/csuf" className="pt-1">
+                  <NavigationMenuLink href="/v1/csuf">
+                    CSU Fullerton
+                  </NavigationMenuLink>
+                </Link>
                 <Link to="/v1/set-design" className="pt-1">
                   <NavigationMenuLink href="/v1/set-design">
                     Set Design

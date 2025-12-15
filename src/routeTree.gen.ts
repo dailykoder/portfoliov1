@@ -27,6 +27,7 @@ const V1SetDesignLazyImport = createFileRoute('/v1/set-design')()
 const V1ResumeLazyImport = createFileRoute('/v1/resume')()
 const V1HandRenderingLazyImport = createFileRoute('/v1/hand-rendering')()
 const V1DigitalRenderingLazyImport = createFileRoute('/v1/digital-rendering')()
+const V1CsufLazyImport = createFileRoute('/v1/csuf')()
 const V1ContactLazyImport = createFileRoute('/v1/contact')()
 const V1BrandingLazyImport = createFileRoute('/v1/branding')()
 const V1AboutLazyImport = createFileRoute('/v1/about')()
@@ -84,6 +85,11 @@ const V1DigitalRenderingLazyRoute = V1DigitalRenderingLazyImport.update({
   import('./routes/v1/digital-rendering.lazy').then((d) => d.Route),
 )
 
+const V1CsufLazyRoute = V1CsufLazyImport.update({
+  path: '/v1/csuf',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/v1/csuf.lazy').then((d) => d.Route))
+
 const V1ContactLazyRoute = V1ContactLazyImport.update({
   path: '/v1/contact',
   getParentRoute: () => rootRoute,
@@ -129,6 +135,13 @@ declare module '@tanstack/react-router' {
       path: '/v1/contact'
       fullPath: '/v1/contact'
       preLoaderRoute: typeof V1ContactLazyImport
+      parentRoute: typeof rootRoute
+    }
+    '/v1/csuf': {
+      id: '/v1/csuf'
+      path: '/v1/csuf'
+      fullPath: '/v1/csuf'
+      preLoaderRoute: typeof V1CsufLazyImport
       parentRoute: typeof rootRoute
     }
     '/v1/digital-rendering': {
@@ -197,6 +210,7 @@ export interface FileRoutesByFullPath {
   '/v1/about': typeof V1AboutLazyRoute
   '/v1/branding': typeof V1BrandingLazyRoute
   '/v1/contact': typeof V1ContactLazyRoute
+  '/v1/csuf': typeof V1CsufLazyRoute
   '/v1/digital-rendering': typeof V1DigitalRenderingLazyRoute
   '/v1/hand-rendering': typeof V1HandRenderingLazyRoute
   '/v1/resume': typeof V1ResumeLazyRoute
@@ -212,6 +226,7 @@ export interface FileRoutesByTo {
   '/v1/about': typeof V1AboutLazyRoute
   '/v1/branding': typeof V1BrandingLazyRoute
   '/v1/contact': typeof V1ContactLazyRoute
+  '/v1/csuf': typeof V1CsufLazyRoute
   '/v1/digital-rendering': typeof V1DigitalRenderingLazyRoute
   '/v1/hand-rendering': typeof V1HandRenderingLazyRoute
   '/v1/resume': typeof V1ResumeLazyRoute
@@ -228,6 +243,7 @@ export interface FileRoutesById {
   '/v1/about': typeof V1AboutLazyRoute
   '/v1/branding': typeof V1BrandingLazyRoute
   '/v1/contact': typeof V1ContactLazyRoute
+  '/v1/csuf': typeof V1CsufLazyRoute
   '/v1/digital-rendering': typeof V1DigitalRenderingLazyRoute
   '/v1/hand-rendering': typeof V1HandRenderingLazyRoute
   '/v1/resume': typeof V1ResumeLazyRoute
@@ -245,6 +261,7 @@ export interface FileRouteTypes {
     | '/v1/about'
     | '/v1/branding'
     | '/v1/contact'
+    | '/v1/csuf'
     | '/v1/digital-rendering'
     | '/v1/hand-rendering'
     | '/v1/resume'
@@ -259,6 +276,7 @@ export interface FileRouteTypes {
     | '/v1/about'
     | '/v1/branding'
     | '/v1/contact'
+    | '/v1/csuf'
     | '/v1/digital-rendering'
     | '/v1/hand-rendering'
     | '/v1/resume'
@@ -273,6 +291,7 @@ export interface FileRouteTypes {
     | '/v1/about'
     | '/v1/branding'
     | '/v1/contact'
+    | '/v1/csuf'
     | '/v1/digital-rendering'
     | '/v1/hand-rendering'
     | '/v1/resume'
@@ -289,6 +308,7 @@ export interface RootRouteChildren {
   V1AboutLazyRoute: typeof V1AboutLazyRoute
   V1BrandingLazyRoute: typeof V1BrandingLazyRoute
   V1ContactLazyRoute: typeof V1ContactLazyRoute
+  V1CsufLazyRoute: typeof V1CsufLazyRoute
   V1DigitalRenderingLazyRoute: typeof V1DigitalRenderingLazyRoute
   V1HandRenderingLazyRoute: typeof V1HandRenderingLazyRoute
   V1ResumeLazyRoute: typeof V1ResumeLazyRoute
@@ -304,6 +324,7 @@ const rootRouteChildren: RootRouteChildren = {
   V1AboutLazyRoute: V1AboutLazyRoute,
   V1BrandingLazyRoute: V1BrandingLazyRoute,
   V1ContactLazyRoute: V1ContactLazyRoute,
+  V1CsufLazyRoute: V1CsufLazyRoute,
   V1DigitalRenderingLazyRoute: V1DigitalRenderingLazyRoute,
   V1HandRenderingLazyRoute: V1HandRenderingLazyRoute,
   V1ResumeLazyRoute: V1ResumeLazyRoute,
@@ -330,6 +351,7 @@ export const routeTree = rootRoute
         "/v1/about",
         "/v1/branding",
         "/v1/contact",
+        "/v1/csuf",
         "/v1/digital-rendering",
         "/v1/hand-rendering",
         "/v1/resume",
@@ -351,6 +373,9 @@ export const routeTree = rootRoute
     },
     "/v1/contact": {
       "filePath": "v1/contact.lazy.tsx"
+    },
+    "/v1/csuf": {
+      "filePath": "v1/csuf.lazy.tsx"
     },
     "/v1/digital-rendering": {
       "filePath": "v1/digital-rendering.lazy.tsx"

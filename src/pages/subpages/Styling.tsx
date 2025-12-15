@@ -21,41 +21,53 @@ import GalleryGrid from "@/components/set-design/GalleryGrid";
 import { images } from "@/components/set-design/constants";
 
 function Styling() {
+  const commercialMaterials = ["Adobe Photoshop", "InDesign"];
   return (
     <div className="w-full py-6 px-4 md:px-8">
-      {/* Overlay to improve content readability */}
       <div className="fixed inset-0 pointer-events-none" />
-
-      {/* Content wrapper */}
       <div className="w-full">
-        {/* Hero Section */}
         <Header title="Styling" />
-
-        {/* Main Content */}
         <div className="mx-auto space-y-20">
-          {/* Accordion Section */}
           <div className="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg">
             <Accordion type="multiple" className="w-full space-y-6">
               <AccordionItem
                 value="item-1"
                 className="border border-[#e8b5bd] rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
               >
-                <AccordionTrigger className="px-6 py-4 hover:no-underline group">
+                <AccordionTrigger className="px-4 py-4 hover:no-underline group">
                   <div className="flex items-center space-x-4">
-                    <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
-                    <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      Commercial Campaign
-                    </h4>
+                    <div className="relative">
+                      <div className="w-10 h-10 flex items-center justify-center">
+                        <Brush className="w-6 h-6" />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <h4 className="font-semibold italic text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                        Commercial Campaign
+                      </h4>
+                    </div>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
+                  <hr className="border-border-pink w-full mb-4" />
                   <div>
-                    <div className="mt-6 space-y-4">
-                      <div className="flex items-center space-x-4 text-[#6d464c]">
-                        <Brush className="w-5 h-5" />
-                        <span className="italic">
-                          Material used: Camera, Adobe Photoshop, InDesign
-                        </span>
+                    <div className="flex flex-col gap-4 mb-4">
+                      <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
+                        <div>
+                          <p className="text-center test-xs md:text-left text-[#6d464c]">
+                            Materials Used
+                          </p>
+                        </div>
+                        <div className="flex flex-wrap gap-2 text-[#6d464c]">
+                          {commercialMaterials.map((material, index) => (
+                            <span
+                              key={index}
+                              className="px-2 py-1.5 text-xs border-2 rounded-lg"
+                            >
+                              {material}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
                     <LightGallery
@@ -114,25 +126,30 @@ function Styling() {
                 value="item-2"
                 className="border border-[#e8b5bd] rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
               >
-                <AccordionTrigger className="px-6 py-4 hover:no-underline group">
+                <AccordionTrigger className="px-4 py-4 hover:no-underline group">
                   <div className="flex items-center space-x-4">
-                    <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
-                    <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      Fresh Soy Face Cleanser
-                    </h4>
+                    <div className="relative">
+                      <div className="w-10 h-10 flex items-center justify-center">
+                        <Brush className="w-6 h-6" />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <h4 className="font-semibold italic text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                        Fresh Soy Face Cleanser
+                      </h4>
+                      <p className="text-sm text-gray-700">Original Concept</p>
+                    </div>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
+                  <hr className="border-border-pink w-full mb-4" />
                   <LightGallery
                     speed={100}
                     plugins={[lgZoom, lgThumbnail]}
                     elementClassNames="flex flex-col mt-4"
                     selector="a"
                   >
-                    <a
-                      href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/0823420c-dc1a-4261-a106-a9c6127ac56e_rw_1920.jpg?h=42826269ea091ecf3854f4ef768003c8"
-                      className="py-4"
-                    >
+                    <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/0823420c-dc1a-4261-a106-a9c6127ac56e_rw_1920.jpg?h=42826269ea091ecf3854f4ef768003c8">
                       <img
                         loading="lazy"
                         alt="Face Cleaner Notes"

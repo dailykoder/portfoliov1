@@ -23,41 +23,15 @@ import {
 import GalleryGrid from "@/components/set-design/GalleryGrid";
 import { images } from "@/components/set-design/constants";
 
-const SetDesign = () => {
-  const sharperMaterials = [
-    "Polymer Clay",
-    "Metal Wire",
-    "Foamboard",
-    "Resin",
-    "Paper",
-    "Paint",
-    "Wood",
-    "Glue",
-  ];
-  const enchantmentMaterials = [
-    "Coffee Grounds",
-    "Polymer Clay",
-    "Tea Leaves",
-    "Hot Glue",
-    "Paint",
-    "Resin",
-    "Foil",
-  ];
-  const parisMaterials = [
-    "Fairy Light",
-    "Metal Leaf",
-    "Foam Core",
-    "Task Board",
-    "Resin",
-    "Paint",
-    "Sand",
-  ];
+const Csuf = () => {
+  const houseOfTheSpiritsMaterials = ["VectorWorks"];
+  const danceMaterials = ["VectorWorks"];
 
   return (
     <div className="w-full py-6 px-4 md:px-8">
       <div className="fixed inset-0 pointer-events-none" />
       <div>
-        <Header title="Set Design" />
+        <Header title="CSU Fullerton" />
         <div className="mx-auto space-y-20">
           <div className="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg">
             <Accordion type="multiple" className="w-full space-y-6">
@@ -73,11 +47,11 @@ const SetDesign = () => {
                       </div>
                     </div>
                     <div className="flex flex-col items-start">
-                      <h4 className="font-semibold text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                        Script: "Sharper"
+                      <h4 className="font-semibold italic text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                        The House of the Spirits
                       </h4>
                       <p className="text-sm text-gray-700">
-                        Feature Film Set Design
+                        Scenic Designer - Fall 2025
                       </p>
                     </div>
                   </div>
@@ -91,7 +65,7 @@ const SetDesign = () => {
                           Description
                         </p>
                         <h5 className="text-center md:text-left md:text-lg font-semibold text-[#4a3034]">
-                          Written by Brian Gatewood & Alessandro Tanaka
+                          Script by Caridad Svich
                         </h5>
                       </div>
                       <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
@@ -101,7 +75,7 @@ const SetDesign = () => {
                           </p>
                         </div>
                         <div className="flex flex-wrap gap-2 text-[#6d464c]">
-                          {sharperMaterials.map((material, index) => (
+                          {houseOfTheSpiritsMaterials.map((material, index) => (
                             <span
                               key={index}
                               className="px-2 py-1.5 text-xs border-2 rounded-lg"
@@ -118,53 +92,34 @@ const SetDesign = () => {
                       elementClassNames="flex flex-col"
                       selector="a"
                     >
-                      {/* Removed 12/10/2025 */}
-                      {/* <GalleryGrid layout={3} images={images["scriptPages"]} /> */}
+                      <GalleryGrid
+                        layout={3}
+                        images={images["paintingElevationsHOTS"]}
+                      />
                       <GalleryGrid
                         layout={2}
-                        images={images["moodboardImages"]}
+                        images={images["modelImagesHOTS"]}
                       />
-                      <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/b63908a6-be0e-41c8-a695-8cee002d30fd_rw_3840.png?h=773f62547b66aea6fe51e800792202cc">
+                      <a href="https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790176/The%20House%20of%20the%20Spirits/DRAFTING%20PHOTOS/IMG_1540_s85zn5.jpg">
                         <img
                           loading="lazy"
-                          alt=""
-                          src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/b63908a6-be0e-41c8-a695-8cee002d30fd_rw_3840.png?h=773f62547b66aea6fe51e800792202cc"
+                          alt="HOTS Stage Image"
+                          className="mb-2"
+                          src="https://res.cloudinary.com/dm2me9rsd/image/upload/v1765790176/The%20House%20of%20the%20Spirits/DRAFTING%20PHOTOS/IMG_1540_s85zn5.jpg"
                         />
                       </a>
-                      <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/edadcdd1-fc84-43e6-98de-bc91668471af_rw_1920.png?h=5b1c6aa12db089c432da5625583e6d69">
-                        <img
-                          loading="lazy"
-                          alt=""
-                          src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/edadcdd1-fc84-43e6-98de-bc91668471af_rw_1920.png?h=5b1c6aa12db089c432da5625583e6d69"
-                        />
-                      </a>
-                      <div className="w-full aspect-video mb-2">
-                        <a
-                          className="block w-full h-full"
-                          data-src="https://www.youtube.com/embed/tBNz1mwTYF8?si=QiRqVQWDgQPF7rng"
-                          data-lg-size="1280-720"
-                          data-iframe="true"
-                        >
-                          <iframe
-                            className="w-full h-full"
-                            src="https://www.youtube.com/embed/tBNz1mwTYF8?si=QiRqVQWDgQPF7rng"
-                            title="BookStore video"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                          ></iframe>
-                        </a>
-                      </div>
                       <GalleryGrid
                         layout={2}
-                        images={images["conceptImages"]}
+                        images={images["productionImages1HOTS"]}
                       />
-                      <GalleryGrid layout={2} images={images["modelImages"]} />
-                      <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/55aaefbc-73ee-4423-8c85-b546ab9dde41_rw_1920.jpeg?h=a8325527c2af1f9099faf880be28f64b">
-                        <img
-                          loading="lazy"
-                          src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/55aaefbc-73ee-4423-8c85-b546ab9dde41_rw_1920.jpeg?h=a8325527c2af1f9099faf880be28f64b"
-                        />
-                      </a>
+                      <GalleryGrid
+                        layout={2}
+                        images={images["productionImages2HOTS"]}
+                      />
+                      <GalleryGrid
+                        layout={2}
+                        images={images["productionImages3HOTS"]}
+                      />
                     </LightGallery>
                   </div>
                 </AccordionContent>
@@ -182,10 +137,10 @@ const SetDesign = () => {
                     </div>
                     <div className="flex flex-col items-start">
                       <h4 className="font-semibold text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                        TV Pilot Script: "The Book of Enchantment"
+                        Spring/Fall Dance 2025
                       </h4>
                       <p className="text-sm text-gray-700">
-                        Disney Villains Series Adaptation
+                        Scenic Co-Designer
                       </p>
                     </div>
                   </div>
@@ -204,8 +159,7 @@ const SetDesign = () => {
                           Description
                         </p>
                         <h5 className="text-center md:text-left md:text-lg font-semibold text-[#4a3034]">
-                          Based on the Disney Villains Series of Books by Serena
-                          Valentino
+                          Co-designed with Johnny Corde
                         </h5>
                       </div>
                       <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
@@ -215,7 +169,7 @@ const SetDesign = () => {
                           </p>
                         </div>
                         <div className="flex flex-wrap gap-2 text-[#6d464c]">
-                          {enchantmentMaterials.map((material, index) => (
+                          {danceMaterials.map((material, index) => (
                             <span
                               key={index}
                               className="px-2 py-1.5 text-xs border-2 rounded-lg"
@@ -226,13 +180,42 @@ const SetDesign = () => {
                         </div>
                       </div>
                     </div>
-                    <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bfd23547-b05e-4649-8d3d-19b3c94a58a7_rw_3840.jpg?h=218e0fe56f1feb1e0ba265b5e88f361d">
+                    <h3 className="text-sm uppercase tracking-widest mb-1">
+                      Spring Dance
+                    </h3>
+                    <GalleryGrid
+                      layout={2}
+                      images={images["springDanceProduction"]}
+                    />
+                    <GalleryGrid
+                      layout={3}
+                      images={images["springDanceProduction2"]}
+                    />
+                    <h3 className="text-sm uppercase tracking-widest mb-1">
+                      Fall Dance
+                    </h3>
+                    <GalleryGrid
+                      layout={3}
+                      images={images["springDanceDrafts"]}
+                    />
+                    <GalleryGrid
+                      layout={2}
+                      images={images["fallDanceModelImages"]}
+                    />
+                    <GalleryGrid
+                      layout={1}
+                      images={images["fallDanceProductionStageImages1"]}
+                    />
+                    <a href={images["fallDanceProductionStageImage"]}>
                       <img
-                        src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/bfd23547-b05e-4649-8d3d-19b3c94a58a7_rw_3840.jpg?h=218e0fe56f1feb1e0ba265b5e88f361d"
-                        className="mb-4"
+                        src={images["fallDanceProductionStageImage"]}
+                        loading="lazy"
                       />
                     </a>
-                    <GalleryGrid layout={4} images={images["tHouseImages"]} />
+                    <GalleryGrid
+                      layout={3}
+                      images={images["fallDanceProductionStageImages"]}
+                    />
                   </LightGallery>
                 </AccordionContent>
               </AccordionItem>
@@ -249,10 +232,10 @@ const SetDesign = () => {
                     </div>
                     <div className="flex flex-col items-start">
                       <h4 className="font-semibold text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                        "Midnight in Paris" (2011)
+                        The Magic Flute
                       </h4>
                       <p className="text-sm text-gray-700">
-                        Conceptual Time-Period Design
+                        Scenic Design Assistant - Spring 2025
                       </p>
                     </div>
                   </div>
@@ -272,8 +255,7 @@ const SetDesign = () => {
                             Description
                           </p>
                           <h5 className="text-center md:text-left md:text-lg font-semibold text-[#4a3034]">
-                            This conceptual design represents the two timelines
-                            of the story: 1920s and modern day
+                            Libretto by Emanuel Schikaneder
                           </h5>
                         </div>
                         <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
@@ -283,7 +265,7 @@ const SetDesign = () => {
                             </p>
                           </div>
                           <div className="flex flex-wrap gap-2 text-[#6d464c]">
-                            {parisMaterials.map((material, index) => (
+                            {["Vectorworks"].map((material, index) => (
                               <span
                                 key={index}
                                 className="px-2 py-1.5 text-xs border-2 rounded-lg"
@@ -294,38 +276,103 @@ const SetDesign = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-2 mb-4">
-                        <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/3d3f146c-102d-4812-8df1-39d7d70052c4_rw_1920.jpg?h=f304b7c30dbd003b49a86eadeecc188e">
-                          <img
-                            src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/3d3f146c-102d-4812-8df1-39d7d70052c4_rw_1920.jpg?h=f304b7c30dbd003b49a86eadeecc188e"
-                            className="h-[50em]"
-                            loading="lazy"
-                          />
-                        </a>
-                        <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/0ad5d9de-8ed9-474d-bbe4-142f68f8c38d_rw_1920.jpg?h=02442fad0dcc0eec8be175487e4c0b2b">
-                          <img
-                            src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/0ad5d9de-8ed9-474d-bbe4-142f68f8c38d_rw_1920.jpg?h=02442fad0dcc0eec8be175487e4c0b2b"
-                            className="h-[50em]"
-                            loading="lazy"
-                          />
-                        </a>
+                      <GalleryGrid
+                        layout={3}
+                        images={images["magicFluteModelImages"]}
+                      />
+                      <GalleryGrid
+                        layout={2}
+                        images={images["magicFluteStageImages1"]}
+                      />
+                      <GalleryGrid
+                        layout={3}
+                        images={images["magicFluteStageImages2"]}
+                      />
+                      <GalleryGrid
+                        layout={3}
+                        images={images["magicFluteStageImages3"]}
+                      />
+                      <GalleryGrid
+                        layout={3}
+                        images={images["magicFluteStageImages4"]}
+                      />
+                      <GalleryGrid
+                        layout={2}
+                        images={images["magicFluteStageImages5"]}
+                      />
+                    </LightGallery>
+                  </AccordionContent>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem
+                value="item-4"
+                className="border border-border-pink rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
+              >
+                <AccordionTrigger className="px-4 py-4 hover:no-underline group">
+                  <div className="flex items-center space-x-4">
+                    <div className="relative">
+                      <div className="w-10 h-10 flex items-center justify-center">
+                        <Brush className="w-6 h-6" />
                       </div>
-                      <div className="flex gap-2">
-                        <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/ebff52b0-48cb-4240-bd77-abb3c77636ae_rw_1920.jpg?h=ee055e914f0f6d24349c9c9a4ccb3391">
-                          <img
-                            src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/ebff52b0-48cb-4240-bd77-abb3c77636ae_rw_1920.jpg?h=ee055e914f0f6d24349c9c9a4ccb3391"
-                            className=""
-                            loading="lazy"
-                          />
-                        </a>
-                        <a href="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/d9badb57-304d-4bc3-b0bf-00359ac324cf_rw_1920.jpg?h=d7e5f25483933faed8a835414fcd7ae4">
-                          <img
-                            src="https://cdn.myportfolio.com/06e0ed95-634c-4e1a-b024-66d229adfaa4/d9badb57-304d-4bc3-b0bf-00359ac324cf_rw_1920.jpg?h=d7e5f25483933faed8a835414fcd7ae4"
-                            className=""
-                            loading="lazy"
-                          />
-                        </a>
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <h4 className="font-semibold text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                        School Projects
+                      </h4>
+                      <p className="text-sm text-gray-700">2024-Present</p>
+                    </div>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="px-4 pb-6">
+                  <AccordionContent>
+                    <LightGallery
+                      speed={500}
+                      plugins={[lgZoom, lgThumbnail]}
+                      elementClassNames="flex flex-col"
+                      selector="a"
+                    >
+                      <hr className="border-border-pink w-full mb-2" />
+                      <div className="flex flex-col gap-4 mb-4">
+                        <div className="md:border-l-2 md:border-[#d4848c] pl-2">
+                          <p className="text-center test-xs md:text-left text-[#6d464c]">
+                            Description
+                          </p>
+                          <h5 className="text-center md:text-left md:text-lg font-semibold text-[#4a3034]">
+                            In-class projects
+                          </h5>
+                        </div>
+                        <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
+                          <div>
+                            <p className="text-center test-xs md:text-left text-[#6d464c]">
+                              Materials Used
+                            </p>
+                          </div>
+                          <div className="flex flex-wrap gap-2 text-[#6d464c]">
+                            {["Resin", "3D Printer"].map((material, index) => (
+                              <span
+                                key={index}
+                                className="px-2 py-1.5 text-xs border-2 rounded-lg"
+                              >
+                                {material}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
                       </div>
+                      <h3 className="text-sm uppercase tracking-widest mb-1">
+                        Exterior Model
+                      </h3>
+                      <GalleryGrid
+                        layout={3}
+                        images={images["schoolProjectExteriorImages1"]}
+                      />
+                      <h3 className="text-sm uppercase tracking-widest mb-1">
+                        Interior Model
+                      </h3>
+                      <GalleryGrid
+                        layout={1}
+                        images={images["schoolProjectInteriorImages1"]}
+                      />
                     </LightGallery>
                   </AccordionContent>
                 </AccordionContent>
@@ -338,4 +385,4 @@ const SetDesign = () => {
   );
 };
 
-export default SetDesign;
+export default Csuf;

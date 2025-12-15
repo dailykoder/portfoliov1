@@ -21,44 +21,63 @@ import GalleryGrid from "@/components/set-design/GalleryGrid";
 import { images } from "@/components/set-design/constants";
 
 function DigitalRendering() {
+  const gatsbyMaterials = ["Sketchup", "Adobe Photoshop"];
   return (
     <div className="w-full py-6 px-4 md:px-8">
-      {/* Overlay to improve content readability */}
       <div className="fixed inset-0 pointer-events-none" />
-
-      {/* Content wrapper */}
       <div>
-        {/* Hero Section */}
         <Header title="Digital Rendering" />
 
-        {/* Main Content */}
         <div className="mx-auto space-y-20">
-          {/* Accordion Section */}
           <div className="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-lg">
             <Accordion type="multiple" className="w-full space-y-6">
               <AccordionItem
                 value="item-1"
                 className="border border-[#e8b5bd] rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
               >
-                <AccordionTrigger className="px-6 py-4 hover:no-underline group">
+                <AccordionTrigger className="px-4 py-4 hover:no-underline group">
                   <div className="flex items-center space-x-4">
-                    <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
-                    <h4 className="font-semibold text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      "Great Gatsby" (2013)
-                    </h4>
+                    <div className="relative">
+                      <div className="w-10 h-10 flex items-center justify-center">
+                        <Brush className="w-6 h-6" />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <h4 className="font-semibold italic text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                        Great Gatsby (2013)
+                      </h4>
+                      <p className="text-sm text-gray-700">2025</p>
+                    </div>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
+                  <hr className="border-border-pink w-full mb-4" />
                   <div>
-                    <div className="mt-6 space-y-4">
-                      <h5 className="md:text-md lg:text-lg font-semibold text-[#4a3034]">
-                        Daisy Buchanan's Sitting Room
-                      </h5>
-                      <div className="flex items-center space-x-4 text-[#6d464c]">
-                        <Brush className="w-5 h-5" />
-                        <span className="italic">
-                          Materials used: Sketchup, Adobe Photoshop
-                        </span>
+                    <div className="flex flex-col gap-4 mb-4">
+                      <div className="md:border-l-2 md:border-[#d4848c] pl-2">
+                        <p className="text-center test-xs md:text-left text-[#6d464c]">
+                          Description
+                        </p>
+                        <h5 className="text-center md:text-left md:text-lg font-semibold text-[#4a3034]">
+                          Daisy Buchanan's Sitting Room
+                        </h5>
+                      </div>
+                      <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
+                        <div>
+                          <p className="text-center test-xs md:text-left text-[#6d464c]">
+                            Materials Used
+                          </p>
+                        </div>
+                        <div className="flex flex-wrap gap-2 text-[#6d464c]">
+                          {gatsbyMaterials.map((material, index) => (
+                            <span
+                              key={index}
+                              className="px-2 py-1.5 text-xs border-2 rounded-lg"
+                            >
+                              {material}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
                     <LightGallery
@@ -93,24 +112,50 @@ function DigitalRendering() {
                 value="item-2"
                 className="border border-[#e8b5bd] rounded-lg shadow-sm hover:shadow-md transition-all duration-300 bg-white/90"
               >
-                <AccordionTrigger className="px-6 py-4 hover:no-underline group">
+                <AccordionTrigger className="px-4 py-4 hover:no-underline group">
                   <div className="flex items-center space-x-4">
-                    <div className="w-2 h-2 rounded-full bg-[#d4848c] group-hover:scale-125 transition-transform duration-300" />
-                    <h4 className="lg:text-md text-lg font-semibold text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
-                      Glossier x The Ordinary: The "Face To Face" Experience
-                    </h4>
+                    <div className="relative">
+                      <div className="w-10 h-10 flex items-center justify-center">
+                        <Brush className="w-6 h-6" />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <h4 className="font-semibold italic text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                        Glossier x The Ordinary: The "Face to Face" Experience
+                      </h4>
+                      <p className="text-sm text-gray-700">
+                        Scenic Designer - Fall 2025
+                      </p>
+                    </div>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6">
-                  <div className="mt-6 space-y-4">
-                    <h5 className="md:text-md lg:text-lg font-semibold text-[#4a3034]">
-                      Original Concept
-                    </h5>
-                    <div className="flex items-center space-x-4 text-[#6d464c]">
-                      <Brush className="w-5 h-5" />
-                      <span className="italic">
-                        Materials used: Sketchup, Adobe Photoshop
-                      </span>
+                  <hr className="border-border-pink w-full mb-4" />
+                  <div className="flex flex-col gap-4 mb-4">
+                    <div className="md:border-l-2 md:border-[#d4848c] pl-2">
+                      <p className="text-center test-xs md:text-left text-[#6d464c]">
+                        Description
+                      </p>
+                      <h5 className="text-center md:text-left md:text-lg font-semibold text-[#4a3034]">
+                        Original Concept
+                      </h5>
+                    </div>
+                    <div className="flex flex-col gap-2 md:border-l-2 md:border-[#d4848c] pl-2">
+                      <div>
+                        <p className="text-center test-xs md:text-left text-[#6d464c]">
+                          Materials Used
+                        </p>
+                      </div>
+                      <div className="flex flex-wrap gap-2 text-[#6d464c]">
+                        {gatsbyMaterials.map((material, index) => (
+                          <span
+                            key={index}
+                            className="px-2 py-1.5 text-xs border-2 rounded-lg"
+                          >
+                            {material}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                   <LightGallery
@@ -125,49 +170,6 @@ function DigitalRendering() {
               </AccordionItem>
             </Accordion>
           </div>
-
-          {/* Project Stats Section */}
-          {/* <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 bg-white/100 backdrop-blur-sm ">
-            {[
-              {
-                icon: Brush,
-                title: "Projects",
-                value: "2",
-                desc: "Major Set Designs",
-              },
-              {
-                icon: Camera,
-                title: "Hours",
-                value: "100+",
-                desc: "Of Detailed Crafting",
-              },
-              {
-                icon: Star,
-                title: "Pieces",
-                value: "16+",
-                desc: "Unique Digital Designs",
-              },
-              {
-                icon: Palette,
-                title: "Materials",
-                value: "4+",
-                desc: "Different Media Used",
-              },
-            ].map(({ icon: Icon, title, value, desc }) => (
-              <Card
-                key={title}
-                className="bg-white/80 backdrop-blur-sm border-[#e8b5bd] hover:shadow-lg transition-shadow duration-300"
-              >
-                <CardContent className="p-6 text-center">
-                  <Icon className="w-8 h-8 text-[#d4848c] mx-auto mb-3" />
-                  <div className="text-4xl font-bold text-[#4a3034] mb-2">
-                    {value}
-                  </div>
-                  <div className="text-[#6d464c] font-medium">{desc}</div>
-                </CardContent>
-              </Card>
-            ))}
-          </div> */}
         </div>
       </div>
     </div>
