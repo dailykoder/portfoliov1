@@ -17,6 +17,9 @@ const MobileNavbar = ({ isOpen, className, setIsOpen }: MobileNavbarProps) => {
           <Link to="/" onClick={closeNavbar}>
             Home
           </Link>
+          <Link to="/v1/csuf" onClick={closeNavbar}>
+            Cal State Fullerton
+          </Link>
           <Link to="/v1/work" onClick={closeNavbar}>
             Work
           </Link>

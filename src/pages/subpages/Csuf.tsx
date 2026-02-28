@@ -47,10 +47,10 @@ const Csuf = () => {
                       </div>
                     </div>
                     <div className="flex flex-col items-start">
-                      <h4 className="font-semibold italic text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                      <h4 className="font-semibold italic text-sm text-left md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
                         The House of the Spirits
                       </h4>
-                      <p className="text-sm text-gray-700">
+                      <p className="text-sm text-left text-gray-700">
                         Scenic Designer - Fall 2025
                       </p>
                     </div>
@@ -140,7 +140,7 @@ const Csuf = () => {
                       </div>
                     </div>
                     <div className="flex flex-col items-start">
-                      <h4 className="font-semibold text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
+                      <h4 className="font-semibold text-sm text-left md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
                         Spring/Fall Dance 2025
                       </h4>
                       <p className="text-sm text-gray-700">
@@ -232,7 +232,7 @@ const Csuf = () => {
                       <h4 className="font-semibold text-sm md:text-xl text-[#4a3034] group-hover:text-[#d4848c] transition-colors duration-300">
                         The Magic Flute
                       </h4>
-                      <p className="text-sm text-gray-700">
+                      <p className="text-sm text-left text-gray-700">
                         Scenic Design Assistant - Spring 2025
                       </p>
                     </div>
