@@ -4,7 +4,7 @@ import { Maximize2, X, Download } from "lucide-react"; // Optional: standard ico
 
 const Resume = () => {
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const resumeUrl = "/GinaKimResume.png";
+  const resumeUrl = "/GKResume.jpg";
 
   const toggleFullscreen = () => setIsFullscreen(!isFullscreen);
 
@@ -29,11 +29,11 @@ const Resume = () => {
           onClick={toggleFullscreen}
         >
           <img
-            src={resumeUrl}
+            src="/GKResume.jpg"
             alt="Professional Resume"
-            className="w-full max-w-4xl h-auto shadow-2xl rounded-sm border border-gray-200"
+            className="w-full max-w-4xl h-auto shadow-lg"
+            style={{ imageRendering: "auto" }}
             loading="eager"
-            decoding="sync"
           />
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors flex items-center justify-center">
             <div className="opacity-0 group-hover:opacity-100 bg-white/90 p-2 rounded-full shadow-lg transition-opacity">
@@ -45,21 +45,22 @@ const Resume = () => {
 
       {isFullscreen && (
         <div
-          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 cursor-zoom-out"
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4 cursor-zoom-out"
           onClick={toggleFullscreen}
         >
           <button
-            className="absolute top-6 right-6 text-white hover:text-gray-300 transition-colors"
+            className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-[60]"
             onClick={toggleFullscreen}
           >
-            <X size={32} />
+            <X size={40} />
           </button>
 
           <img
             src={resumeUrl}
-            alt="Professional Resume Fullscreen"
-            className="max-w-full max-h-full object-contain"
-            onClick={(e) => e.stopPropagation()} // Prevents closing when clicking the image itself
+            alt="Fullscreen Resume"
+            className="max-w-full max-h-full object-contain shadow-2xl cursor-default"
+            style={{ touchAction: "pinch-zoom" }}
+            onClick={(e) => e.stopPropagation()}
           />
         </div>
       )}
